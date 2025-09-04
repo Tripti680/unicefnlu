@@ -1,0 +1,72 @@
+.header{
+    background:#0f2c59;
+}
+  .team_section{
+    background-color: #fff;
+  }
+  .teamcolumn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card-body{
+    background-color: #fff; 
+    font-family: 'Merriweather Sans', sans-serif;
+    border:none;
+
+  }
+  .card-text{
+    font-size: 15px;
+  }
+  .team-heading h3{
+    font-size: 25px;
+    font-family: 'Merriweather Sans' ;
+    font-weight: bold;
+  }
+
+  .news-section{
+     background-color:#e0ded9;
+  }
+
+  .opinion-section{
+    background-color: #fff;  
+  }
+
+
+  .footer{
+       background:#0f2c59;
+  }
+
+  .tabulation{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link{
+    cursor: pointer;
+}
+.yellowclr{
+  background: rgb(255, 193, 7);
+}
+.blueclr{
+  background:#0f2c59;
+}
+.greyclr{
+  background:#e0ded9;
+}
+.pointer{
+  cursor: pointer;
+}
+
+/* Team card styling */
+.team-card {
+  width: 14rem; /* smaller width */
+  margin: auto;
+}
+
+.team-card img {
+  height: 200px; /* smaller height */
+  object-fit: cover;
+  object-position: top;
+}
