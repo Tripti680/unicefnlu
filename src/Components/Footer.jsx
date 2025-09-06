@@ -16,16 +16,16 @@ function Footer() {
           {/* Newsletter Section */}
           <div className="col-lg-6 col-md-12 mb-4 px-lg-4">
 
-             <div className="logo text-white">
+             <div className="logo text-white mb-3">
                 <a onClick={() => navigation("/")}>
                   <img
-                    src={Images.uniceflogo}
+                    src={Images.uniceffooterlogo}
                     alt="Logo"
-                    style={{ width: 95, height: 50, cursor: "pointer" }}
+                    style={{ width: 150, height: 70, cursor: "pointer" }}
                   />
                 </a>
               </div>
-            <h5 className="fw-bold mb-3">Subscribe to Our Newsletter</h5>
+            <h5 className="fw-bold ">Subscribe to Our Newsletter</h5>
             <p className="small">
               Enter your email here and stay updated with our latest news.
             </p>

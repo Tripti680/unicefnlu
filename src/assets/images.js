@@ -1,4 +1,4 @@
-import uniceflogo from '../assets/Images/unicef-logo.jpeg';
+import uniceflogo from '../assets/Images/uniceflogo.webp';
 import bannerimg from '../assets/Images/bannerimg.webp';
 import legislation from '../assets/Images/legislation.webp';
 import Landmark from '../assets/Images/Landmark.webp';
@@ -12,7 +12,9 @@ import linkedin from '../assets/Images/linkedin.png';
 import twit from '../assets/Images/twit.png';
 import tasnemm from '../assets/Images/tasnemm.jpg';
 import blank from '../assets/Images/blankpic.png';
-import srishti from '../assets/Images/srishti.png'
+import srishti from '../assets/Images/srishti.png';
+import uniceffooterlogo from '../assets/Images/uniceffotterlogo.webp';
+
 
 const Images = {
     uniceflogo:uniceflogo,
@@ -29,7 +31,8 @@ const Images = {
     linkedin:linkedin,
     tasnemm:tasnemm,
     blank:blank,
-    srishti:srishti
+    srishti:srishti,
+    uniceffooterlogo:uniceffooterlogo
 
 }
 

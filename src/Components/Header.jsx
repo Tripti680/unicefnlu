@@ -68,13 +68,13 @@ function Header() {
         <div className="container-fluid">
           <div className="row align-items-center">
             {/* Logo */}
-            <div className="col-lg-2 col-6 p-3 px-0 px-lg-3">
+            <div className="col-lg-2 col-6 px-0 ">
               <div className="logo text-white">
                 <a onClick={() => navigation("/")}>
                   <img
                     src={Images.uniceflogo}
                     alt="Logo"
-                    style={{ width: 95, height: 50, cursor: "pointer" }}
+                    style={{ width: 95, height: 95, cursor: "pointer" }}
                   />
                 </a>
               </div>
