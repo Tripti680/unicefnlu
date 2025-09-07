@@ -2,8 +2,30 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Images from "../assets/images"; 
 import { useNavigate } from "react-router";
+import emailjs from "emailjs-com";
 
 function Footer() {
+
+   const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_nr84hu4",
+        "template_9rhrp97",
+        e.target,
+        "HBapxx-Ft07lIjowT" 
+      )
+      .then(
+        (result) => {
+          alert("✅ Subscription successful!");
+          e.target.reset();
+        },
+        (error) => {
+          alert("❌ Something went wrong. Please try again.");
+        }
+      );
+  };
 
     const navigate = useNavigate();
   const navigation = (path) => {
@@ -14,72 +36,67 @@ function Footer() {
       <div className="container">
         <div className="row">
           {/* Newsletter Section */}
-          <div className="col-lg-6 col-md-12 mb-4 px-lg-4">
+         <div className="col-lg-6 col-md-12 mb-4 px-lg-4">
+      <div className="logo text-white mb-3">
+        <a onClick={() => navigation("/")}>
+          <img
+            src={Images.uniceffooterlogo}
+            alt="Logo"
+            style={{ width: 219, height: 107, cursor: "pointer",borderRadius:'8px' }}
+          />
+        </a>
+      </div>
 
-             <div className="logo text-white mb-3">
-                <a onClick={() => navigation("/")}>
-                  <img
-                    src={Images.uniceffooterlogo}
-                    alt="Logo"
-                    style={{ width: 150, height: 70, cursor: "pointer" }}
-                  />
-                </a>
-              </div>
-            <h5 className="fw-bold ">Subscribe to Our Newsletter</h5>
-            <p className="small">
-              Enter your email here and stay updated with our latest news.
-            </p>
-            <form
-              action="YOUR_GOOGLE_SCRIPT_URL"
-              method="POST"
-              className="d-flex flex-wrap gap-2"
-            >
-              <input
-                type="email"
-                name="email"
-                placeholder="Your email address"
-                required
-                className="form-control w-auto flex-grow-1"
-              />
-              <button
-                type="submit"
-                className="btn btn-primary fw-bold"
-                style={{  color: "#fff" }}
-              >
-                Subscribe
-              </button>
-            </form>
-            <div className="form-check mt-2">
-              <input
-                className="form-check-input"
-                type="checkbox"
-                id="newsletter"
-              />
-              <label className="form-check-label" htmlFor="newsletter">
-                Yes, subscribe me to your newsletter.*
-              </label>
-            </div>
+      <h5 className="fw-bold">Subscribe to Our Newsletter</h5>
+      <p className="small">
+        Enter your email here and stay updated with our latest news.
+      </p>
 
-            {/* Social Icons */}
-            <div className="mt-3 d-flex gap-3">
-              <a href="#">
-                <img src={Images.instagram} alt="Instagram" className="social-icon" />
-              </a>
-              <a href="#">
-                <img src={Images.linkedin} alt="LinkedIn" className="social-icon" />
-              </a>
-              <a href="#">
-                <img src={Images.twit} alt="Twitter" className="social-icon" />
-              </a>
-              <a href="#">
-                <img
-                  src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
-                  alt="YouTube"
-                  className="social-icon"
-                />
-              </a>
-            </div>
-          </div>
+      {/* EmailJS Form */}
+      <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2">
+        <input
+          type="email"
+          name="email"
+          placeholder="Your email address"
+          required
+          className="form-control w-auto flex-grow-1"
+        />
+        <button
+          type="submit"
+          className="btn btn-primary fw-bold"
+          style={{ color: "#fff" }}
+        >
+          Subscribe
+        </button>
+      </form>
+
+      <div className="form-check mt-2">
+        <input className="form-check-input" type="checkbox" id="newsletter" />
+        <label className="form-check-label" htmlFor="newsletter">
+          Yes, subscribe me to your newsletter.*
+        </label>
+      </div>
+
+      {/* Social Icons */}
+      <div className="mt-3 d-flex gap-3">
+        <a href="#">
+          <img src={Images.instagram} alt="Instagram" className="social-icon" />
+        </a>
+        <a href="#">
+          <img src={Images.linkedin} alt="LinkedIn" className="social-icon" />
+        </a>
+        <a href="#">
+          <img src={Images.twit} alt="Twitter" className="social-icon" />
+        </a>
+        <a href="#">
+          <img
+            src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+            alt="YouTube"
+            className="social-icon"
+          />
+        </a>
+      </div>
+    </div>
 
           {/* Quick Links */}
           <div className="col-lg-6 col-md-12 mb-4 mt-4 text-center">

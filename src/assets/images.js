@@ -14,6 +14,7 @@ import tasnemm from '../assets/Images/tasnemm.jpg';
 import blank from '../assets/Images/blankpic.png';
 import srishti from '../assets/Images/srishti.png';
 import uniceffooterlogo from '../assets/Images/uniceffotterlogo.webp';
+import banner from '../assets/Images/banner.jpeg'
 
 
 const Images = {
@@ -32,7 +33,8 @@ const Images = {
     tasnemm:tasnemm,
     blank:blank,
     srishti:srishti,
-    uniceffooterlogo:uniceffooterlogo
+    uniceffooterlogo:uniceffooterlogo,
+    banner:banner,
 
 }
 

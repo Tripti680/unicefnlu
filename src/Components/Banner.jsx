@@ -1,24 +1,37 @@
-import React from 'react'
-import Images from '../assets/images'
+import React from "react";
+import Images from "../assets/images";
 
 function Banner() {
   return (
-    <>
     <section className="banner">
-        <div className="container-fluid p-0">
-            <div className="row">
-                <div className="col-lg-12 col-6">
-                    <div className="banner-box">
-                        <h2 className='my-4 h1 text-content-center' style={{fontSize:70,fontWeight:'900',paddingLeft:"128px",fontSize: "clamp(36px, 8vw, 64px)"}}>UNICEF Chair on Justice for Children<br />at National Law University Delhi</h2>
-                        <img src="https://www.developmentaid.org/api/frontend/cms/file/2024/01/The-biggest-social-issues-that-affect-modern-society.jpg" alt="" style={{width:'100%', height:270}}/>
-                       
-                    </div>
-                </div>
+      <div className="container-fluid p-0">
+        <div className="row g-0">
+          <div className="col-12">
+            <div className="banner-box text-center text-lg-start  ">
+              <h2
+                className="my-4 fw-bold"
+                style={{
+                  fontSize: "clamp(28px, 6vw, 70px)", // responsive font size
+                  lineHeight: "1.2",
+                  paddingLeft:'128px'
+                }}
+              >
+                UNICEF Chair on Justice for Children
+                <br />
+                at National Law University Delhi
+              </h2>
+              <img
+                src={Images.banner}
+                alt="Banner"
+                className="img-fluid w-100"
+                style={{ maxHeight: 400,  }}
+              />
             </div>
+          </div>
         </div>
+      </div>
     </section>
-    </>
-  )
+  );
 }
 
-export default Banner
+export default Banner;
