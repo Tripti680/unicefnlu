@@ -4,14 +4,14 @@ import { useNavigate, useLocation } from "react-router";
 
 function Header() {
   const navigate = useNavigate();
-  const location = useLocation(); // track current URL
+  const location = useLocation(); 
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
   const navigation = (path) => {
     navigate(path);
     setSearchTerm("");
-    setSuggestions([]); // clear dropdown after navigation
+    setSuggestions([]); 
   };
 
   // Menu items mapping
@@ -75,6 +75,7 @@ function Header() {
                     src={Images.uniceflogo}
                     alt="Logo"
                     style={{ width: 95, height: 95, cursor: "pointer" }}
+                    
                   />
                 </a>
               </div>
