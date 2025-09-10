@@ -7,7 +7,7 @@ function Notefield() {
     {
       path: "/childright",
       img: Images.Notefield1,
-      title: "To be or not to be … Child Rights Lawyer \n By Shivit Mongia",
+      title: "To Be Or Not To Be … A Child Rights Lawyer \n by Shreyas Dhamapurakar",
     },
   ];
 

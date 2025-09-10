@@ -1,4 +1,4 @@
-import uniceflogo from '../assets/Images/uniceflogo.webp';
+// import uniceflogo from '../assets/Images/uniceflogo.webp';
 import bannerimg from '../assets/Images/bannerimg.webp';
 import legislation from '../assets/Images/legislation.webp';
 import Landmark from '../assets/Images/Landmark.webp';
@@ -14,11 +14,12 @@ import tasnemm from '../assets/Images/tasnemm.jpg';
 import blank from '../assets/Images/blankpic.png';
 import srishti from '../assets/Images/srishti.png';
 import uniceffooterlogo from '../assets/Images/uniceffotterlogo.webp';
-import banner from '../assets/Images/banner.jpeg'
+import banner from '../assets/Images/banner.webp';
+
 
 
 const Images = {
-    uniceflogo:uniceflogo,
+    // uniceflogo:uniceflogo,
     bannerimg:bannerimg,
     legislation:legislation,
     Landmark:Landmark,
@@ -35,6 +36,7 @@ const Images = {
     srishti:srishti,
     uniceffooterlogo:uniceffooterlogo,
     banner:banner,
+    
 
 }
 

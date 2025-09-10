@@ -66,7 +66,10 @@
 }
 
 .team-card img {
-  height: 200px; /* smaller height */
-  object-fit: cover;
+  height: 230px; /* smaller height */
+ 
   object-position: top;
+}
+.aboutpara{
+  font-size: 17px;
 }

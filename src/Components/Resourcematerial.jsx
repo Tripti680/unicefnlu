@@ -51,7 +51,7 @@ function Resourcematerial() {
                   alt={item.title}
                   style={{
                     height: "250px",
-                    objectFit: "cover",
+                    objectFit: "none",
                     borderTopLeftRadius: "12px",
                     borderTopRightRadius: "12px",
                   }}

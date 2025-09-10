@@ -20,7 +20,7 @@ function Contact() {
             {/* Contact Info */}
             <div className="col-lg-6">
               <div className="p-4 bg-white rounded shadow-sm h-100">
-                <h4 className=" yellowclr text-white fw-bold m-0 px-1">Address</h4>
+                <h4 className=" yellowclr fw-bold m-0 px-1" style={{color:'#0f2c59'}}>Address</h4>
                 <p className="mb-4">
                   National Law University Delhi <br />
                   UNICEF Chair on Justice for Children <br />
@@ -29,10 +29,10 @@ function Contact() {
                   INDIA
                 </p>
 
-                <h4 className="yellowclr text-white fw-bold m-0 px-1">Contact Number</h4>
+                <h4 className="yellowclr fw-bold m-0 px-1" style={{color:'#0f2c59'}}>Contact Number</h4>
                 <p className="mb-4">011-28034993</p>
 
-                <h4 className="fw-bold text-white yellowclr m-0 px-1">Email</h4>
+                <h4 className="fw-bold yellowclr m-0 px-1" style={{color:'#0f2c59'}}>Email</h4>
                 <p>
                   <a
                     href="mailto:unicefchair@nludelhi.ac.in"

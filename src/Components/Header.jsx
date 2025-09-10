@@ -65,7 +65,7 @@ function Header() {
       </style>
 
       <section className="header">
-        <div className="container-fluid">
+        <div className="container">
           <div className="row align-items-center">
             {/* Logo */}
             <div className="col-lg-2 col-6 px-0 ">
@@ -82,8 +82,8 @@ function Header() {
 
             {/* Navbar */}
             <div
-              className="col-lg-8 col-6"
-              style={{ position: "relative", right: "190px" }}
+              className="col-lg-7 col-6"
+              style={{ position: "relative", right: "170px" }}
             >
               <nav className="navbar navbar-expand-xl navbar-dark">
                 <div className="container-fluid justify-content-start">
@@ -123,7 +123,7 @@ function Header() {
             </div>
 
             {/* Search Bar with Auto Suggest */}
-           <div className="col-12 col-lg-2 mt-3 mt-lg-0 position-relative " style={{right:"6px"}}>
+           <div className="col-12 col-lg-3 mt-3 mt-lg-0 position-relative " style={{right:"6px"}}>
   <form role="search" onSubmit={handleSearch}>
     <div
       className="input-group input-group-sm"

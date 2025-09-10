@@ -6,6 +6,7 @@ import {
   Link,
   HashRouter,
 } from "react-router-dom";
+import ScrollToTop from "./Components/ScrollToTop";
 import Homepage from "./Dashboard/Homepage";
 import Publication from "./screens/Headerscreen/Publication";
 import Contact from "./screens/Headerscreen/Contact";
@@ -21,10 +22,12 @@ import NewsDigest from "./screens/Headerscreen/NewsDigest";
 import Opinion1 from "./screens/Headerscreen/Opinion1";
 import ChildRight from "./screens/Headerscreen/ChildRight";
 import QuarterlyNewsletter from "./screens/Headerscreen/QuarterlyNewsletter";
+import MarqueFirst from "./screens/Headerscreen/MarqueFirst";
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/aboutus" element={<AboutUs />} />
@@ -44,6 +47,7 @@ function App() {
 
         <Route path="/childright" element={<ChildRight />} />
         <Route path="/quarterlynewsletter" element={<QuarterlyNewsletter />} />
+         <Route path="/marquefirst" element={<MarqueFirst />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>

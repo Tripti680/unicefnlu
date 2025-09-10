@@ -7,7 +7,7 @@ function Opinion() {
     {
       path: "/opinion1",
       img: Images.Opinion,
-      title: "Speedy Trials under the JJ Act \n By Shreyas Dhamapurkar",
+      title: "Speedy Trials under POCSO \n Lessons from West Bengal \n by Srishti Ray",
     },
   ];
 

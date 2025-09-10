@@ -18,7 +18,10 @@ function Banner() {
               >
                 UNICEF Chair on Justice for Children
                 <br />
-                at National Law University Delhi
+              <span style={{
+                  fontSize: "clamp(28px, 6vw, 55px)", // responsive font size
+                 
+                }} > National Law University Delhi</span>
               </h2>
               <img
                 src={Images.banner}
