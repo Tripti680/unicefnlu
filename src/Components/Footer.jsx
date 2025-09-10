@@ -33,30 +33,43 @@ function Footer() {
   };
   return (
     <footer
-      className="footer text-white pt-4 pb-3"
+      className="footer text-white pt-5 pb-3"
       style={{ background: "#0b2147" }}
     >
       <div className="container">
         <div className="row">
-          {/* Newsletter Section */}
-         <div className="col-lg-6 col-md-12 mb-4 px-lg-4">
-      <div className="logo text-white mb-3">
+
+          <div className="col-lg-2 text-center">
+             <div className="logo text-center text-white mb-3">
+        <a onClick={() => navigation("/")}>
+          <img
+            src={Images.nlulogo}
+            alt="Logo"
+            style={{ width: 110, height: 100, cursor: "pointer",borderRadius:'8px' }}
+          />
+        </a>
+      </div>
+       <div className="logo text-white mb-3">
         <a onClick={() => navigation("/")}>
           <img
             src={Images.uniceffooterlogo}
             alt="Logo"
-            style={{ width: 219, height: 107, cursor: "pointer",borderRadius:'8px' }}
+            style={{ width: 110, height: 100, cursor: "pointer",borderRadius:'8px' }}
           />
         </a>
       </div>
+          </div>
+          {/* Newsletter Section */}
+         <div className="col-lg-8 col-md-12 mb-4 px-lg-4">
+     
 
-      <h5 className="fw-bold">Subscribe to Our Newsletter</h5>
+      <h5 className="fw-bold">Subscribe to our Newsletter</h5>
       <p className="small">
         Enter your email here and stay updated with our latest news.
       </p>
 
       {/* EmailJS Form */}
-      <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2">
+      <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2 w-75">
         <input
           type="email"
           name="email"
@@ -102,35 +115,35 @@ function Footer() {
     </div>
 
           {/* Quick Links */}
-          <div className="col-lg-6 col-md-12 mb-4 mt-4 text-center">
+          <div className="col-lg-2 col-md-12 mb-4 mt-4 text-center">
             
-            <ul className="list-unstyled">
+            <ul className=" h5 list-unstyled">
               <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none"
+                <a href="#" className="text-white text-decoration-none h5"
                  onClick={() => navigation("/")}>
                   Home
                 </a>
               </li>
               <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none"
+                <a href="#" className="text-white text-decoration-none h5"
                 onClick={() => navigation("/aboutus")}>
                   About
                 </a>
               </li>
               <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none"
+                <a href="#" className="text-white text-decoration-none h5"
                  onClick={() => navigation("/fellowship")}>
                   Fellowship
                 </a>
               </li>
               <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none"
+                <a href="#" className="text-white text-decoration-none h5"
                  onClick={() => navigation("/publication")}>
                   Publications
                 </a>
               </li>
               <li className="fw-bold">
-                <a href="#" className="text-white text-decoration-none"
+                <a href="#" className="text-white text-decoration-none h5"
                 onClick={() => navigation("/contact")}>
                   Contact
                 </a>

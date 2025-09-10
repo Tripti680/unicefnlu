@@ -33,7 +33,7 @@ function Fellowship() {
             {/* Research Fellowship */}
             <div className="col-md-4">
               <div className="  shadow-sm border-0">
-                <div className="mb-0 p-0">
+                <div className="mb-0 p-0" style={{height:'224px'}}>
                   <h4 className="fw-bold mb-0 p-1 px-3 yellowclr ">
                     Research Fellowship
                   </h4>
@@ -66,7 +66,7 @@ function Fellowship() {
 
             <div className="col-md-4">
               <div className="  shadow-sm border-0">
-                <div className="mb-0 p-0">
+                <div className="mb-0 p-0" style={{height:'224px'}}>
                   <h4 className="fw-bold mb-0 p-1 px-3 yellowclr ">
                     {" "}
                     Litigation Fellowship
