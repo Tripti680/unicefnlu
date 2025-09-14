@@ -14,9 +14,12 @@ import tasnemm from '../assets/Images/tasnemm.jpg';
 import blank from '../assets/Images/blankpic.png';
 import srishti from '../assets/Images/srishti.png';
 
-import banner from '../assets/Images/banner.webp';
+import banner from '../assets/Images/bannerr.webp';
 import uniceffooterlogo from '../assets/Images/uniceflogofotter.webp';
 import nlulogo from '../assets/Images/nlulogo.webp'
+import headerlogo1 from '../assets/Images/headerlogo1.jpg'
+import headerlogo2 from '../assets/Images/headerlogo2.jpg'
+import headerlogo3 from '../assets/Images/headerlogo3.jpg'
 
 
 
@@ -40,7 +43,10 @@ const Images = {
     
     banner:banner,
     uniceffooterlogo:uniceffooterlogo,
-    nlulogo:nlulogo
+    nlulogo:nlulogo,
+    headerlogo1:headerlogo1,
+    headerlogo2:headerlogo2,
+    headerlogo3:headerlogo3
     
 
 }

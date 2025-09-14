@@ -1,25 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Images from "../assets/images";
 import { useNavigate } from "react-router";
 import emailjs from "emailjs-com";
+import { Link } from "react-router-dom";
 
 function Footer() {
+  const [isChecked, setIsChecked] = useState(false); // ✅ checkbox state
 
-   const sendEmail = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
+
+    if (!isChecked) {
+      alert("⚠️ Please agree to subscribe by checking the box first.");
+      return; // stop execution
+    }
 
     emailjs
       .sendForm(
-        "service_nr84hu4",
-        "template_9rhrp97",
+        "service_atx2bmb",
+        "template_pbnq3vc",
         e.target,
-        "HBapxx-Ft07lIjowT"
+        "xVoRcA4mZ16_Zr5Gh"
       )
       .then(
         (result) => {
           alert("✅ Subscription successful!");
           e.target.reset();
+          setIsChecked(false); // reset checkbox
         },
         (error) => {
           alert("❌ Something went wrong. Please try again.");
@@ -27,10 +35,11 @@ function Footer() {
       );
   };
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const navigation = (path) => {
     navigate(path);
   };
+
   return (
     <footer
       className="footer text-white pt-5 pb-3"
@@ -38,133 +47,164 @@ function Footer() {
     >
       <div className="container">
         <div className="row">
-
-          <div className="col-lg-2 text-center">
-             <div className="logo text-center text-white mb-3">
-        <a onClick={() => navigation("/")}>
-          <img
-            src={Images.nlulogo}
-            alt="Logo"
-            style={{ width: 110, height: 100, cursor: "pointer",borderRadius:'8px' }}
-          />
-        </a>
-      </div>
-       <div className="logo text-white mb-3">
-        <a onClick={() => navigation("/")}>
-          <img
-            src={Images.uniceffooterlogo}
-            alt="Logo"
-            style={{ width: 110, height: 100, cursor: "pointer",borderRadius:'8px' }}
-          />
-        </a>
-      </div>
+          {/* Logo Section */}
+          <div className="col-lg-3 ">
+            <div className="logo text-white mb-3">
+              <a onClick={() => navigation("/")}>
+                <img
+                  src={Images.nlulogo}
+                  alt="Logo"
+                  style={{
+                    width: 100,
+                    height: 90,
+                    cursor: "pointer",
+                    borderRadius: "8px",
+                  }}
+                />
+              </a>
+            </div>
+            <div className="logo text-white mb-3">
+              <a onClick={() => navigation("/")}>
+                <img
+                  src={Images.uniceffooterlogo}
+                  alt="Logo"
+                  style={{
+                    width: 100,
+                    height: 90,
+                    cursor: "pointer",
+                    borderRadius: "8px",
+                  }}
+                />
+              </a>
+            </div>
           </div>
+
           {/* Newsletter Section */}
-         <div className="col-lg-8 col-md-12 mb-4 px-lg-4">
-     
+          <div className="col-lg-7 col-md-12 mb-4 px-lg-5">
+            <h5 className="fw-bold">Subscribe to our Newsletter</h5>
+            <p className="small">
+              Enter your email here and stay updated with our latest news.
+            </p>
 
-      <h5 className="fw-bold">Subscribe to our Newsletter</h5>
-      <p className="small">
-        Enter your email here and stay updated with our latest news.
-      </p>
+            {/* EmailJS Form */}
+            <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2 w-75">
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email address"
+                required
+                className="form-control w-auto flex-grow-1"
+              />
+              <button
+                type="submit"
+                className="btn btn-primary fw-bold"
+                style={{ color: "#fff" }}
+                disabled={!isChecked} 
+              >
+                Subscribe
+              </button>
+            </form>
 
-      {/* EmailJS Form */}
-      <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2 w-75">
-        <input
-          type="email"
-          name="email"
-          placeholder="Your email address"
-          required
-          className="form-control w-auto flex-grow-1"
-        />
-        <button
-          type="submit"
-          className="btn btn-primary fw-bold"
-          style={{ color: "#fff" }}
-        >
-          Subscribe
-        </button>
-      </form>
+            {/* Checkbox */}
+            <div className="form-check mt-2">
+              <input
+                className="form-check-input"
+                type="checkbox"
+                id="newsletter"
+                checked={isChecked}
+                onChange={(e) => setIsChecked(e.target.checked)} // ✅ update state
+              />
+              <label className="form-check-label" htmlFor="newsletter">
+                Yes, subscribe me to your newsletter.*
+              </label>
+            </div>
 
-      <div className="form-check mt-2">
-        <input className="form-check-input" type="checkbox" id="newsletter" />
-        <label className="form-check-label" htmlFor="newsletter">
-          Yes, subscribe me to your newsletter.*
-        </label>
-      </div>
-
-      {/* Social Icons */}
-      <div className="mt-3 d-flex gap-3">
-        <a href="#">
-          <img src={Images.instagram} alt="Instagram" className="social-icon" />
-        </a>
-        <a href="#">
-          <img src={Images.linkedin} alt="LinkedIn" className="social-icon" />
-        </a>
-        <a href="#">
-          <img src={Images.twit} alt="Twitter" className="social-icon" />
-        </a>
-        <a href="#">
-          <img
-            src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
-            alt="YouTube"
-            className="social-icon"
-          />
-        </a>
-      </div>
-    </div>
+            {/* Social Icons */}
+            <div className="mt-3 d-flex gap-3">
+              <a href="#">
+                <img
+                  src={Images.instagram}
+                  alt="Instagram"
+                  className="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img
+                  src={Images.linkedin}
+                  alt="LinkedIn"
+                  className="social-icon"
+                />
+              </a>
+              <a href="#">
+                <img src={Images.twit} alt="Twitter" className="social-icon" />
+              </a>
+              <a href="#">
+                <img
+                  src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+                  alt="YouTube"
+                  className="social-icon"
+                />
+              </a>
+            </div>
+          </div>
 
           {/* Quick Links */}
-          <div className="col-lg-2 col-md-12 mb-4 mt-4 text-center">
-            
-            <ul className=" h5 list-unstyled">
-              <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none h5"
-                 onClick={() => navigation("/")}>
+          <div className="col-lg-2 col-md-12 mb-4 mt-4 text-end">
+            <ul className="h5 list-unstyled">
+              <li className="mb-2 fw-bold h5">
+                <Link className="text-white text-decoration-none" to="/">
                   Home
-                </a>
+                </Link>
               </li>
-              <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none h5"
-                onClick={() => navigation("/aboutus")}>
+              <li className="mb-2 fw-bold h5">
+                <Link className="text-white text-decoration-none" to="/aboutus">
                   About
-                </a>
+                </Link>
               </li>
-              <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none h5"
-                 onClick={() => navigation("/fellowship")}>
+              <li className="mb-2 fw-bold h5">
+                <Link
+                  className="text-white text-decoration-none"
+                  to="/fellowship"
+                >
                   Fellowship
-                </a>
+                </Link>
               </li>
-              <li className="mb-2 fw-bold">
-                <a href="#" className="text-white text-decoration-none h5"
-                 onClick={() => navigation("/publication")}>
+              <li className="mb-2 fw-bold h5">
+                <Link
+                  className="text-white text-decoration-none"
+                  to="/publication"
+                >
                   Publications
-                </a>
+                </Link>
               </li>
-              <li className="fw-bold">
-                <a href="#" className="text-white text-decoration-none h5"
-                onClick={() => navigation("/contact")}>
+              <li className="fw-bold h5">
+                <Link
+                  className="text-white text-decoration-none"
+                  to="/contact"
+                >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
         </div>
 
         {/* Footer Bottom */}
-        <div className="text-center pt-3 mt-3 small" style={{borderTop:"1px solid #2a5bd7"}}>
-          © {new Date().getFullYear()} UNICEF Chair at NLU Delhi. Powered and secured.
+        <div
+          className="text-center pt-3 mt-3 small"
+          style={{ borderTop: "1px solid #2a5bd7" }}
+        >
+          © {new Date().getFullYear()} UNICEF Chair at NLU Delhi. Powered and
+          secured.
         </div>
       </div>
-
 
       <style jsx>{`
         .social-icon {
           width: 25px;
           height: 25px;
           object-fit: contain;
-          filter: brightness(0) invert(1); /* ensures white icons */
+          filter: brightness(0) invert(1);
           transition: transform 0.2s ease-in-out;
         }
         .social-icon:hover {

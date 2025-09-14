@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Images from "../assets/images";
 import { useNavigate, useLocation } from "react-router";
 
@@ -7,6 +7,18 @@ function Header() {
   const location = useLocation(); 
   const [searchTerm, setSearchTerm] = useState("");
   const [suggestions, setSuggestions] = useState([]);
+
+   const logos = [Images.headerlogo1, Images.headerlogo2, Images.headerlogo3];
+  const [currentLogo, setCurrentLogo] = useState(0);
+
+  // ✅ change logo every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentLogo((prev) => (prev + 1) % logos.length);
+    }, 3000); // 3 seconds
+    return () => clearInterval(interval);
+  }, []);
+
 
   const navigation = (path) => {
     navigate(path);
@@ -61,21 +73,25 @@ function Header() {
             color:#0f2c59 !important;
             border-radius:30px/* Yellow on hover */
           }
+            .logo-fade {
+            transition: opacity 1s ease-in-out;
+          }
         `}
       </style>
 
       <section className="header">
-        <div className="container">
+        <div className="container-fluid py-1">
           <div className="row align-items-center">
             {/* Logo */}
-            <div className="col-lg-2 col-6 px-0 ">
+             <div className="col-lg-2 col-6 px-4 ">
               <div className="logo text-white">
                 <a onClick={() => navigation("/")}>
                   <img
-                    src={Images.uniceflogo}
+                    key={currentLogo} // force re-render on change
+                    src={logos[currentLogo]}
                     alt="Logo"
-                    style={{ width: 95, height: 95, cursor: "pointer" }}
-                    
+                    className="logo-fade"
+                    style={{ width: 90, height: 90, cursor: "pointer", borderRadius:'8px' }}
                   />
                 </a>
               </div>
@@ -84,7 +100,7 @@ function Header() {
             {/* Navbar */}
             <div
               className="col-lg-7 col-6"
-              style={{ position: "relative", right: "170px" }}
+              style={{ position: "relative", right: "190px" }}
             >
               <nav className="navbar navbar-expand-xl navbar-dark">
                 <div className="container-fluid justify-content-start">

@@ -61,12 +61,12 @@
 
 /* Team card styling */
 .team-card {
-  width: 14rem; /* smaller width */
+  width: 12rem; /* smaller width */
   margin: auto;
 }
 
 .team-card img {
-  height: 230px; /* smaller height */
+  height: 150px; /* smaller height */
  
   object-position: top;
 }

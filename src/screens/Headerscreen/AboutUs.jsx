@@ -65,7 +65,7 @@ function AboutUs() {
             </h3>
             <div className="row g-4">
               {/* Team Member 1 */}
-              <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
+              {/* <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
                 <a
                   href="https://nludelhi.ac.in/faculty/dr-tasneem-deo/"
                   target="_blank"
@@ -90,10 +90,43 @@ function AboutUs() {
                     </div>
                   </div>
                 </a>
+              </div> */}
+              <div className="col-lg-4 col-md-6 col-12 ">
+                <div className="card border-0 mb-0" style={{ maxWidth: "540px" }}>
+                <div className="d-flex">
+                  {/* Left side - Image */}
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={Images.tasnemm}
+                      className=" rounded-start"
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        maxWidth: "180px",
+                      }}
+                      alt="Tasneem Deo"
+                    />
+                  </div>
+
+                  {/* Right side - Text */}
+                  <div className="d-flex align-items-center flex-grow-1" style={{background:'none'}}>
+                    <div
+                      className="card-body p-2 mb-0"
+                      style={{ background: "none" }}
+                    >
+                      <h5 className="fw-bold mb-1">Tasneem Deo</h5>
+                      <p className="mb-1">Chair</p>
+                      <p className="mb-0 text-muted">
+                        Fellowship Co-ordinator (Research)
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
               </div>
 
               {/* Team Member 2 */}
-              <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
+              {/* <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
@@ -118,10 +151,41 @@ function AboutUs() {
                     </div>
                   </div>
                 </a>
+              </div> */}
+              <div className="card border-0 mb-0" style={{ maxWidth: "540px" }}>
+                <div className="d-flex">
+                  {/* Left side - Image */}
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={Images.tasnemm}
+                      className="h-75 rounded-start"
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        maxWidth: "180px",
+                      }}
+                      alt="Tasneem Deo"
+                    />
+                  </div>
+
+                  {/* Right side - Text */}
+                  <div className="d-flex align-items-center flex-grow-1">
+                    <div
+                      className="card-body p-2 mb-0"
+                      style={{ background: "none" }}
+                    >
+                      <h5 className="fw-bold mb-1">Tasneem Deo</h5>
+                      <p className="mb-1">Chair</p>
+                      <p className="mb-0 text-muted">
+                        Fellowship Co-ordinator (Research)
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               {/* Team Member 3 */}
-              <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
+              {/* <div className="col-lg-3 col-md-6 col-12 my-3 d-flex">
                 <a
                   href="https://nludelhi.ac.in/faculty/ms-srishti-ray/"
                   target="_blank"
@@ -144,6 +208,37 @@ function AboutUs() {
                     </div>
                   </div>
                 </a>
+              </div> */}
+              <div className="card border-0 mb-0" style={{ maxWidth: "540px" }}>
+                <div className="d-flex">
+                  {/* Left side - Image */}
+                  <div className="d-flex align-items-center">
+                    <img
+                      src={Images.tasnemm}
+                      className="h-75 rounded-start"
+                      style={{
+                        objectFit: "cover",
+                        width: "100%",
+                        maxWidth: "180px",
+                      }}
+                      alt="Tasneem Deo"
+                    />
+                  </div>
+
+                  {/* Right side - Text */}
+                  <div className="d-flex align-items-center flex-grow-1">
+                    <div
+                      className="card-body p-2 mb-0"
+                      style={{ background: "none" }}
+                    >
+                      <h5 className="fw-bold mb-1">Tasneem Deo</h5>
+                      <p className="mb-1">Chair</p>
+                      <p className="mb-0 text-muted">
+                        Fellowship Co-ordinator (Research)
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -171,43 +266,42 @@ function AboutUs() {
           {/* Student Researchers */}
           <div className="mt-5">
             <h3
-              className="fw-bold mb-3 yellowclr p-0 px-1 text-whit"
+              className="fw-bold mb-3 yellowclr p-0 px-1 "
               style={{ color: "#0f2c59" }}
             >
               Student Researchers
             </h3>
-           
-   <div className="row">
-    <div className="col-lg-3">
-      <ul className="aboutpara">
-        <li>Aadya Mital</li>
-        <li>Adyasha Syam</li>
-          <li>Aravya Gupta</li>
-      </ul>
-    </div>
-    <div className="col-lg-3">
-      <ul className="aboutpara">
-        <li>Divas Upadhyay</li>
-        <li>Divyesh Thakur</li>
-          <li>Kanishka Mittal</li>
-      </ul>
-    </div>
-    <div className="col-lg-3">
-      <ul className="aboutpara">
-         <li>Krishaan Doctor</li>
-          <li>Nandita Matolli</li>
-          <li>Nitya Singhania</li>
-      </ul>
-    </div>
-      <div className="col-lg-3">
-      <ul className="aboutpara">
-          <li>Ramya Dosaya</li>
-          <li>Suhani Gupta</li>
-              <li>Vritant Kumar</li>
-      </ul>
-    </div>
-   </div>
 
+            <div className="row">
+              <div className="col-lg-3">
+                <ul className="aboutpara">
+                  <li>Aadya Mital</li>
+                  <li>Adyasha Syam</li>
+                  <li>Aravya Gupta</li>
+                </ul>
+              </div>
+              <div className="col-lg-3">
+                <ul className="aboutpara">
+                  <li>Divas Upadhyay</li>
+                  <li>Divyesh Thakur</li>
+                  <li>Kanishka Mittal</li>
+                </ul>
+              </div>
+              <div className="col-lg-3">
+                <ul className="aboutpara">
+                  <li>Krishaan Doctor</li>
+                  <li>Nandita Matolli</li>
+                  <li>Nitya Singhania</li>
+                </ul>
+              </div>
+              <div className="col-lg-3">
+                <ul className="aboutpara">
+                  <li>Ramya Dosaya</li>
+                  <li>Suhani Gupta</li>
+                  <li>Vritant Kumar</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </section>
