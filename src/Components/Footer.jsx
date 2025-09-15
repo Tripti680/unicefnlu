@@ -69,8 +69,8 @@ function Footer() {
                   src={Images.uniceffooterlogo}
                   alt="Logo"
                   style={{
-                    width: 100,
-                    height: 90,
+                    width: 90,
+                    height: 83,
                     cursor: "pointer",
                     borderRadius: "8px",
                   }}
