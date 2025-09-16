@@ -48,15 +48,15 @@ function Footer() {
       <div className="container">
         <div className="row">
           {/* Logo Section */}
-          <div className="col-lg-3 ">
+          <div className="col-lg-1 px-lg-4">
             <div className="logo text-white mb-3">
               <a onClick={() => navigation("/")}>
                 <img
                   src={Images.nlulogo}
                   alt="Logo"
                   style={{
-                    width: 100,
-                    height: 90,
+                    width: 90,
+                    height: 83,
                     cursor: "pointer",
                     borderRadius: "8px",
                   }}
@@ -80,7 +80,7 @@ function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="col-lg-7 col-md-12 mb-4 px-lg-5">
+          <div className="col-lg-9 col-md-12 mb-4 px-lg-5">
             <h5 className="fw-bold">Subscribe to our Newsletter</h5>
             <p className="small">
               Enter your email here and stay updated with our latest news.

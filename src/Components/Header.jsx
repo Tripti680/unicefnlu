@@ -91,7 +91,7 @@ function Header() {
                     src={logos[currentLogo]}
                     alt="Logo"
                     className="logo-fade"
-                    style={{ width: 80, height: 80, cursor: "pointer", borderRadius:'18px',border:'3px solid #0f2c59' }}
+                    style={{ width: 80, height: 80, cursor: "pointer", borderRadius:'18px',border:'3px solid #79bde2ff' }}
                   />
                 </a>
               </div>

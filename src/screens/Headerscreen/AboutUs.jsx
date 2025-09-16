@@ -56,115 +56,132 @@ function AboutUs() {
           </div>
 
           {/* Team */}
-         <div className="mb-3">
-  <h3
-    className="fw-bold mb-3 yellowclr p-0 px-1 "
-    style={{ color: "#0f2c59" }}
-  >
-    Team
-  </h3>
-  <div className="row g-4 ">
-    {/* Team Member 1 */}
-    <div className="col-lg-4 col-md-6 col-12 d-flex">
-      <div
-        className="card border-0 mb-0 h-100 w-100"
-        style={{ maxWidth: "540px",background:'none' }}
-      >
-        <div className="d-flex h-100">
-          {/* Left side - Image */}
-          <div className="d-flex align-items-center">
-            <img
-              src={Images.tasnemm}
-              className="rounded-start"
-              style={{
-                objectFit: "cover",
-                width: "100%",
-                maxWidth: "180px",
-                height: "80%", // keeps image stretched equal
-              }}
-              alt="Tasneem Deo"
-            />
-          </div>
+          <div className="mb-3">
+            <h3
+              className="fw-bold mb-3 yellowclr p-0 px-1 "
+              style={{ color: "#0f2c59" }}
+            >
+              Team
+            </h3>
+            <div className="row g-4">
+              {/* Team Member 1 */}
 
-          {/* Right side - Text */}
-          <div
-            className="d-flex align-items-center flex-grow-1"
-            style={{ background: "none" }}
-          >
-            <div className="card-body p-2 mb-0" style={{background:'none'}}>
-              <h5 className="fw-bold mb-1">Tasneem Deo</h5>
-              <p className="mb-1">Chair</p>
-              <p className="mb-0 text-muted">
-                Fellowship Co-ordinator (Research)
-              </p>
+              <div className="col-lg-4 col-md-6 col-12 d-flex">
+                <a href="https://nludelhi.ac.in/faculty/dr-tasneem-deo/" style={{textDecoration:'none'}}>
+                  <div
+                    className="card border-0 mb-0 h-100 w-100"
+                    style={{ maxWidth: "540px", background: "none" }}
+                  >
+                    <div className="d-flex h-100">
+                      {/* Left side - Image */}
+                      <div className="d-flex align-items-center">
+                        <img
+                          className="img-thumbnail"
+                          src={Images.tasnemm}
+                          alt="Tasneem Deo"
+                          style={{
+                            width: "150px",
+                            height: "180px",
+                            // objectFit: "cover",
+                            borderRadius: "8px",
+                          }}
+                        />
+                      </div>
+
+                      {/* Right side - Text */}
+                      <div className="d-flex  flex-grow-1">
+                        <div
+                          className="card-body p-2 mb-0"
+                          style={{ background: "none" }}
+                        >
+                          <h5 className="fw-bold mb-1">Tasneem Deo</h5>
+                          <p className="mb-1">Chair</p>
+                          <p className="mb-0 ">
+                            Fellowship Co-ordinator (Research)
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              {/* Team Member 2 */}
+              <div className="col-lg-4 col-md-6 col-12 d-flex">
+                <div
+                  className="card border-0 mb-0 h-100 w-100"
+                  style={{ maxWidth: "540px", background: "none" }}
+                >
+                  <div className="d-flex h-100">
+                    {/* Left side - Image */}
+                    <div className="d-flex align-items-center">
+                      <img
+                        className="img-thumbnail"
+                        src={Images.blank}
+                        alt="Fellowship Coordinator"
+                        style={{
+                          width: "150px",
+                          height: "180px",
+                          // objectFit: "cover",
+                          borderRadius: "8px",
+                        }}
+                      />
+                    </div>
+
+                    {/* Right side - Text */}
+                    <div className="d-flex align-items-center flex-grow-1">
+                      <div
+                        className="card-body p-2 mb-0"
+                        style={{ background: "none" }}
+                      >
+                        <p className="mb-1">Fellowship Co-ordinator</p>
+                        <p className="mb-0">(Litigation)</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Team Member 3 */}
+
+              <div className="col-lg-4 col-md-6 col-12 d-flex">
+                <a href="https://nludelhi.ac.in/faculty/ms-srishti-ray/" style={{textDecoration:'none'}}>
+                  <div
+                    className="card border-0 mb-0 h-100 w-100"
+                    style={{ maxWidth: "540px", background: "none" }}
+                  >
+                    <div className="d-flex h-100">
+                      {/* Left side - Image */}
+                      <div className="d-flex align-items-center">
+                        <img
+                          className="img-thumbnail"
+                          src={Images.srishti}
+                          alt="Srishti Ray"
+                          style={{
+                            width: "150px",
+                            height: "180px",
+                            // objectFit: "cover",
+                            borderRadius: "8px",
+                          }}
+                        />
+                      </div>
+
+                      {/* Right side - Text */}
+                      <div className="d-flex  flex-grow-1">
+                        <div
+                          className="card-body p-2 mb-0"
+                          style={{ background: "none" }}
+                        >
+                          <h5 className="fw-bold mb-1">Srishti Ray</h5>
+                          <p className="mb-1">Program Manager</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Team Member 2 */}
-    <div className="col-lg-4 col-md-6 col-12 d-flex">
-      <div className="card border-0 mb-0 h-100 w-100" style={{ maxWidth: "540px", background:'none' }}>
-        <div className="d-flex h-100">
-          {/* Left side - Image */}
-          <div className="d-flex align-items-center">
-            <img
-              src={Images.blank}
-              className="rounded-start"
-              style={{
-                objectFit: "cover",
-                width: "100%",
-                maxWidth: "180px",
-                height: "80%",
-              }}
-              alt="Fellowship Coordinator"
-            />
-          </div>
-
-          {/* Right side - Text */}
-          <div className="d-flex align-items-center flex-grow-1">
-            <div className="card-body p-2 mb-0" style={{background:'none'}}>
-              <p className="mb-1">Fellowship Co-ordinator</p>
-              <p className="mb-0">(Litigation)</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    {/* Team Member 3 */}
-    <div className="col-lg-4 col-md-6 col-12 d-flex">
-      <div className="card border-0 mb-0 h-100 w-100" style={{ maxWidth: "540px" ,background:'none'}}>
-        <div className="d-flex h-100">
-          {/* Left side - Image */}
-          <div className="d-flex align-items-center">
-            <img
-              src={Images.srishti}
-              className="rounded-start"
-              style={{
-                objectFit: "cover",
-                width: "100%",
-                maxWidth: "180px",
-                height: "80%",
-              }}
-              alt="Srishti Ray"
-            />
-          </div>
-
-          {/* Right side - Text */}
-          <div className="d-flex align-items-center flex-grow-1">
-            <div className="card-body p-2 mb-0" style={{background:'none'}}>
-              <h5 className="fw-bold mb-1">Srishti Ray</h5>
-              <p className="mb-1">Program Manager</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
           {/* Applications */}
           <h3
