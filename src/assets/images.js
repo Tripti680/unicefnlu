@@ -1,9 +1,9 @@
- import uniceflogo from '../assets/Images/unicefpic.jpg';
-import bannerimg from '../assets/Images/bannerimg.webp';
-import legislation from '../assets/Images/legislation.webp';
-import Landmark from '../assets/Images/Landmark.webp';
-import obligations from '../assets/Images/obligations.webp';
-import notable from '../assets/Images/notable.webp';
+
+// import bannerimg from '../assets/Images/bannerimg.webp';
+// import legislation from '../assets/Images/legislation.webp';
+// import Landmark from '../assets/Images/Landmark.webp';
+// import obligations from '../assets/Images/obligations.webp';
+// import notable from '../assets/Images/notable.webp';
 import augustcalender from '../assets/Images/augustcalender.png'
 import Opinion from '../assets/Images/opinion.jpg';
 import Notefield1 from '../assets/Images/Notefield1.png';
@@ -14,7 +14,7 @@ import tasnemm from '../assets/Images/tasnemm.jpg';
 import blank from '../assets/Images/blankpic.png';
 import srishti from '../assets/Images/srishti.png';
 
-import banner from '../assets/Images/bannerr.jpg';
+// import banner from '../assets/Images/bannerr.jpg';
 import uniceffooterlogo from '../assets/Images/uniceflogofotter.jpg';
 import nlulogo from '../assets/Images/nlulogo.jpg'
 import headerlogo1 from '../assets/Images/headerlogo1.jpg'
@@ -25,12 +25,12 @@ import headerlogo3 from '../assets/Images/headerlogo3.jpg'
 
 
 const Images = {
-    uniceflogo:uniceflogo,
+   
     // bannerimg:bannerimg,
-    legislation:legislation,
-    Landmark:Landmark,
-    obligations:obligations,
-    notable:notable,
+    // legislation:legislation,
+    // Landmark:Landmark,
+    // obligations:obligations,
+    // notable:notable,
     augustcalender:augustcalender,
     Opinion:Opinion,
     Notefield1:Notefield1,
@@ -41,7 +41,7 @@ const Images = {
     blank:blank,
     srishti:srishti,
     
-    banner:banner,
+    // banner:banner,
     uniceffooterlogo:uniceffooterlogo,
     nlulogo:nlulogo,
     headerlogo1:headerlogo1,
