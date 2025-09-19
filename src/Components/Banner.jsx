@@ -10,7 +10,7 @@ function Banner() {
           <div className="col-12 px-lg-4 p-1">
             <div className="banner-box text-center text-lg-start  ">
               <h2
-                className="my-4 fw-bold"
+                className="my-lg-4 my-2 fw-bold"
                 style={{
                   fontSize: "clamp(28px, 6vw, 60px)", // responsive font size
                   lineHeight: "1.2",

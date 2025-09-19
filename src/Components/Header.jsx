@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Images from "../assets/images";
 import { useNavigate, useLocation } from "react-router";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function Header() {
   const navigate = useNavigate();
@@ -10,7 +12,6 @@ function Header() {
 
   const logos = [Images.headerlogo1, Images.headerlogo2, Images.headerlogo3];
   const [currentLogo, setCurrentLogo] = useState(0);
-
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -25,7 +26,6 @@ function Header() {
     setSuggestions([]);
   };
 
-  
   const menuItems = {
     home: "/",
     about: "/aboutus",
@@ -33,7 +33,6 @@ function Header() {
     publications: "/publication",
     contact: "/contact",
   };
-
 
   const handleInputChange = (e) => {
     const value = e.target.value.toLowerCase();
@@ -48,7 +47,6 @@ function Header() {
       setSuggestions(filtered);
     }
   };
-
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -70,9 +68,9 @@ function Header() {
           .navbar-nav .nav-link:hover {
             background: #ffc107 !important; 
             color:#0f2c59 !important;
-            border-radius:30px/* Yellow on hover */
+            border-radius:30px;
           }
-            .logo-fade {
+          .logo-fade {
             transition: opacity 1s ease-in-out;
           }
         `}
@@ -82,11 +80,11 @@ function Header() {
         <div className="container-fluid py-1">
           <div className="row align-items-center">
             {/* Logo */}
-            <div className="col-lg-2 col-6 px-4 ">
+            <div className="col-6 col-lg-2 px-4 d-flex align-items-center">
               <div className="logo text-white">
                 <a onClick={() => navigation("/")}>
                   <img
-                    key={currentLogo} // force re-render on change
+                    key={currentLogo}
                     src={logos[currentLogo]}
                     alt="Logo"
                     className="logo-fade"
@@ -102,9 +100,9 @@ function Header() {
               </div>
             </div>
 
-            {/* Navbar */}
+            {/* Navbar (Desktop only) */}
             <div
-              className="col-lg-7 col-6"
+              className="col-lg-7 d-none d-lg-block desktopnavbar"
               style={{ position: "relative", right: "190px" }}
             >
               <nav className="navbar navbar-expand-xl navbar-dark">
@@ -113,7 +111,6 @@ function Header() {
                     className="collapse navbar-collapse show"
                     id="navbarSupportedContent"
                   >
-                    {/* Added ms-lg-4 to push menu slightly away from logo */}
                     <ul className="navbar-nav ms-lg-4">
                       {Object.entries(menuItems).map(([key, path]) => (
                         <li className="nav-item mx-lg-3" key={key}>
@@ -144,9 +141,9 @@ function Header() {
               </nav>
             </div>
 
-            {/* Search Bar with Auto Suggest */}
+            {/* Search Bar (Desktop only) */}
             <div
-              className="col-12 col-lg-3 mt-3 mt-lg-0 position-relative "
+              className="col-lg-3 d-none d-lg-block position-relative desktopsearchbar"
               style={{ right: "6px" }}
             >
               <form role="search" onSubmit={handleSearch}>
@@ -156,7 +153,7 @@ function Header() {
                 >
                   <input
                     type="search"
-                    className="form-control "
+                    className="form-control"
                     placeholder="Search..."
                     aria-label="Search"
                     value={searchTerm}
@@ -168,7 +165,6 @@ function Header() {
                       color: "#e0ded9",
                     }}
                   />
-
                   <button
                     className="btn ms-1 d-flex align-items-center justify-content-center"
                     style={{
@@ -207,6 +203,137 @@ function Header() {
                 </ul>
               )}
             </div>
+
+            {/* Hamburger Button (Mobile only) */}
+            <div className="col-6 d-flex justify-content-end d-lg-none pe-4">
+              <button
+                className="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"
+                style={{
+                  background: "#ffc107",
+                  borderRadius: "8px",
+                  width: "45px",
+                  height: "40px",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <i className="bi bi-list" style={{ fontSize: "24px" }}></i>
+              </button>
+            </div>
+
+            {/* Offcanvas with Accordion */}
+            <div
+              className="offcanvas offcanvas-end mobilebg px-0 w-100"
+              tabIndex="-1"
+              id="offcanvasRight"
+              aria-labelledby="offcanvasRightLabel"
+            >
+              <div className="offcanvas-header p-2 px-3">
+                <h5 id="offcanvasRightLabel">
+                  <a onClick={() => navigation("/")}>
+                    <img
+                      key={currentLogo}
+                      src={logos[currentLogo]}
+                      alt="Logo"
+                      className="logo-fade"
+                      style={{
+                        width: 60,
+                        height: 60,
+                        cursor: "pointer",
+                        borderRadius: "18px",
+                        border: "3px solid #79bde2ff",
+                      }}
+                    />
+                  </a>
+                </h5>
+                <button
+                  type="button"
+                  className="btn-close text-reset mobilebtn"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div className="offcanvas-body p-0">
+                <div
+                  className="accordion accordion-flush"
+                  id="accordionFlushExample"
+                >
+                  {/* Accordion Item 1 */}
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingOne">
+                      <button
+                        className="accordion-button collapsed removedropdown"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        <a onClick={() => navigation("/aboutus")}>About</a>
+                      </button>
+                    </h2>
+                  </div>
+
+                  {/* Accordion Item 2 */}
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingTwo">
+                      <button
+                        className="accordion-button collapsed removedropdown"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        <a onClick={() => navigation("/fellowship")}>
+                          Fellowship
+                        </a>
+                      </button>
+                    </h2>
+                  </div>
+
+                  {/* Accordion Item 3 */}
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingThree">
+                      <button
+                        className="accordion-button collapsed removedropdown"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <a onClick={() => navigation("/publication")}>
+                          Publications
+                        </a>
+                      </button>
+                    </h2>
+                  </div>
+                  {/* Accordion Item 4 */}
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingThree">
+                      <button
+                        className="accordion-button collapsed removedropdown"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        <a onClick={() => navigation("/contact")}>Contact</a>
+                      </button>
+                    </h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {/* End Offcanvas */}
           </div>
         </div>
       </section>

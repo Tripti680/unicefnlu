@@ -73,3 +73,81 @@
 .aboutpara{
   font-size: 17px;
 }
+
+.mobilebg{
+  background-color: #0f2c59 !important;
+}
+.offcanvas-header{
+background-color: #12294c !important;
+}
+  .accordion-button:focus {
+    box-shadow: none;
+    border-color: transparent;
+    border:none;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: transparent; 
+    box-shadow: none; 
+     border: none; 
+  }
+  .accordion-header button{
+    background-color: #0f2c59;
+    color:white;
+  }
+  .accordion-body{
+    background-color: #0f2c59;
+      color:white;
+  }
+   .accordion-header button:focus{
+    background-color: #0f2c59;
+    border-bottom:1px solid #36676e;
+    color:white;
+    box-shadow: none;
+  }
+   .accordion-item {
+    border: none;
+  }
+   .accordion-flush .accordion-item {
+    border: none;
+  }
+.accordion-flush .accordion-button{
+border-bottom:1px solid #36676e;
+}
+.offcanvas-header{
+  border-bottom:1px solid #36676e;
+}
+   .accordion-button::after {
+    filter: brightness(0) invert(1);
+  }
+  .btn-close {
+    filter: brightness(0) invert(1);
+  }
+   .accordion-body ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  .mobilebtn{
+    padding-right:30px !important;
+  }
+
+  /* Apply border to each list item */
+  .accordion-body li {
+    border-bottom: 1px solid #36676e; /* Change color as needed */
+    padding: 10px 45px;
+  
+   
+  }
+  .accordion-header button a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .accordion-body a{
+     text-decoration: none;
+    color:#fff;
+  }
+
+  .removedropdown::after{
+   display: none !important;
+}

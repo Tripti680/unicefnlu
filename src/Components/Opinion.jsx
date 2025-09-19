@@ -15,7 +15,7 @@ function Opinion() {
     <section className="opinion-section">
       <div className="container">
         {/* Section Title */}
-        <div className="row py-4 pb-lg-1">
+        <div className="row pb-lg-1 py-2 py-lg-4">
           <div className="col-lg-12 px-lg-4">
             <div className="text-start">
               <span className="section-title fs-4 font-roboto fw-bold">
@@ -26,7 +26,7 @@ function Opinion() {
         </div>
 
         {/* Cards Grid */}
-        <div className="row pb-lg-3">
+        <div className="row pb-lg-3 g-lg-0 g-2 pb-3">
           {resources.map((item, index) => {
             const CardContent = (
               <div className="card opinion-card border-0 h-100 d-flex flex-column">
