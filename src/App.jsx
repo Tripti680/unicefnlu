@@ -23,6 +23,24 @@ import Opinion1 from "./screens/Headerscreen/Opinion1";
 import ChildRight from "./screens/Headerscreen/ChildRight";
 import QuarterlyNewsletter from "./screens/Headerscreen/QuarterlyNewsletter";
 import MarqueFirst from "./screens/Headerscreen/MarqueFirst";
+import LandmarkPage1 from "./Components/LandmarkPage1";
+import LandmarkPage2 from "./Components/LandmarkPage2";
+import LandmarkPage3 from "./Components/LandmarkPage3";
+import LandmarkPage4 from "./Components/LandmarkPage4";
+import LandmarkPage5 from "./Components/LandmarkPage5";
+import LandmarkPage6 from "./Components/LandmarkPage6";
+import LandmarkPage7 from "./Components/LandmarkPage7";
+import LandmarkPage8 from "./Components/LandmarkPage8";
+import LandmarkPage9 from "./Components/LandmarkPage9";
+import LandmarkPage10 from "./Components/LandmarkPage10";
+import LandmarkPage11 from "./Components/LandmarkPage11";
+import LandmarkPage12 from "./Components/LandmarkPage12";
+import LandmarkPage13 from "./Components/LandmarkPage13";
+import LandmarkPage14 from "./Components/LandmarkPage14";
+import LandmarkPage15 from "./Components/LandmarkPage15";
+import LandmarkPage16 from "./Components/LandmarkPage16";
+import LandmarkPage17 from "./Components/LandmarkPage17";
+import LandmarkPage18 from "./Components/LandmarkPage18";
 
 function App() {
   return (
@@ -47,7 +65,25 @@ function App() {
 
         <Route path="/childright" element={<ChildRight />} />
         <Route path="/quarterlynewsletter" element={<QuarterlyNewsletter />} />
-         <Route path="/marquefirst" element={<MarqueFirst />} />
+        <Route path="/marquefirst" element={<MarqueFirst />} />
+        <Route path="/landmark1" element={<LandmarkPage1 />} />
+        <Route path="/landmark2" element={<LandmarkPage2 />} />
+        <Route path="/landmark3" element={<LandmarkPage3 />} />
+        <Route path="/landmark4" element={<LandmarkPage4 />} />
+        <Route path="/landmark5" element={<LandmarkPage5 />} />
+        <Route path="/landmark6" element={<LandmarkPage6 />} />
+        <Route path="/landmark7" element={<LandmarkPage7 />} />
+        <Route path="/landmark8" element={<LandmarkPage8 />} />
+        <Route path="/landmark9" element={<LandmarkPage9 />} />
+        <Route path="/landmark10" element={<LandmarkPage10 />} />
+        <Route path="/landmark11" element={<LandmarkPage11 />} />
+        <Route path="/landmark12" element={<LandmarkPage12 />} />
+        <Route path="/landmark13" element={<LandmarkPage13 />} />
+        <Route path="/landmark14" element={<LandmarkPage14 />} />
+        <Route path="/landmark15" element={<LandmarkPage15 />} />
+        <Route path="/landmark16" element={<LandmarkPage16 />} />
+        <Route path="/landmark17" element={<LandmarkPage17 />} />
+        <Route path="/landmark18" element={<LandmarkPage18 />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>

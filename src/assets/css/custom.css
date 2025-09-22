@@ -48,9 +48,16 @@
 }
 .yellowclr{
   background: rgb(255, 193, 7);
+
+}
+.yellowtxt{
+  color: rgb(255, 193, 7);
 }
 .blueclr{
   background:#0f2c59;
+}
+.bluetxt{
+  color:#0f2c59;
 }
 .greyclr{
   background:#e0ded9;

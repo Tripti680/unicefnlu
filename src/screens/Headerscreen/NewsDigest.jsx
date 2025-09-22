@@ -97,13 +97,26 @@ function NewsDigest() {
       <Header />
       <section className="newsdigest">
         <div className="container-fluid my-lg-5">
-<div className="row">
-  <div className="col-12" style={styles.accordion}>
-    <h3 className="fw-bold pt-lg-0 pt-3">NLUD – UNICEF Monthly News Digest on Child Rights and the Indian Criminal Justice System</h3>
-    <h4 className="fw-bold pt-3">AUGUST 2025</h4>
-    <p className="pt-3">The following resource outlines the legal developments pertaining to child rights and the Indian criminal justice system – judicial, legislative and policy-oriented that took place in August 2025. For ease of reference, they have been categorised to cover developments surrounding justice for children in need of care and protection and children in conflict with the law. </p>
-  </div>
-</div>
+          <div className="row">
+            <div className="col-12" style={styles.accordion}>
+              <h3 className="fw-bold pt-lg-0 pt-3">
+                NLUD – UNICEF Monthly News Digest on Child Rights and the Indian
+                Criminal Justice System
+              </h3>
+              <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
+                AUGUST 2025
+              </h4>
+              <p className="pt-3">
+                The following resource outlines the legal developments
+                pertaining to child rights and the Indian criminal justice
+                system – judicial, legislative and policy-oriented that took
+                place in August 2025. For ease of reference, they have been
+                categorised to cover developments surrounding justice for
+                children in need of care and protection and children in conflict
+                with the law.{" "}
+              </p>
+            </div>
+          </div>
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
@@ -486,7 +499,7 @@ function NewsDigest() {
                                 313 CrPC.{" "}
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://indiankanoon.org/doc/25160959/"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -536,7 +549,7 @@ function NewsDigest() {
                                 to monitor and prevent child pornography.{" "}
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://indiankanoon.org/doc/17329524/"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -586,7 +599,7 @@ function NewsDigest() {
                                 urged parents to remain vigilant.{" "}
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://www.hindustantimes.com/india-news/sc-alarmed-over-rampant-child-trafficking-in-delhi-101754936214403.html"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -646,7 +659,7 @@ function NewsDigest() {
                               </p>
 
                               <a
-                                href="https://example.com/"
+                                href="https://api.sci.gov.in/supremecourt/2022/26834/26834_2022_3_7_63522_Order_19-Aug-2025.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -707,7 +720,7 @@ function NewsDigest() {
                               </p>
 
                               <a
-                                href="https://example.com/"
+                                href="https://api.sci.gov.in/supremecourt/2023/28995/28995_2023_3_1501_63740_Judgement_25-Aug-2025.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -758,7 +771,7 @@ function NewsDigest() {
                               </p>
 
                               <a
-                                href="https://example.com/"
+                                href="https://api.sci.gov.in/supremecourt/2025/41706/41706_2025_3_1501_63567_Judgement_22-Aug-2025.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -815,7 +828,7 @@ function NewsDigest() {
                               </p>
 
                               <a
-                                href="https://example.com/"
+                                href="https://lawchakra.in/supreme-court/ngo-opposes-lowering-age-of-consent/"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -894,7 +907,7 @@ function NewsDigest() {
                                 Devadasi families
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://prsindia.org/files/bills_acts/bills_states/karnataka/2025/Bill54of2025KA.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -963,7 +976,7 @@ function NewsDigest() {
                                 education and protection.
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://timesofindia.indiatimes.com/city/lucknow/sc-orders-states-to-survey-orphaned-kids-denied-education/articleshow/123150499.cms"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -1016,7 +1029,7 @@ function NewsDigest() {
                                 timely relief to survivors of sexual violence.
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://doj.gov.in/fast-track-special-court-ftscs/"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -1076,7 +1089,7 @@ function NewsDigest() {
                                 protection mechanisms.
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://www.sikkim.gov.in/media/press-release/press-info?name=Press+release+from+District+Child+Protection+Unit+(DCPU),+Gyalshing&&id=133071"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}

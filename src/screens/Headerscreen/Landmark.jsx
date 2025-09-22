@@ -1,12 +1,18 @@
 import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import { useNavigate } from "react-router";
 // import Construction from '../../Components/Construction'
 
 function Landmark() {
   const [activeMain, setActiveMain] = useState(null);
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
+
+  const navigate = useNavigate();
+  const navigation = (path) => {
+    navigate(path);
+  };
 
   const styles = {
     body: {
@@ -84,7 +90,8 @@ function Landmark() {
     },
     link: {
       color: "#0a2c5f",
-      textDecoration: "underline",
+      textDecoration: "none",
+      cursor:'pointer'
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -102,7 +109,9 @@ function Landmark() {
               <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice System
               </h3>
-              <h4 className="fw-bold pt-3">LANDMARK JUDGEMENTS</h4>
+              <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
+                LANDMARK JUDGEMENTS
+              </h4>
               <p className="pt-3">
                 The following resource outlines the landmark judgments of the
                 Indian Supreme Court on issues pertaining to child rights and
@@ -171,12 +180,13 @@ function Landmark() {
                                 Article 14.
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/136445499/"
-                                target="_blank"
-                                rel="noreferrer"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/landmark1");
+                                }}
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -211,12 +221,10 @@ function Landmark() {
                                 “juvenility” under the Act.{" "}
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/66724194/"
-                                target="_blank"
-                                rel="noreferrer"
+                                onClick={() => navigation("/landmark2")}
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -261,12 +269,10 @@ function Landmark() {
                                 age-determination evidence.
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/136445499/"
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={() => navigation("/landmark3")}
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -299,12 +305,11 @@ function Landmark() {
                                 purposes of determining the age of a juvenile.{" "}
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/66724194/"
-                                target="_blank"
+                                 onClick={() => navigation("/landmark4")}
                                 rel="noreferrer"
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -336,12 +341,10 @@ function Landmark() {
                                 ‘impossible or unreliable’ procedures.{" "}
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/66724194/"
-                                target="_blank"
-                                rel="noreferrer"
+                                onClick={() => navigation("/landmark5")}
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -373,17 +376,15 @@ function Landmark() {
                                 landmark judgements.{" "}
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/66724194/"
-                                target="_blank"
-                                rel="noreferrer"
+                                 onClick={() => navigation("/landmark6")}
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
 
-                           <div>
+                          <div>
                             <div
                               style={styles.accordionSubSubheader}
                               onClick={() =>
@@ -393,7 +394,8 @@ function Landmark() {
                                 })
                               }
                             >
-                              2.5 Bhola Bhagat Vs. State of Bihar, [1997 8 SCC 720]
+                              2.5 Bhola Bhagat Vs. State of Bihar, [1997 8 SCC
+                              720]
                               <span style={styles.arrow(activeSubSub["6-6"])}>
                                 ▼
                               </span>
@@ -404,15 +406,514 @@ function Landmark() {
                               )}
                             >
                               <p style={styles.p}>
-                               If there is any doubt about the accused’s age, the court is obliged to conduct an inquiry and record a finding. {" "}
+                                If there is any doubt about the accused’s age,
+                                the court is obliged to conduct an inquiry and
+                                record a finding.{" "}
                               </p>
                               <a
-                                href="https://indiankanoon.org/doc/66724194/"
-                                target="_blank"
+                                onClick={() => navigation("/landmark7")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div
+                          style={styles.accordionSubheader}
+                          onClick={() =>
+                            setActiveSub({ ...activeSub, 4: !activeSub[4] })
+                          }
+                        >
+                          III. Grant of Bail
+                          <span style={styles.arrow(activeSub[4])}>▼</span>
+                        </div>
+                        <div style={styles.accordionSubBody(activeSub[4])}>
+                          {/* SUB-SUB ITEM 1.1.1 */}
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "4-4": !activeSubSub["4-4"],
+                                })
+                              }
+                            >
+                              3.1 Manoj @ Kali Vs. State (NCT of Delhi) [2006
+                              Cri LJ 4759]
+                              <span style={styles.arrow(activeSubSub["4-4"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["4-4"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The ‘ends of justice’ exception under Section 12
+                                cannot be invoked on mere procedural grounds
+                                such as a pending trial or unexamined witnesses.
+                                It can only be assessed in the context of the
+                                juvenile’s welfare, developmental needs, and
+                                potential for rehabilitation.
+                              </p>
+                              <a
+                                onClick={() => navigation("/landmark8")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "6-6": !activeSubSub["6-6"],
+                                })
+                              }
+                            >
+                              3.2 Prahalad Gaur v. State of U.P [2009 Cri LJ
+                              153]
+                              <span style={styles.arrow(activeSubSub["6-6"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["6-6"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                A single instance of a child delinquent joining
+                                the company of known criminals would not be
+                                sufficient to satisfy the definition of
+                                ‘association’ under Section 12.{" "}
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark9")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div
+                          style={styles.accordionSubheader}
+                          onClick={() =>
+                            setActiveSub({ ...activeSub, 7: !activeSub[7] })
+                          }
+                        >
+                          IV. Heinous Offences/Trial as an Adult
+                          <span style={styles.arrow(activeSub[7])}>▼</span>
+                        </div>
+                        <div style={styles.accordionSubBody(activeSub[7])}>
+                          {/* SUB-SUB ITEM 1.1.1 */}
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "7-7": !activeSubSub["7-7"],
+                                })
+                              }
+                            >
+                              4.1 Shilpa Mittal v. State of NCT of Delhi [(2020)
+                              (2) SCC 787]
+                              <span style={styles.arrow(activeSubSub["7-7"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["7-7"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The Court while distinguishing between heinous
+                                and serious offences stated that when one
+                                interpretation favours the child and the other
+                                does not, the interpretation favouring the child
+                                must prevail.
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark10")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "8-8": !activeSubSub["8-8"],
+                                })
+                              }
+                            >
+                              4.2 Puneet S. v. State of Karnataka [2019 SCC
+                              OnLine Kar 1835]
+                              <span style={styles.arrow(activeSubSub["8-8"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["8-8"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                Police or ordinary magistrates cannot decide if
+                                an offence by a child is “heinous,” since the JJ
+                                Act entrusts this responsibility to the JJB.{" "}
+                              </p>
+                              <a
+                                onClick={() => navigation("/landmark11")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* MAIN ITEM 2 */}
+                  <div style={styles.accordionItem}>
+                    <div
+                      style={styles.accordionHeader}
+                      onClick={() =>
+                        setActiveMain(activeMain === 10 ? null : 10)
+                      }
+                    >
+                      Children in Need of Care and Protection
+                      <span style={styles.arrow(activeMain === 10)}>▼</span>
+                    </div>
+                    <div style={styles.accordionBody(activeMain === 10)}>
+                      {/* SUB ITEM 1.1 */}
+                      <div>
+                        <div
+                          style={styles.accordionSubheader}
+                          onClick={() =>
+                            setActiveSub({ ...activeSub, 10: !activeSub[10] })
+                          }
+                        >
+                          I. Protection from Exploitation
+                          <span style={styles.arrow(activeSub[10])}>▼</span>
+                        </div>
+                        <div style={styles.accordionSubBody(activeSub[10])}>
+                          {/* SUB-SUB ITEM 1.1.1 */}
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "10-10": !activeSubSub["10-10"],
+                                })
+                              }
+                            >
+                              1.1 Bachpan Bachao Andolan v Union of India
+                              [(2011) 5 SCC]
+                              <span style={styles.arrow(activeSubSub["10-10"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["10-10"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                This case established the constitutional
+                                obligation to protect the children from
+                                trafficking and exploitation, particularly in
+                                circuses. The Court interpreted Articles 21
+                                (Right to Life) and 24 (Right against
+                                Exploitation) to encompass comprehensive child
+                                protection, along with right to education,
+                                health, and development.
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark12")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "12-12": !activeSubSub["12-12"],
+                                })
+                              }
+                            >
+                              1.2 Vishal Jeet v Union of India [(1990) 3 SCC
+                              318]
+                              <span style={styles.arrow(activeSubSub["12-12"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["12-12"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The court established the State's duty to take
+                                preventive rather than merely punitive measures
+                                against child trafficking and the Devadasi
+                                system.{" "}
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark13")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div
+                          style={styles.accordionSubheader}
+                          onClick={() =>
+                            setActiveSub({ ...activeSub, 13: !activeSub[13] })
+                          }
+                        >
+                          II. Child-Friendly Procedures
+                          <span style={styles.arrow(activeSub[13])}>▼</span>
+                        </div>
+                        <div style={styles.accordionSubBody(activeSub[13])}>
+                          {/* SUB-SUB ITEM 1.1.1 */}
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "13-13": !activeSubSub["13-13"],
+                                })
+                              }
+                            >
+                              2.1 Prerana v State of Maharashtra [2002 SCC
+                              OnLine BOM 984]
+                              <span style={styles.arrow(activeSubSub["13-13"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["13-13"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The case established that only Child Welfare
+                                Committees, not regular magistrates, have
+                                jurisdiction to decide on the release and
+                                rehabilitation of minor girls rescued from
+                                brothels.
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark14")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "14-14": !activeSubSub["14-14"],
+                                })
+                              }
+                            >
+                              2.2 Court on its own motion v State of Delhi [2007
+                              SCC OnLine Del 1983]
+                              <span style={styles.arrow(activeSubSub["14-14"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["14-14"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The court recognised that all authorities in the
+                                Criminal Justice System have a protective role
+                                to prevent further victimisation of child
+                                victims, interpreting Articles 21 and 14 to
+                                mandate child-friendly procedures in sexual
+                                abuse cases.{" "}
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark15")}
                                 rel="noreferrer"
                                 style={styles.link}
                               >
-                                Read More
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div
+                          style={styles.accordionSubheader}
+                          onClick={() =>
+                            setActiveSub({ ...activeSub, 15: !activeSub[15] })
+                          }
+                        >
+                          III. Institutional Accountability and Implementation
+                          <span style={styles.arrow(activeSub[15])}>▼</span>
+                        </div>
+                        <div style={styles.accordionSubBody(activeSub[15])}>
+                          {/* SUB-SUB ITEM 1.1.1 */}
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "15-15": !activeSubSub["15-15"],
+                                })
+                              }
+                            >
+                              3.1 Re: Exploitation of children in orphanages in
+                              the State of TN v Union of India [(2020) 14 SCC
+                              327]
+                              <span style={styles.arrow(activeSubSub["15-15"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["15-15"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The judgment strengthened institutional
+                                safeguards for children in care facilities,
+                                enhanced enforcement of child protection laws,
+                                and established comprehensive monitoring
+                                mechanisms.
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark16")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "16-16": !activeSubSub["16-16"],
+                                })
+                              }
+                            >
+                              3.2 Independent Thought v Union of India [(2017)
+                              10 SCC 800]
+                              <span style={styles.arrow(activeSubSub["16-16"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["16-16"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The Supreme Court, held that sexual intercourse
+                                with a girl below 18 years of age is rape
+                                irrespective of marital status, thereby reading
+                                down Exception 2 to Section 375 IPC, which had
+                                exempted penile intercourse by a husband with
+                                his wife aged between 15 and 18 from the
+                                definition of rape. This exception was found to
+                                be arbitrary and discriminatory, violating
+                                Articles 14, 15, and 21 of the Indian
+                                Constitution.{" "}
+                              </p>
+                              <a
+                                onClick={() => navigation("/landmark17")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </a>
+                            </div>
+                          </div>
+                          <div>
+                            <div
+                              style={styles.accordionSubSubheader}
+                              onClick={() =>
+                                setActiveSubSub({
+                                  ...activeSubSub,
+                                  "17-17": !activeSubSub["17-17"],
+                                })
+                              }
+                            >
+                              3.3 Sampurna Behura v Union of India [(2018) 4 SCC
+                              433]
+                              <span style={styles.arrow(activeSubSub["17-17"])}>
+                                ▼
+                              </span>
+                            </div>
+                            <div
+                              style={styles.accordionSubSubContent(
+                                activeSubSub["17-17"]
+                              )}
+                            >
+                              <p style={styles.p}>
+                                The court emphasised that caring for children is
+                                not governmental charity but a constitutional
+                                duty under Articles 21, 39(e), and 39(f), and
+                                that effective implementation of juvenile
+                                justice legislation is mandatory.{" "}
+                              </p>
+                              <a
+                                 onClick={() => navigation("/landmark18")}
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
