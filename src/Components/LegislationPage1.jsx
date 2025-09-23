@@ -66,7 +66,7 @@ function LegislationPage1() {
               <h4 className="fw-bold">Important Provisions</h4>
               <div className="overflow-x-auto aboutpara">
                 <table className="min-w-full divide-y divide-gray-200">
-                 
+
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
                       <td className="">Section 4:</td>
@@ -96,7 +96,7 @@ function LegislationPage1() {
                       <td className="">Section 74:</td>
                       <td className="px-3">Prohibition on disclosure of identity of children</td>
                     </tr>
-                     <tr>
+                    <tr>
                       <td className="">Section 99:</td>
                       <td className="px-3">Reports to be treated as confidential.</td>
                     </tr>
@@ -104,7 +104,7 @@ function LegislationPage1() {
                 </table>
               </div>
               <div className="main mt-4">
-                
+
 
 
 
