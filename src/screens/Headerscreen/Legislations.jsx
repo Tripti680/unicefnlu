@@ -1,12 +1,18 @@
 import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import { useNavigate } from "react-router";
 import Construction from "../../Components/Construction";
 
 function Legislations() {
   const [activeMain, setActiveMain] = useState(null);
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
+
+    const navigate = useNavigate();
+  const navigation = (path) => {
+    navigate(path);
+  };
 
   const styles = {
     body: {
@@ -172,9 +178,10 @@ function Legislations() {
                                 treatment, social re-integration.
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                                 onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation1");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -208,9 +215,10 @@ function Legislations() {
                                 issues in the implementation of the JJ Act 2015.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation2");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -245,9 +253,10 @@ function Legislations() {
                                 for implementation.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation3");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -296,9 +305,10 @@ function Legislations() {
                                 principles.
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation4");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -363,9 +373,10 @@ function Legislations() {
                                 child pornography.
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation5");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -400,9 +411,10 @@ function Legislations() {
                                 procedures.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation6");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -435,9 +447,10 @@ function Legislations() {
                                 therewith.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation7");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -472,9 +485,10 @@ function Legislations() {
                                 in hazardous occupations and processes..{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation8");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -521,9 +535,10 @@ function Legislations() {
                                 sexual exploitation for commercial purposes.
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                              onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation9");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -558,9 +573,10 @@ function Legislations() {
                                 communication.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation10");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -598,9 +614,10 @@ function Legislations() {
                                 complaints from users or victims.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation11");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -634,9 +651,10 @@ function Legislations() {
                                 principles.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation12");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;
@@ -671,9 +689,10 @@ function Legislations() {
                                 timely access to justice.{" "}
                               </p>
                               <a
-                                
-                                target="_blank"
-                                rel="noreferrer"
+                               onClick={(e) => {
+                                  e.preventDefault();
+                                  navigation("/legislation13");
+                                }}
                                 style={styles.link}
                               >
                                Continue reading &#10219;

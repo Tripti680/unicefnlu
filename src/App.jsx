@@ -41,6 +41,20 @@ import LandmarkPage15 from "./Components/LandmarkPage15";
 import LandmarkPage16 from "./Components/LandmarkPage16";
 import LandmarkPage17 from "./Components/LandmarkPage17";
 import LandmarkPage18 from "./Components/LandmarkPage18";
+import LegislationPage1 from "./Components/LegislationPage1";
+import LegislationPage2 from "./Components/LegislationPage2";
+import LegislationPage3 from "./Components/LegislationPage3";
+import LegislationPage4 from "./Components/LegislationPage4";
+import LegislationPage5 from "./Components/LegislationPage5";
+import LegislationPage6 from "./Components/LegislationPage6";
+import LegislationPage7 from "./Components/LegislationPage7";
+import LegislationPage8 from "./Components/LegislationPage8";
+import LegislationPage9 from "./Components/LegislationPage9";
+import LegislationPage10 from "./Components/LegislationPage10";
+import LegislationPage11 from "./Components/LegislationPage11";
+import LegislationPage12 from "./Components/LegislationPage12";
+import LegislationPage13 from "./Components/LegislationPage13";
+
 
 function App() {
   return (
@@ -84,6 +98,19 @@ function App() {
         <Route path="/landmark16" element={<LandmarkPage16 />} />
         <Route path="/landmark17" element={<LandmarkPage17 />} />
         <Route path="/landmark18" element={<LandmarkPage18 />} />
+        <Route path="/legislation1" element={<LegislationPage1 />} />
+         <Route path="/legislation2" element={<LegislationPage2 />} />
+          <Route path="/legislation3" element={<LegislationPage3 />} />
+           <Route path="/legislation4" element={<LegislationPage4 />} />
+            <Route path="/legislation5" element={<LegislationPage5 />} />
+             <Route path="/legislation6" element={<LegislationPage6 />} />
+              <Route path="/legislation7" element={<LegislationPage7 />} />
+               <Route path="/legislation8" element={<LegislationPage8 />} />
+                <Route path="/legislation9" element={<LegislationPage9 />} />
+                 <Route path="/legislation10" element={<LegislationPage10 />} />
+                  <Route path="/legislation11" element={<LegislationPage11 />} />
+                   <Route path="/legislation12" element={<LegislationPage12 />} />
+                    <Route path="/legislation13" element={<LegislationPage13 />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>
