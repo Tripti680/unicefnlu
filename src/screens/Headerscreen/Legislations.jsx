@@ -91,6 +91,7 @@ function Legislations() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
+      cursor:'pointer'
     },
     arrow: (isActive) => ({
       fontSize: "14px",
