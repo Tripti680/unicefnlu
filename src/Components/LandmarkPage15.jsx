@@ -63,17 +63,15 @@ function LandmarkPage15() {
                 </p>
               </div>
               <div className="main mt-4">
-                <h4 className="fw-bold">Impact</h4>
+                
 
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>15</sup>{" "}
-                </p>
+               
 
                 <a
-                  className="aboutpara"
-                  href="/https://cdnbbsr.s3waas.gov.in/s3d04863f100d59b3eb688a11f95b0ae60/uploads/2025/06/20250617139853866.pdf"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://cdnbbsr.s3waas.gov.in/s3d04863f100d59b3eb688a11f95b0ae60/uploads/2025/06/20250617139853866.pdf"
                 >
-                  https://cdnbbsr.s3waas.gov.in/s3d04863f100d59b3eb688a11f95b0ae60/uploads/2025/06/20250617139853866.pdf
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

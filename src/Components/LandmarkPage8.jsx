@@ -75,15 +75,13 @@ function LandmarkPage8() {
                   that explicitly emphasize the mandatory nature of bail under
                   Section 12, unless the exceptions are clearly made out.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>8</sup>{" "}
-                </p>
+                
 
                 <a
-                  className="aboutpara"
-                  href="/https:/indiankanoon.org/doc/743968/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https:/indiankanoon.org/doc/743968/"
                 >
-                  https:/indiankanoon.org/doc/743968/
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

@@ -89,15 +89,13 @@ function LandmarkPage10() {
                   but a maximum over 7 years can be shielded from adult trial
                   and kept within the ‘reformative’ fold of the JJ system.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>10</sup>{" "}
-                </p>
+                
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/140334194/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/140334194/"
                 >
-                  https://indiankanoon.org/doc/140334194/
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

@@ -76,10 +76,9 @@ function LandmarkPage1() {
                   juveniles between 16–18 years to be tried as adults in heinous
                   offences.
                 </p>
-                 <p className='fw-bold fs-6'>Click here for the full text of the judgement <sup>1</sup> </p>
-
-                <a className="aboutpara" href="/https://indiankanoon.org/doc/78971373/">
-                    https://indiankanoon.org/doc/78971373/
+               
+                <a className="aboutpara link" href="https://indiankanoon.org/doc/78971373/">
+                   Click here for the full text of the judgement 
                 </a>
               </div>
             </div>

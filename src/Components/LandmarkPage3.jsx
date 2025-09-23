@@ -69,14 +69,12 @@ function LandmarkPage3() {
                   court held that age determination should occur with the best
                   interest of the juvenile in mind.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>3</sup>{" "}
-                </p>
+                
                 <a
-                  href="/  https://indiankanoon.org/doc/85936912/?type=print"
-                  className="fw-bold fs-6"
+                  href="https://indiankanoon.org/doc/85936912/?type=print"
+                  className="fw-bold link aboutpara fs-6"
                 >
-                    https://indiankanoon.org/doc/85936912/?type=print
+                    Click here for the full text of the judgement
                 </a>
               </div>
             </div>

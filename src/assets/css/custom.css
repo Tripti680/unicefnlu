@@ -158,3 +158,9 @@ border-bottom:1px solid #36676e;
   .removedropdown::after{
    display: none !important;
 }
+.link {
+      color: "#0a2c5f";
+      text-decoration: "none";
+      cursor:'pointer';
+      font-weight:bold;
+    }

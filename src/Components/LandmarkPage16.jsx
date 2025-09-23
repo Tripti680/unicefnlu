@@ -110,15 +110,13 @@ function LandmarkPage16() {
                   </li>
                 </ul>
 
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>16</sup>{" "}
-                </p>
+               
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/87705010/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/87705010/"
                 >
-                  https://indiankanoon.org/doc/87705010/
+              Click here for the full text of the judgement
                 </a>
               </div>
             </div>

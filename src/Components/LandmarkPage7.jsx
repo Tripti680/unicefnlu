@@ -70,15 +70,13 @@ function LandmarkPage7() {
                   a formal inquiry by the court in order to determination the
                   age of the minor.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>7</sup>{" "}
-                </p>
+                
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/1020083/"
+                  className="link aboutpara fs-6 aboutpara"
+                  href="https://indiankanoon.org/doc/1020083/"
                 >
-                  https://indiankanoon.org/doc/1020083/
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

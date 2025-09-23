@@ -83,15 +83,13 @@ function LandmarkPage17() {
                   practices a shield for child marriage-related sexual violence.
                 </p>
 
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>17</sup>{" "}
-                </p>
+               
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/67162757/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/67162757/"
                 >
-                  https://indiankanoon.org/doc/67162757/
+                Click here for the full text of the judgement
                 </a>
               </div>
             </div>

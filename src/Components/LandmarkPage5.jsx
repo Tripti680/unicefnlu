@@ -60,15 +60,13 @@ function LandmarkPage5() {
                     reintegration of CICL into mainstream society.”
                   </span>
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>5</sup>{" "}
-                </p>
+               
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/19530662/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/19530662/"
                 >
-                  https://indiankanoon.org/doc/19530662/
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

@@ -99,9 +99,12 @@ function LandmarkPage18() {
                   <li>	Instituted continuing judicial oversight by directing every High Court to initiate suo motu proceedings to monitor and address implementation challenges.</li>
                 </ul>
 
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>18</sup>{" "}
-                </p>
+               <a
+                  className="aboutpara link aboutpara fs-6"
+                  href=""
+                >
+                Click here for the full text of the judgement
+                </a>
 
                 
               </div>

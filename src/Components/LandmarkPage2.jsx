@@ -90,15 +90,13 @@ function LandmarkPage2() {
                   harmonised with international norms and best practices marking
                   an extremely progressive step.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>2</sup>{" "}
-                </p>
+                
 
                  <a
-                  href=" https://indiankanoon.org/doc/134314390/"
-                  className="fw-bold fs-6"
+                  href="https://indiankanoon.org/doc/134314390/"
+                  className="fw-bold link aboutpara"
                 >
-                   https://indiankanoon.org/doc/134314390/
+                   Click here for the full text of the judgement
                 </a>
               </div>
             </div>

@@ -51,15 +51,13 @@ function LandmarkPage4() {
                   which test to use and are not bound by a rigid evidentiary
                   straitjacket.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>4</sup>{" "}
-                </p>
+                
 
                  <a
-                  href="/https://indiankanoon.org/doc/190473838/"
-                  className="fw-bold fs-6"
+                  href="https://indiankanoon.org/doc/190473838/"
+                  className="link aboutpara fw-bold fs-6"
                 >
-                   https://indiankanoon.org/doc/190473838/
+                   Click here for the full text of the judgement
                 </a>
               </div>
              

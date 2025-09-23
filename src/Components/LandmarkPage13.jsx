@@ -76,15 +76,13 @@ function LandmarkPage13() {
                   machinery to implement these recommendations effectively.
                 </p>
                
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>13</sup>{" "}
-                </p>
+                
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/1920113/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/1920113/"
                 >
-                 https://indiankanoon.org/doc/1920113/
+                Click here for the full text of the judgement
                 </a>
               </div>
             </div>

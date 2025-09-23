@@ -54,17 +54,15 @@ function LandmarkPage9() {
                 </p>
               </div>
               <div className="main mt-4">
-                <h4 className="fw-bold">Impact</h4>
+             
 
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>9</sup>{" "}
-                </p>
+              
 
                 <a
-                  className="aboutpara"
-                  href="/https://www.casemine.com/judgement/in/56b491dc607dba348fffd480"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://www.casemine.com/judgement/in/56b491dc607dba348fffd480"
                 >
-                  https://www.casemine.com/judgement/in/56b491dc607dba348fffd480
+                  Click here for the full text of the judgement
                 </a>
               </div>
             </div>

@@ -55,15 +55,13 @@ function LandmarkPage11() {
                   categorisation by police or other courts, in line with the
                   rehabilitative and welfare-oriented objectives of the Act.
                 </p>
-                <p className="fw-bold fs-6">
-                  Click here for the full text of the judgement <sup>11</sup>{" "}
-                </p>
+                
 
                 <a
-                  className="aboutpara"
-                  href="/https://indiankanoon.org/doc/1849142/"
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://indiankanoon.org/doc/1849142/"
                 >
-                 https://indiankanoon.org/doc/1849142/
+                 Click here for the full text of the judgement
                 </a>
               </div>
             </div>
