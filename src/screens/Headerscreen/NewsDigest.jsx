@@ -12,10 +12,10 @@ function NewsDigest() {
     body: {
       fontFamily: "Arial, sans-serif",
       background: "#fff",
-      padding: "20px",
+      // padding: "20px",
     },
     accordion: {
-      maxWidth: "1000px",
+      // maxWidth: "1000px",
       margin: "0 auto",
     },
     accordionItem: {
@@ -35,6 +35,7 @@ function NewsDigest() {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
+      borderRadius: "7px",
     },
     accordionBody: (isActive) => ({
       maxHeight: isActive ? "2000px" : "0",
@@ -84,7 +85,7 @@ function NewsDigest() {
     },
     link: {
       color: "#0a2c5f",
-      textDecoration: "underline",
+      textDecoration: "none",
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -96,14 +97,17 @@ function NewsDigest() {
     <>
       <Header />
       <section className="newsdigest">
-        <div className="container-fluid my-lg-5">
+        <div className="container my-lg-5 px-lg-4">
           <div className="row">
-            <div className="col-12" style={styles.accordion}>
+            <div className="col-12 px-lg-4" style={styles.accordion}>
               <h3 className="fw-bold pt-lg-0 pt-3">
                 NLUD – UNICEF Monthly News Digest on Child Rights and the Indian
                 Criminal Justice System
               </h3>
-              <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
+              <h4
+                className="fw-bold mt-3 bluetxt yellowclr"
+                style={styles.accordionHeader}
+              >
                 AUGUST 2025
               </h4>
               <p className="pt-3">
@@ -120,7 +124,7 @@ function NewsDigest() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body}>
+              <div style={styles.body} className="px-lg-4">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>
@@ -398,7 +402,7 @@ function NewsDigest() {
                           }
                         >
                           I. Constitutional Courts’ Corner
-                          <span style={styles.arrow(activeSub[11])}>▼</span>
+                          <span style={styles.arrow(activeSub[10])}>▼</span>
                         </div>
                         <div style={styles.accordionSubBody(activeSub[10])}>
                           {/* SUB-SUB ITEM 1.1.1 */}
@@ -571,7 +575,7 @@ function NewsDigest() {
                             >
                               1.4 Supreme Court Alarmed Over Rampant Child
                               Trafficking in Delhi
-                              <span style={styles.arrow(activeSubSub["3-3"])}>
+                              <span style={styles.arrow(activeSubSub["14-14"])}>
                                 ▼
                               </span>
                             </div>
@@ -846,65 +850,49 @@ function NewsDigest() {
                           onClick={() =>
                             setActiveSub({
                               ...activeSub,
-                              1000: !activeSub[1000],
+                              1000: !activeSub[1000], // ✅ consistent
                             })
                           }
                         >
                           II. Making the Law
-                          <span style={styles.arrow(activeSub[111])}>▼</span>
+                          <span style={styles.arrow(activeSub[1000])}>
+                            ▼
+                          </span>{" "}
+                          {/* ✅ consistent */}
                         </div>
+
                         <div style={styles.accordionSubBody(activeSub[1000])}>
-                          {/* SUB-SUB ITEM 1.1.1 */}
+                          {" "}
+                          {/* ✅ consistent */}
+                          {/* SUB-SUB ITEM 2.1 */}
                           <div>
                             <div
                               style={styles.accordionSubSubheader}
                               onClick={() =>
                                 setActiveSubSub({
                                   ...activeSubSub,
-                                  "111-111": !activeSubSub["111-111"],
+                                  "1000-1": !activeSubSub["1000-1"], // ✅ unique key
                                 })
                               }
                             >
                               2.1 Karnataka Cabinet Approves Devadasi
                               Prohibition Bill, 2025
                               <span
-                                style={styles.arrow(activeSubSub["111-111"])}
+                                style={styles.arrow(activeSubSub["1000-1"])}
                               >
                                 ▼
                               </span>
                             </div>
+
                             <div
                               style={styles.accordionSubSubContent(
-                                activeSubSub["111-111"]
+                                activeSubSub["1000-1"]
                               )}
                             >
                               <p style={styles.p}>
                                 The Karnataka Cabinet has approved the Karnataka
                                 Devadasi (Prevention, Prohibition, Redress and
-                                Rehabilitation) Bill, 2025, drafted by the
-                                Centre for the Study of Social Inclusion at
-                                NLSIU, Bengaluru. Repealing the 1982 and 2009
-                                laws, the Bill represents a shift from punitive
-                                to participatory, rights-based governance. It
-                                emerged from seven months of consultations with
-                                over 15,000 Devadasi women, children, and
-                                community leaders across 16 districts. The
-                                proposed law represents a holistic and
-                                rights-based strategy to dismantle the Devadasi
-                                system, an oppressive and illegal social
-                                practice still prevalent in parts of Karnataka
-                                despite historical bans. The Bill criminalises
-                                the Devadasi system while guaranteeing
-                                healthcare, housing, education, pensions, and
-                                livelihoods through charters of relief. It
-                                secures children’s rights to paternal identity,
-                                inheritance, and protection from stigma, and
-                                institutionalises community governance and
-                                monitoring. Anchored in Articles 14, 15, and 21,
-                                and aligned with Article 39(f), it seeks to
-                                dismantle caste- and gender-based oppression and
-                                ensure dignity, equality, and justice for
-                                Devadasi families
+                                Rehabilitation) Bill, 2025...
                               </p>
                               <a
                                 href="https://prsindia.org/files/bills_acts/bills_states/karnataka/2025/Bill54of2025KA.pdf"
@@ -923,13 +911,13 @@ function NewsDigest() {
                         <div
                           style={styles.accordionSubheader}
                           onClick={() =>
-                            setActiveSub({ ...activeSub, 50: !activeSub[50] })
+                            setActiveSub({ ...activeSub, 52: !activeSub[52] })
                           }
                         >
                           III. Policy Pulse
-                          <span style={styles.arrow(activeSub[51])}>▼</span>
+                          <span style={styles.arrow(activeSub[52])}>▼</span>
                         </div>
-                        <div style={styles.accordionSubBody(activeSub[50])}>
+                        <div style={styles.accordionSubBody(activeSub[52])}>
                           {/* SUB-SUB ITEM 1.1.1 */}
                           <div>
                             <div

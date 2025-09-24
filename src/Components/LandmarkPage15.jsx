@@ -9,7 +9,7 @@ function LandmarkPage15() {
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
                 Court on its own motion v State of Delhi, 2007 SCC OnLine Del
                 1983

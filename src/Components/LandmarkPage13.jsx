@@ -9,7 +9,7 @@ function LandmarkPage13() {
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
                 Vishal Jeet v Union of India, (1990) 3 SCC 318
               </h4>

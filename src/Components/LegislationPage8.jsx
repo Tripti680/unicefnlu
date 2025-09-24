@@ -9,7 +9,7 @@ function LegislationPage8() {
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
                 Child and Adolescent Labour (Prohibition &amp; Regulation) Act,
                 1986

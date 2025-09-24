@@ -9,7 +9,7 @@ function LandmarkPage3() {
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
                 Parag Bhati v. State of U.P., (2016) 12 SCC 744
               </h4>

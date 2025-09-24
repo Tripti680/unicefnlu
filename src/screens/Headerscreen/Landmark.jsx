@@ -14,14 +14,14 @@ function Landmark() {
     navigate(path);
   };
 
-  const styles = {
+ const styles = {
     body: {
       fontFamily: "Arial, sans-serif",
       background: "#fff",
-      padding: "20px",
+      // padding: "20px",
     },
     accordion: {
-      maxWidth: "1000px",
+      // maxWidth: "1000px",
       margin: "0 auto",
     },
     accordionItem: {
@@ -41,6 +41,7 @@ function Landmark() {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
+      borderRadius: "7px",
     },
     accordionBody: (isActive) => ({
       maxHeight: isActive ? "2000px" : "0",
@@ -91,7 +92,7 @@ function Landmark() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
-      cursor:'pointer'
+      coursor:"pointer"
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -103,16 +104,16 @@ function Landmark() {
     <>
       <Header />
       <section className="landmark">
-        <div className="container-fluid my-lg-5">
+        <div className="container my-lg-5  px-lg-4">
           <div className="row">
-            <div className="col-12" style={styles.accordion}>
+            <div className="col-12 px-lg-4" style={styles.accordion}>
               <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice System
               </h3>
-              <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
+              <h4 className="fw-bold mt-3 bluetxt yellowclr" style={styles.accordionHeader}>
                 LANDMARK JUDGEMENTS
               </h4>
-              <p className="pt-3">
+              <p className="pt-3 px-lg-2">
                 The following resource outlines the landmark judgments of the
                 Indian Supreme Court on issues pertaining to child rights and
                 the Indian criminal justice system. The judgements have been
@@ -125,7 +126,7 @@ function Landmark() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body}>
+              <div style={styles.body} className="px-lg-4">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>

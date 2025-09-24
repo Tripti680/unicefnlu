@@ -13,15 +13,14 @@ function Obligations() {
   const navigation = (path) => {
     navigate(path);
   };
-
-  const styles = {
+ const styles = {
     body: {
       fontFamily: "Arial, sans-serif",
       background: "#fff",
-      padding: "20px",
+      // padding: "20px",
     },
     accordion: {
-      maxWidth: "1000px",
+      // maxWidth: "1000px",
       margin: "0 auto",
     },
     accordionItem: {
@@ -41,12 +40,13 @@ function Obligations() {
       display: "flex",
       justifyContent: "space-between",
       alignItems: "center",
+      borderRadius: "7px",
     },
     accordionBody: (isActive) => ({
       maxHeight: isActive ? "2000px" : "0",
       overflow: "hidden",
       transition: "max-height 0.5s ease",
-      background: "#fafafa",
+      background: "#fff",
     }),
     accordionSubheader: {
       background: "#ffc107",
@@ -63,7 +63,8 @@ function Obligations() {
       maxHeight: isActive ? "1200px" : "0",
       overflow: "hidden",
       transition: "max-height 0.5s ease",
-      // background: "#f0f0f0",
+      background: "#fff",
+      padding:isActive ? "5px 20px":"0 18px",
     }),
     accordionSubSubheader: {
       background: "#e0e0e0",
@@ -87,13 +88,10 @@ function Obligations() {
       textAlign: "justify",
       fontSize: "15px",
       lineHeight: "1.6",
-      padding: "12px 18px",
     },
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
-      cursor: "pointer",
-      padding: "12px 18px",
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -105,16 +103,16 @@ function Obligations() {
     <>
       <Header />
       <section className="landmark">
-        <div className="container-fluid my-lg-5">
+        <div className="container  px-lg-4 my-lg-5">
           <div className="row">
-            <div className="col-12" style={styles.accordion}>
+            <div className="col-12 px-lg-4" style={styles.accordion}>
               <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice
               </h3>
-              <h4 className="fw-bold mt-3 yellowclr bluetxt px-2">
+              <h4 className="fw-bold mt-3 yellowclr bluetxt" style={styles.accordionHeader}>
                 OBLIGATIONS UNDER INTERNATIONAL LAW
               </h4>
-              <p className="pt-3">
+              <p className="pt-3 px-lg-2">
                 The following resource provides a comprehensive list of India’s
                 obligations under international law with regard to children and
                 the criminal justice system.{" "}
@@ -124,7 +122,7 @@ function Obligations() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body}>
+              <div style={styles.body} className="px-lg-4">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>

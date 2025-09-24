@@ -9,7 +9,7 @@ function LandmarkPage17() {
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
                 Independent Thought v Union of India, (2017) 10 SCC 800
               </h4>
