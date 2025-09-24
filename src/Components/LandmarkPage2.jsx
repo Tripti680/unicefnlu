@@ -4,6 +4,22 @@ import Footer from "../Components/Footer";
 import Construction from "./Construction";
 
 function LandmarkPage2() {
+  const styles = {
+   
+    accordionHeader: {
+      background: "#0a2c5f",
+      color: "#fff",
+      padding: "15px 20px",
+      fontSize: "18px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      borderRadius: "7px",
+    },
+  
+  };
   return (
     <>
       <Header />
@@ -11,7 +27,7 @@ function LandmarkPage2() {
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row">
             <div className="col-12 px-lg-4">
-              <h4 className="fw-bold mt-3 bluetxt yellowclr px-2">
+              <h4 className="fw-bold mt-3 bluetxt yellowclr "style={styles.accordionHeader}>
                 Subramanian Swamy Vs. Raju [(2014) 8 SCC 390]
               </h4>
 

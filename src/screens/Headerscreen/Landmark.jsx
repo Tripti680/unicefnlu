@@ -92,7 +92,7 @@ function Landmark() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
-      coursor:"pointer"
+      cursor:"pointer"
     },
     arrow: (isActive) => ({
       fontSize: "14px",
