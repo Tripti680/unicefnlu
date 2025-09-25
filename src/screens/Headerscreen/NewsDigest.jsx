@@ -87,6 +87,18 @@ function NewsDigest() {
       color: "#0a2c5f",
       textDecoration: "none",
     },
+      accordionHeaderupper: {
+      background: "#ffc107",
+      color: "#0a2c5f",
+      padding: "15px 20px",
+      fontSize: "18px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      borderRadius: "7px",
+    },
     arrow: (isActive) => ({
       fontSize: "14px",
       transition: "transform 0.3s",
@@ -106,7 +118,7 @@ function NewsDigest() {
               </h3>
               <h4
                 className="fw-bold mt-3 bluetxt yellowclr"
-                style={styles.accordionHeader}
+                style={styles.accordionHeaderupper}
               >
                 AUGUST 2025
               </h4>

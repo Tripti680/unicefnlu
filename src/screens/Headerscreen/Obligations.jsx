@@ -19,6 +19,18 @@ function Obligations() {
       background: "#fff",
       // padding: "20px",
     },
+      accordionHeaderupper: {
+      background: "#ffc107",
+      color: "#0a2c5f",
+      padding: "15px 20px",
+      fontSize: "18px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      borderRadius: "7px",
+    },
     accordion: {
       // maxWidth: "1000px",
       margin: "0 auto",
@@ -109,7 +121,7 @@ function Obligations() {
               <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice
               </h3>
-              <h4 className="fw-bold mt-3 yellowclr bluetxt" style={styles.accordionHeader}>
+              <h4 className="fw-bold mt-3 yellowclr bluetxt" style={styles.accordionHeaderupper}>
                 OBLIGATIONS UNDER INTERNATIONAL LAW
               </h4>
               <p className="pt-3 px-lg-2">

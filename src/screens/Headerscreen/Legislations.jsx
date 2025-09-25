@@ -9,7 +9,7 @@ function Legislations() {
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
 
-    const navigate = useNavigate();
+  const navigate = useNavigate();
   const navigation = (path) => {
     navigate(path);
   };
@@ -34,6 +34,18 @@ function Legislations() {
     accordionHeader: {
       background: "#0a2c5f",
       color: "#fff",
+      padding: "15px 20px",
+      fontSize: "18px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      borderRadius: "7px",
+    },
+     accordionHeaderupper: {
+      background: "#ffc107",
+      color: "#0a2c5f",
       padding: "15px 20px",
       fontSize: "18px",
       fontWeight: "bold",
@@ -92,7 +104,7 @@ function Legislations() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
-      cursor:"pointer",
+      cursor: "pointer",
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -110,7 +122,10 @@ function Legislations() {
               <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice System
               </h3>
-              <h4 className=" fw-bold mt-3 yellowclr bluetxt " style={styles.accordionHeader}>
+              <h4
+                className=" fw-bold mt-3 yellowclr bluetxt "
+                style={styles.accordionHeaderupper}
+              >
                 LEGISLATIONS
               </h4>
               <p className="pt-3">
@@ -180,13 +195,18 @@ function Legislations() {
                                 treatment, social re-integration.
                               </p>
                               <a
-                                 onClick={(e) => {
+                                href="/legislation1"
+                                onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation1");
+                                  window.open(
+                                    window.location.origin + "/legislation1",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -217,13 +237,13 @@ function Legislations() {
                                 issues in the implementation of the JJ Act 2015.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation2");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -238,9 +258,7 @@ function Legislations() {
                               }
                             >
                               1.3 Juvenile Justice Rules, 2022
-                              <span
-                                style={styles.arrow(activeSubSub["20-20"])}
-                              >
+                              <span style={styles.arrow(activeSubSub["20-20"])}>
                                 ▼
                               </span>
                             </div>
@@ -255,13 +273,13 @@ function Legislations() {
                                 for implementation.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation3");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -307,13 +325,13 @@ function Legislations() {
                                 principles.
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation4");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -375,13 +393,13 @@ function Legislations() {
                                 child pornography.
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation5");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -413,13 +431,13 @@ function Legislations() {
                                 procedures.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation6");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -449,13 +467,13 @@ function Legislations() {
                                 therewith.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation7");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -487,13 +505,13 @@ function Legislations() {
                                 in hazardous occupations and processes..{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation8");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -537,13 +555,13 @@ function Legislations() {
                                 sexual exploitation for commercial purposes.
                               </p>
                               <a
-                              onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation9");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -575,13 +593,13 @@ function Legislations() {
                                 communication.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation10");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -616,13 +634,13 @@ function Legislations() {
                                 complaints from users or victims.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation11");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -659,7 +677,7 @@ function Legislations() {
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>
@@ -691,13 +709,13 @@ function Legislations() {
                                 timely access to justice.{" "}
                               </p>
                               <a
-                               onClick={(e) => {
+                                onClick={(e) => {
                                   e.preventDefault();
                                   navigation("/legislation13");
                                 }}
                                 style={styles.link}
                               >
-                               Continue reading &#10219;
+                                Continue reading &#10219;
                               </a>
                             </div>
                           </div>

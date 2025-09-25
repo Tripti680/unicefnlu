@@ -57,7 +57,7 @@ import LegislationPage13 from "./Components/LegislationPage13";
 
 function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
