@@ -174,6 +174,7 @@ function LegislationPage6() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://missionvatsalya.wcd.gov.in/public/pdf/children-related-
 law/POCSO%20Rules%202020.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the POCSO Rules 2020
                 </a>

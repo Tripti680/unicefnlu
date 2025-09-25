@@ -77,6 +77,7 @@ function LandmarkPage9() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.casemine.com/judgement/in/56b491dc607dba348fffd480"
+                  target="_blank"
                 >
                   Click here for the full text of the judgement
                 </a>

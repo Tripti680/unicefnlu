@@ -71,6 +71,7 @@ function LandmarkPage4() {
 
                  <a
                   href="https://indiankanoon.org/doc/190473838/"
+                  target="_blank"
                   className="link aboutpara fw-bold fs-6"
                 >
                    Click here for the full text of the judgement

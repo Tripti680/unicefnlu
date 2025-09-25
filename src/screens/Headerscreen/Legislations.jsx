@@ -237,9 +237,14 @@ function Legislations() {
                                 issues in the implementation of the JJ Act 2015.{" "}
                               </p>
                               <a
+                                href="/legislation2"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation2");
+                                  window.open(
+                                    window.location.origin + "/legislation2",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -273,9 +278,14 @@ function Legislations() {
                                 for implementation.{" "}
                               </p>
                               <a
+                                href="/legislation3"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation3");
+                                  window.open(
+                                    window.location.origin + "/legislation3",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -325,9 +335,14 @@ function Legislations() {
                                 principles.
                               </p>
                               <a
+                                href="/legislation4"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation4");
+                                  window.open(
+                                    window.location.origin + "/legislation4",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -392,10 +407,15 @@ function Legislations() {
                                 18) from sexual assault, sexual harassment and
                                 child pornography.
                               </p>
-                              <a
+                               <a
+                                href="/legislation5"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation5");
+                                  window.open(
+                                    window.location.origin + "/legislation5",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -431,9 +451,14 @@ function Legislations() {
                                 procedures.{" "}
                               </p>
                               <a
+                                href="/legislation6"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation6");
+                                  window.open(
+                                    window.location.origin + "/legislation6",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -466,10 +491,15 @@ function Legislations() {
                                 marriages and related matters connected
                                 therewith.{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation7"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation7");
+                                  window.open(
+                                    window.location.origin + "/legislation7",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -504,10 +534,15 @@ function Legislations() {
                                 all occupations and of adolescents (14-18 years)
                                 in hazardous occupations and processes..{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation8"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation8");
+                                  window.open(
+                                    window.location.origin + "/legislation8",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -554,10 +589,15 @@ function Legislations() {
                                 This Act prevents and combats trafficking and
                                 sexual exploitation for commercial purposes.
                               </p>
-                              <a
+                               <a
+                                href="/legislation9"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation9");
+                                  window.open(
+                                    window.location.origin + "/legislation9",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -592,10 +632,15 @@ function Legislations() {
                                 data interchange and other means of electronic
                                 communication.{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation10"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation10");
+                                  window.open(
+                                    window.location.origin + "/legislation10",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -633,10 +678,15 @@ function Legislations() {
                                 e a grievance redressal mechanism for resolving
                                 complaints from users or victims.{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation11"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation11");
+                                  window.open(
+                                    window.location.origin + "/legislation11",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -670,10 +720,15 @@ function Legislations() {
                                 incorporating contemporary criminal justice
                                 principles.{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation12"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation12");
+                                  window.open(
+                                    window.location.origin + "/legislation12",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -708,10 +763,15 @@ function Legislations() {
                                 justice system that reduces delays and ensures
                                 timely access to justice.{" "}
                               </p>
-                              <a
+                               <a
+                                href="/legislation13"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/legislation13");
+                                  window.open(
+                                    window.location.origin + "/legislation13",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >

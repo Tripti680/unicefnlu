@@ -118,6 +118,7 @@ function LandmarkPage18() {
                <a
                   className="aboutpara link aboutpara fs-6"
                   href=""
+                  target="_blank"
                 >
                 Click here for the full text of the judgement
                 </a>

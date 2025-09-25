@@ -149,6 +149,7 @@ function LegislationPage7() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/15943/1/the_prohibition_of_child_marria
 ge_act%2C_2006.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the PCMA, 2006
                 </a>

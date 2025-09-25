@@ -92,6 +92,7 @@ function LegislationPage3() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://cara.wcd.gov.in/PDF/JJ%20Model%20Amendment%20Rules%202022%20(english)_
 27.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the JJ Rules 2022
                 </a>

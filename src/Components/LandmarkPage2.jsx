@@ -110,6 +110,7 @@ function LandmarkPage2() {
 
                  <a
                   href="https://indiankanoon.org/doc/134314390/"
+                  target="_blank"
                   className="fw-bold link aboutpara"
                 >
                    Click here for the full text of the judgement

@@ -85,6 +85,7 @@ function LegislationPage10() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/13116/1/it_act_2000_updated.pdf"
+                  target="_blank"
                 >
                   Click here to access the full text of the IT Act, 2000
                 </a>

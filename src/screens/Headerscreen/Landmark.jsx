@@ -193,9 +193,14 @@ function Landmark() {
                                 Article 14.
                               </p>
                               <a
+                                href="/landmark1"
                                 onClick={(e) => {
                                   e.preventDefault();
-                                  navigation("/landmark1");
+                                  window.open(
+                                    window.location.origin + "/landmark1",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
                                 }}
                                 style={styles.link}
                               >
@@ -233,8 +238,16 @@ function Landmark() {
                                 practical, and objective test for determining
                                 “juvenility” under the Act.{" "}
                               </p>
-                              <a
-                                onClick={() => navigation("/landmark2")}
+                               <a
+                                href="/landmark2"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark2",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -282,7 +295,15 @@ function Landmark() {
                                 age-determination evidence.
                               </p>
                               <a
-                               onClick={() => navigation("/landmark3")}
+                                href="/landmark3"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark3",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -318,8 +339,15 @@ function Landmark() {
                                 purposes of determining the age of a juvenile.{" "}
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark4")}
-                                rel="noreferrer"
+                                href="/landmark4"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark4",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -353,8 +381,16 @@ function Landmark() {
                                 ages, and the law cannot demand reliance on
                                 ‘impossible or unreliable’ procedures.{" "}
                               </p>
-                              <a
-                                onClick={() => navigation("/landmark5")}
+                               <a
+                                href="/landmark5"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark5",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -389,7 +425,15 @@ function Landmark() {
                                 landmark judgements.{" "}
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark6")}
+                                href="/landmark6"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark6",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -423,8 +467,16 @@ function Landmark() {
                                 the court is obliged to conduct an inquiry and
                                 record a finding.{" "}
                               </p>
-                              <a
-                                onClick={() => navigation("/landmark7")}
+                             <a
+                                href="/landmark7"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark7",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -475,8 +527,16 @@ function Landmark() {
                                 juvenile’s welfare, developmental needs, and
                                 potential for rehabilitation.
                               </p>
-                              <a
-                                onClick={() => navigation("/landmark8")}
+                             <a
+                                href="/landmark8"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark8",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -511,8 +571,16 @@ function Landmark() {
                                 sufficient to satisfy the definition of
                                 ‘association’ under Section 12.{" "}
                               </p>
-                              <a
-                                 onClick={() => navigation("/landmark9")}
+                               <a
+                                href="/landmark9"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark9",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -563,7 +631,15 @@ function Landmark() {
                                 must prevail.
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark10")}
+                                href="/landmark10"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark10",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -597,8 +673,16 @@ function Landmark() {
                                 an offence by a child is “heinous,” since the JJ
                                 Act entrusts this responsibility to the JJB.{" "}
                               </p>
-                              <a
-                                onClick={() => navigation("/landmark11")}
+                               <a
+                                href="/landmark11"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark11",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -667,7 +751,15 @@ function Landmark() {
                                 health, and development.
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark12")}
+                                href="/landmark12"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark12",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -702,8 +794,16 @@ function Landmark() {
                                 against child trafficking and the Devadasi
                                 system.{" "}
                               </p>
-                              <a
-                                 onClick={() => navigation("/landmark13")}
+                             <a
+                                href="/landmark13"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark13",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -754,7 +854,15 @@ function Landmark() {
                                 brothels.
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark14")}
+                                href="/landmark14"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark14",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -791,9 +899,16 @@ function Landmark() {
                                 mandate child-friendly procedures in sexual
                                 abuse cases.{" "}
                               </p>
-                              <a
-                                 onClick={() => navigation("/landmark15")}
-                                rel="noreferrer"
+                             <a
+                                href="/landmark15"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark15",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -844,8 +959,16 @@ function Landmark() {
                                 and established comprehensive monitoring
                                 mechanisms.
                               </p>
-                              <a
-                                 onClick={() => navigation("/landmark16")}
+                             <a
+                                href="/landmark16"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark16",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -887,7 +1010,15 @@ function Landmark() {
                                 Constitution.{" "}
                               </p>
                               <a
-                                onClick={() => navigation("/landmark17")}
+                                href="/landmark17"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark17",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
@@ -923,7 +1054,15 @@ function Landmark() {
                                 justice legislation is mandatory.{" "}
                               </p>
                               <a
-                                 onClick={() => navigation("/landmark18")}
+                                href="/landmark18"
+                                onClick={(e) => {
+                                  e.preventDefault();
+                                  window.open(
+                                    window.location.origin + "/landmark18",
+                                    "_blank",
+                                    "noreferrer"
+                                  );
+                                }}
                                 style={styles.link}
                               >
                                 Continue reading &#10219;

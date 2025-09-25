@@ -90,6 +90,7 @@ function LegislationPage11() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.meity.gov.in/static/uploads/2024/02/IT-Intermediary-Rules-2021-updated-on-
 28.10.2022-2.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the IT Rules, 2021
                 </a>

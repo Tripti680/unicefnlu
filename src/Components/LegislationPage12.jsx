@@ -123,6 +123,7 @@ function LegislationPage12() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/20062/1/a2023-45.pdf"
+                  target="_blank"
                 >
                   Click here to access the full text of the BNS, 2023
                 </a>

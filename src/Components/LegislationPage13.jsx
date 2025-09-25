@@ -107,6 +107,7 @@ function LegislationPage13() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.mha.gov.in/sites/default/files/2024-04/250884_2_english_01042024.pdf"
+                  target="_blank"
                 >
                   Click here to access the full text of BNSS, 2023
                 </a>

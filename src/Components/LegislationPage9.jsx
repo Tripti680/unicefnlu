@@ -178,6 +178,7 @@ function LegislationPage9() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/15378/1/the_immoral_traffic_%28prevent
 ion%29_act%2C_1956.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the ITPA, 1956
                 </a>

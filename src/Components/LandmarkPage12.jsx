@@ -125,6 +125,7 @@ function LandmarkPage12() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://indiankanoon.org/doc/653695/"
+                  target="_blank"
                 >
                   Click here for the full text of the judgement
                 </a>

@@ -100,6 +100,7 @@ function LegislationPage2() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://cara.wcd.gov.in/PDF/JJ%20Amendment%20Act%20-2021_.PDF"
+                  target="_blank"
                 >
                   Click here to access the full text of the JJ Act, 2021
                 </a>

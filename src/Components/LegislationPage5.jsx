@@ -137,6 +137,7 @@ function LegislationPage5() {
                 <a
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/2079/1/AA2012-32.pdf"
+                  target="_blank"
                 >
                   Click here to access the full text of the POCSO Act, 2012
                 </a>

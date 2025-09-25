@@ -94,7 +94,8 @@ function LandmarkPage1() {
                   offences.
                 </p>
                
-                <a className="aboutpara link" href="https://indiankanoon.org/doc/78971373/">
+                <a className="aboutpara link" href="https://indiankanoon.org/doc/78971373/"
+                target="_blank">
                    Click here for the full text of the judgement 
                 </a>
               </div>

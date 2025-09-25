@@ -57,7 +57,7 @@ import LegislationPage13 from "./Components/LegislationPage13";
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <BrowserRouter >
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -113,7 +113,7 @@ function App() {
 
         <Route path="*" element={<Homepage />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

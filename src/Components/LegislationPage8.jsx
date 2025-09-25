@@ -128,6 +128,7 @@ function LegislationPage8() {
                   className="aboutpara link aboutpara fs-6"
                   href="https://www.indiacode.nic.in/bitstream/123456789/19582/1/the_child_and_adolescent_labour
 _%28prohibition_and_regulation%29_act%2C_1986_no._61_of_1986_date_23.12.1986.pdf"
+target="_blank"
                 >
                   Click here to access the full text of the Child and Adolescent
                   Labour (Prohibition and Regulation) Act, 1986

@@ -89,6 +89,7 @@ function LandmarkPage3() {
                 
                 <a
                   href="https://indiankanoon.org/doc/85936912/?type=print"
+                  target="_blank"
                   className="fw-bold link aboutpara fs-6"
                 >
                     Click here for the full text of the judgement
