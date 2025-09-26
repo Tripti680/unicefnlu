@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
@@ -5,7 +6,7 @@ import { useNavigate } from "react-router";
 import Construction from "../../Components/Construction";
 
 function Legislations() {
-  const [activeMain, setActiveMain] = useState(null);
+  const [activeMains, setActiveMains] = useState({});
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
 
@@ -43,7 +44,7 @@ function Legislations() {
       alignItems: "center",
       borderRadius: "7px",
     },
-     accordionHeaderupper: {
+    accordionHeaderupper: {
       background: "#ffc107",
       color: "#0a2c5f",
       padding: "15px 20px",
@@ -119,9 +120,9 @@ function Legislations() {
         <div className="container my-lg-5 px-lg-4">
           <div className="row">
             <div className="col-12 px-lg-4" style={styles.accordion}>
-              <h3 className="fw-bold pt-lg-0 pt-3">
+              {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice System
-              </h3>
+              </h3> */}
               <h4
                 className=" fw-bold mt-3 yellowclr bluetxt "
                 style={styles.accordionHeaderupper}
@@ -147,12 +148,12 @@ function Legislations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 0 ? null : 0)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
                       Children in Conflict with the Law (CCL)
-                      <span style={styles.arrow(activeMain === 0)}>▼</span>
+                      <span style={styles.arrow(activeMains[0])}>▼</span>
                     </div>
-                    <div style={styles.accordionBody(activeMain === 0)}>
+                    <div style={styles.accordionBody(activeMains[0])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -359,14 +360,12 @@ function Legislations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 10 ? null : 10)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >
                       Children in Need of Care and Protection
-                      <span style={styles.arrow(activeMain === 10)}>▼</span>
+                      <span style={styles.arrow(activeMains[10])}>▼</span>
                     </div>
-                    <div style={styles.accordionBody(activeMain === 10)}>
+                    <div style={styles.accordionBody(activeMains[10])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -407,7 +406,7 @@ function Legislations() {
                                 18) from sexual assault, sexual harassment and
                                 child pornography.
                               </p>
-                               <a
+                              <a
                                 href="/legislation5"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -491,7 +490,7 @@ function Legislations() {
                                 marriages and related matters connected
                                 therewith.{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation7"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -534,7 +533,7 @@ function Legislations() {
                                 all occupations and of adolescents (14-18 years)
                                 in hazardous occupations and processes..{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation8"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -589,7 +588,7 @@ function Legislations() {
                                 This Act prevents and combats trafficking and
                                 sexual exploitation for commercial purposes.
                               </p>
-                               <a
+                              <a
                                 href="/legislation9"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -632,7 +631,7 @@ function Legislations() {
                                 data interchange and other means of electronic
                                 communication.{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation10"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -678,7 +677,7 @@ function Legislations() {
                                 e a grievance redressal mechanism for resolving
                                 complaints from users or victims.{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation11"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -720,7 +719,7 @@ function Legislations() {
                                 incorporating contemporary criminal justice
                                 principles.{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation12"
                                 onClick={(e) => {
                                   e.preventDefault();
@@ -763,7 +762,7 @@ function Legislations() {
                                 justice system that reduces delays and ensures
                                 timely access to justice.{" "}
                               </p>
-                               <a
+                              <a
                                 href="/legislation13"
                                 onClick={(e) => {
                                   e.preventDefault();

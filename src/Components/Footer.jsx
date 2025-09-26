@@ -35,6 +35,19 @@ function Footer() {
       );
   };
 
+  const styles = {
+    socialIcon: {
+      width: "25px", // Adjust size as needed
+      height: "25px",
+      filter: "invert(100%)", // Default white filter for other icons
+    },
+    spotifyIcon: {
+      width: "25px",
+      height: "25px",
+     filter: "invert(100%)", // No filter to preserve Spotify's green color
+    },
+  };
+
   const navigate = useNavigate();
   const navigation = (path) => {
     navigate(path);
@@ -80,82 +93,91 @@ function Footer() {
           </div>
 
           {/* Newsletter Section */}
-          <div className="col-lg-9 col-md-12 mb-4 px-lg-5 ">
-            <div className="newsletter-section">
-              <h5 className="fw-bold">Subscribe to our Newsletter</h5>
-              <p className="small">
-                Enter your email here and stay updated with our latest news.
-              </p>
+        <div className="col-lg-9 col-md-12 mb-4 px-lg-5">
+      <div className="newsletter-section">
+        <h5 className="fw-bold">Subscribe to our Newsletter</h5>
+        <p className="small">
+          Enter your email here and stay updated with our latest news.
+        </p>
 
-              {/* EmailJS Form */}
-              <form
-                onSubmit={sendEmail}
-                className="d-flex flex-wrap gap-2 w-75"
-              >
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Your email address"
-                  required
-                  className="form-control w-auto flex-grow-1"
-                />
-                <button
-                  type="submit"
-                  className="btn btn-primary fw-bold"
-                  style={{ color: "#fff" }}
-                  disabled={!isChecked}
-                >
-                  Subscribe
-                </button>
-              </form>
+        {/* EmailJS Form */}
+        <form onSubmit={sendEmail} className="d-flex flex-wrap gap-2 w-75">
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email address"
+            required
+            className="form-control w-auto flex-grow-1"
+          />
+          <button
+            type="submit"
+            className="btn btn-primary fw-bold"
+            style={{ color: "#fff" }}
+            disabled={!isChecked}
+          >
+            Subscribe
+          </button>
+        </form>
 
-              {/* Checkbox */}
-              <div className="form-check mt-2">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="newsletter"
-                  checked={isChecked}
-                  onChange={(e) => setIsChecked(e.target.checked)} // ✅ update state
-                />
-                <label className="form-check-label" htmlFor="newsletter">
-                  Yes, subscribe me to your newsletter.*
-                </label>
-              </div>
+        {/* Checkbox */}
+        <div className="form-check mt-2">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="newsletter"
+            checked={isChecked}
+            onChange={(e) => setIsChecked(e.target.checked)}
+          />
+          <label className="form-check-label" htmlFor="newsletter">
+            Yes, subscribe me to your newsletter.*
+          </label>
+        </div>
 
-              {/* Social Icons */}
-              <div className="mt-3 d-flex gap-3">
-                <a href="#">
-                  <img
-                    src={Images.instagram}
-                    alt="Instagram"
-                    className="social-icon"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src={Images.linkedin}
-                    alt="LinkedIn"
-                    className="social-icon"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src={Images.twit}
-                    alt="Twitter"
-                    className="social-icon"
-                  />
-                </a>
-                <a href="#">
-                  <img
-                    src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
-                    alt="YouTube"
-                    className="social-icon"
-                  />
-                </a>
-              </div>
-            </div>
-          </div>
+        {/* Social Icons */}
+        <div className="mt-3 d-flex gap-3">
+          <a href="#">
+            <img
+              src={Images.instagram}
+              alt="Instagram"
+              className="social-icon"
+              style={styles.socialIcon}
+            />
+          </a>
+          <a href="#">
+            <img
+              src={Images.linkedin}
+              alt="LinkedIn"
+              className="social-icon"
+              style={styles.socialIcon}
+            />
+          </a>
+          <a href="#">
+            <img
+              src={Images.twit}
+              alt="Twitter"
+              className="social-icon"
+              style={styles.socialIcon}
+            />
+          </a>
+          <a href="#">
+            <img
+              src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
+              alt="YouTube"
+              className="social-icon"
+              style={styles.socialIcon}
+            />
+          </a>
+          <a href="#">
+            <img
+              src={Images.spotify}
+              alt="Spotify"
+              className="social-icon"
+              style={styles.spotifyIcon} // Use specific style for Spotify
+            />
+          </a>
+        </div>
+      </div>
+    </div>
 
           {/* Quick Links */}
           <div className="col-lg-2 col-md-12 mb-lg-4 mt-lg-4 text-end quicklink">

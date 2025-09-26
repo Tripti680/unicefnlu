@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 // import Construction from '../../Components/Construction'
 
 function Landmark() {
-  const [activeMain, setActiveMain] = useState(null);
+  const [activeMains, setActiveMains] = useState({});
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
 
@@ -119,9 +119,9 @@ function Landmark() {
         <div className="container my-lg-5  px-lg-4">
           <div className="row">
             <div className="col-12 px-lg-4" style={styles.accordion}>
-              <h3 className="fw-bold pt-lg-0 pt-3">
+              {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice System
-              </h3>
+              </h3> */}
               <h4 className="fw-bold mt-3 bluetxt yellowclr" style={styles.accordionHeaderupper}>
                 LANDMARK JUDGEMENTS
               </h4>
@@ -144,12 +144,12 @@ function Landmark() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 0 ? null : 0)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
                       Children in Conflict with the Law (CCL)
-                      <span style={styles.arrow(activeMain === 0)}>▼</span>
+                      <span style={styles.arrow(activeMains[0])}>▼</span>
                     </div>
-                    <div style={styles.accordionBody(activeMain === 0)}>
+                    <div style={styles.accordionBody(activeMains[0])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -698,14 +698,12 @@ function Landmark() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 10 ? null : 10)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >
                       Children in Need of Care and Protection
-                      <span style={styles.arrow(activeMain === 10)}>▼</span>
+                      <span style={styles.arrow(activeMains[10])}>▼</span>
                     </div>
-                    <div style={styles.accordionBody(activeMain === 10)}>
+                    <div style={styles.accordionBody(activeMains[10])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div

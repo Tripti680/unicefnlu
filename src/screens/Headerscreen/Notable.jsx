@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import Construction from "../../Components/Construction";
 
 function Notable() {
-  const [activeMain, setActiveMain] = useState(null);
+  const [activeMains, setActiveMains] = useState({});
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
 
@@ -121,9 +121,9 @@ function Notable() {
         <div className="container my-lg-5 px-lg-4">
           <div className="row">
             <div className="col-12 px-lg-4" style={styles.accordion}>
-              <h3 className="fw-bold pt-lg-0 pt-3">
+              {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 Status of Child Rights within the Indian Criminal Justice System
-              </h3>
+              </h3> */}
               <h4 className="fw-bold mt-3 yellowclr bluetxt " style={styles.accordionHeaderupper}>
                 NOTABLE REPORTS
               </h4>
@@ -143,14 +143,14 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 0 ? null : 0)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
                       Annual Report 2024-25, Ministry of Women and Child
                       Development, Government of India
-                      <span style={styles.arrow(activeMain === 0)}>▼</span>
+                      <span style={styles.arrow(activeMains[0])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 0)}>
+                    <div style={styles.accordionBody(activeMains[0])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         It is a compliance document reviewing implementation of
@@ -173,14 +173,14 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 1 ? null : 1)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 1: !prev[1] }))}
                     >
                       Crime in India statistics, National Crime Records Bureau
                       (2022)
-                      <span style={styles.arrow(activeMain === 1)}>▼</span>
+                      <span style={styles.arrow(activeMains[1])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 1)}>
+                    <div style={styles.accordionBody(activeMains[1])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         NCRB functions as a repository of information on crime
@@ -205,16 +205,16 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 2 ? null : 2)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 2: !prev[2] }))}
                     >
                       A Decade of POCSO: Developments, Challenges, and
                       Observations from Judicial Data, Vidhi Centre for Legal
                       Policy and World Bank Data Evidence for Justice Reform
                       Program (November 2022)
-                      <span style={styles.arrow(activeMain === 2)}>▼</span>
+                      <span style={styles.arrow(activeMains[2])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 2)}>
+                    <div style={styles.accordionBody(activeMains[2])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         This is the most comprehensive empirical study on the
@@ -239,14 +239,14 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 3 ? null : 3)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 3: !prev[3] }))}
                     >
                       Child Rights in India - Stakeholder’s Report on Universal
                       Periodic Review III (April 2022)
-                      <span style={styles.arrow(activeMain === 3)}>▼</span>
+                      <span style={styles.arrow(activeMains[3])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 3)}>
+                    <div style={styles.accordionBody(activeMains[3])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The report specifically examines the implementation gap
@@ -271,15 +271,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 4 ? null : 4)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 4: !prev[4] }))}
                     >
                       Policy Research on Children Deprived of Liberty in the
                       Administration of Justice in South Asia, Kathmandu School
                       of Law (2022)
-                      <span style={styles.arrow(activeMain === 4)}>▼</span>
+                      <span style={styles.arrow(activeMains[4])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 4)}>
+                    <div style={styles.accordionBody(activeMains[4])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The research examined eight South Asian countries to
@@ -307,15 +307,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 5 ? null : 5)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 5: !prev[5] }))}
                     >
                       “Romantic” Cases under the POCSO Act: An Analysis of
                       Judgments of Special Courts in Assam, Maharashtra &amp;
                       West Bengal, Enfold Proactive Health Trust (2022)
-                      <span style={styles.arrow(activeMain === 5)}>▼</span>
+                      <span style={styles.arrow(activeMains[5])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 5)}>
+                    <div style={styles.accordionBody(activeMains[5])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The research aimed to understand the proportion of
@@ -340,14 +340,14 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 6 ? null : 6)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 6: !prev[6] }))}
                     >
                       Strategy for Ending Violence against Children (EVAC),
                       UNICEF India (2020)
-                      <span style={styles.arrow(activeMain === 6)}>▼</span>
+                      <span style={styles.arrow(activeMains[6])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 6)}>
+                    <div style={styles.accordionBody(activeMains[6])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         This report provides a comprehensive strategy
@@ -373,15 +373,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 7 ? null : 7)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 7: !prev[7] }))}
                     >
                       Children in Conflict with the Law – A Primer based on
                       NCRB&#39;s Crime in India Report, HAQ Centre for Child
                       Rights (2020)
-                      <span style={styles.arrow(activeMain === 7)}>▼</span>
+                      <span style={styles.arrow(activeMains[7])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 7)}>
+                    <div style={styles.accordionBody(activeMains[7])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The report provides an analysis of crime statistics
@@ -408,15 +408,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 8 ? null : 8)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 8: !prev[8] }))}
                     >
                       Research on the Sexual Exploitation of Boys: Findings,
                       Ethical Considerations and Methodological Challenges,
-                      UNICEF Data and Analytics Section (2020)
-                      <span style={styles.arrow(activeMain === 8)}>▼</span>
+                      UNICEF (2020)
+                      <span style={styles.arrow(activeMains[8])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 8)}>
+                    <div style={styles.accordionBody(activeMains[8])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         A systematic literature review of quantitative and
@@ -443,15 +443,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 9 ? null : 9)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 9: !prev[9] }))}
                     >
                       Mapping Needs and Priorities: Study of Child Rape Victim
                       in Delhi, Delhi Commission for Protection and Human
                       Development Society (2019)
-                      <span style={styles.arrow(activeMain === 9)}>▼</span>
+                      <span style={styles.arrow(activeMains[9])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 9)}>
+                    <div style={styles.accordionBody(activeMains[9])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The primary aim of this study was to understand the
@@ -482,16 +482,14 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 10 ? null : 10)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >
                       Status of Juvenile Justice System: Structures, Mechanisms,
                       &amp; Processes, National Legal Services Authority (2019)
-                      <span style={styles.arrow(activeMain === 10)}>▼</span>
+                      <span style={styles.arrow(activeMains[10])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 10)}>
+                    <div style={styles.accordionBody(activeMains[10])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The aim of this report is to highlight the status of
@@ -518,17 +516,15 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 11 ? null : 11)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 11: !prev[11] }))}
                     >
                       Implementation of the POCSO Act, 2012 by Special Courts:
                       Challenges and Issues, Centre for Child and the Law,
                       National Law School of India University (2018).
-                      <span style={styles.arrow(activeMain === 11)}>▼</span>
+                      <span style={styles.arrow(activeMains[11])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 11)}>
+                    <div style={styles.accordionBody(activeMains[11])}>
                       {/* DIRECT CONTENT (no yellow row) */}
                       <p style={styles.p}>
                         The report seeks to address common hurdles and issues in

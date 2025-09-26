@@ -5,8 +5,8 @@ function LandmarkPage16() {
    const styles = {
    
     accordionHeader: {
-      background: "#0a2c5f",
-      color: "#fff",
+       background: "#ffc107",
+      color: "#0a2c5f",
       padding: "15px 20px",
       fontSize: "18px",
       fontWeight: "bold",

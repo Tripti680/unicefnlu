@@ -5,7 +5,7 @@ import { useNavigate } from "react-router";
 import Construction from "../../Components/Construction";
 
 function Obligations() {
-  const [activeMain, setActiveMain] = useState(null);
+  const [activeMains, setActiveMains] = useState({});
   const [activeSub, setActiveSub] = useState({});
   const [activeSubSub, setActiveSubSub] = useState({});
 
@@ -118,9 +118,9 @@ function Obligations() {
         <div className="container  px-lg-4 my-lg-5">
           <div className="row">
             <div className="col-12 px-lg-4" style={styles.accordion}>
-              <h3 className="fw-bold pt-lg-0 pt-3">
+              {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 Child Rights and the Indian Criminal Justice
-              </h3>
+              </h3> */}
               <h4 className="fw-bold mt-3 yellowclr bluetxt" style={styles.accordionHeaderupper}>
                 OBLIGATIONS UNDER INTERNATIONAL LAW
               </h4>
@@ -140,13 +140,13 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 0 ? null : 0)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
                       I. International Conventions focussed on Child Rights
-                      <span style={styles.arrow(activeMain === 0)}>▼</span>
+                      <span style={styles.arrow(activeMains[0])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 0)}>
+                    <div style={styles.accordionBody(activeMains[0])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -317,13 +317,13 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMain(activeMain === 5 ? null : 5)}
+                      onClick={() => setActiveMains(prev => ({ ...prev, 5: !prev[5] }))}
                     >
                       II. International Rules and Guidelines
-                      <span style={styles.arrow(activeMain === 5)}>▼</span>
+                      <span style={styles.arrow(activeMains[5])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 5)}>
+                    <div style={styles.accordionBody(activeMains[5])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -488,16 +488,14 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 10 ? null : 10)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >
                       III. International Conventions with ancillary focus on
                       Child Rights
-                      <span style={styles.arrow(activeMain === 10)}>▼</span>
+                      <span style={styles.arrow(activeMains[10])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 10)}>
+                    <div style={styles.accordionBody(activeMains[10])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -633,15 +631,13 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 14 ? null : 14)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 14: !prev[14] }))}
                     >
                       IV. Regional Conventions
-                      <span style={styles.arrow(activeMain === 14)}>▼</span>
+                      <span style={styles.arrow(activeMains[14])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 14)}>
+                    <div style={styles.accordionBody(activeMains[14])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -712,15 +708,13 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 16 ? null : 16)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 16: !prev[16] }))}
                     >
                       V. Bilateral Commitments
-                      <span style={styles.arrow(activeMain === 16)}>▼</span>
+                      <span style={styles.arrow(activeMains[16])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 16)}>
+                    <div style={styles.accordionBody(activeMains[16])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -835,15 +829,13 @@ function Obligations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() =>
-                        setActiveMain(activeMain === 19 ? null : 19)
-                      }
+                      onClick={() => setActiveMains(prev => ({ ...prev, 19: !prev[19] }))}
                     >
                       VI. Statements made in International Fora
-                      <span style={styles.arrow(activeMain === 19)}>▼</span>
+                      <span style={styles.arrow(activeMains[19])}>▼</span>
                     </div>
 
-                    <div style={styles.accordionBody(activeMain === 19)}>
+                    <div style={styles.accordionBody(activeMains[19])}>
                       {/* SUB ITEM 1.1 */}
                       <div>
                         <div
@@ -854,7 +846,7 @@ function Obligations() {
                         >
                           6.1 G20 Statement - Maternal, newborn, child and
                           adolescent health and well-being (India 2023)
-                          <span style={styles.arrow(activeSub[16])}>▼</span>
+                          <span style={styles.arrow(activeSub[19])}>▼</span>
                         </div>
 
                         <div style={styles.accordionSubBody(activeSub[19])}>

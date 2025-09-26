@@ -81,7 +81,7 @@ function Header() {
           <div className="row align-items-center">
             {/* Logo */}
             <div className="col-6 col-lg-2 px-4 d-flex align-items-center">
-              <div className="logo text-white">
+              <div className="logo text-white" style={{padding:"10px"}}>
                 <a onClick={() => navigation("/")}>
                   <img
                     key={currentLogo}
