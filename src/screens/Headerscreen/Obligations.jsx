@@ -104,6 +104,7 @@ function Obligations() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
+      cursor:"pointer",
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -202,7 +203,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation2");
                             }}
                             style={styles.link}
                           >
@@ -235,7 +236,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation3");
                             }}
                             style={styles.link}
                           >
@@ -265,7 +266,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation4");
                             }}
                             style={styles.link}
                           >
@@ -302,7 +303,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation5");
                             }}
                             style={styles.link}
                           >
@@ -347,7 +348,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation6");
                             }}
                             style={styles.link}
                           >
@@ -378,7 +379,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation7");
                             }}
                             style={styles.link}
                           >
@@ -409,7 +410,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation8");
                             }}
                             style={styles.link}
                           >
@@ -440,7 +441,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation9");
                             }}
                             style={styles.link}
                           >
@@ -473,7 +474,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation10");
                             }}
                             style={styles.link}
                           >
@@ -520,7 +521,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation11");
                             }}
                             style={styles.link}
                           >
@@ -551,7 +552,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation12");
                             }}
                             style={styles.link}
                           >
@@ -582,7 +583,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation13");
                             }}
                             style={styles.link}
                           >
@@ -616,7 +617,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation14");
                             }}
                             style={styles.link}
                           >
@@ -661,7 +662,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation15");
                             }}
                             style={styles.link}
                           >
@@ -693,7 +694,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation16");
                             }}
                             style={styles.link}
                           >
@@ -741,7 +742,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation17");
                             }}
                             style={styles.link}
                           >
@@ -779,7 +780,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation18");
                             }}
                             style={styles.link}
                           >
@@ -814,7 +815,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation19");
                             }}
                             style={styles.link}
                           >
@@ -861,7 +862,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation20");
                             }}
                             style={styles.link}
                           >
@@ -895,7 +896,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation21");
                             }}
                             style={styles.link}
                           >
@@ -926,7 +927,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation22");
                             }}
                             style={styles.link}
                           >
@@ -958,7 +959,7 @@ function Obligations() {
                           <a
                             onClick={(e) => {
                               e.preventDefault();
-                              navigation("/obligation1");
+                              navigation("/obligation23");
                             }}
                             style={styles.link}
                           >

@@ -54,10 +54,33 @@ import LegislationPage10 from "./Components/LegislationPage10";
 import LegislationPage11 from "./Components/LegislationPage11";
 import LegislationPage12 from "./Components/LegislationPage12";
 import LegislationPage13 from "./Components/LegislationPage13";
+import ObligationPage1 from "./Components/ObligationPage1";
+import ObligationPage2 from "./Components/ObligationPage2";
+import ObligationPage3 from "./Components/ObligationPage3";
+import ObligationPage4 from "./Components/ObligationPage4";
+import ObligationPage5 from "./Components/ObligationPage5";
+import ObligationPage6 from "./Components/ObligationPage6";
+import ObligationPage7 from "./Components/ObligationPage7";
+import ObligationPage8 from "./Components/ObligationPage8";
+import ObligationPage9 from "./Components/ObligationPage9";
+import ObligationPage10 from "./Components/ObligationPage10";
+import ObligationPage11 from "./Components/ObligationPage11";
+import ObligationPage12 from "./Components/ObligationPage12";
+import ObligationPage13 from "./Components/ObligationPage13";
+import ObligationPage14 from "./Components/ObligationPage14";
+import ObligationPage15 from "./Components/ObligationPage15";
+import ObligationPage16 from "./Components/ObligationPage16";
+import ObligationPage17 from "./Components/ObligationPage17";
+import ObligationPage18 from "./Components/ObligationPage18";
+import ObligationPage19 from "./Components/ObligationPage19";
+import ObligationPage20 from "./Components/ObligationPage20";
+import ObligationPage21 from "./Components/ObligationPage21";
+import ObligationPage22 from "./Components/ObligationPage22";
+import ObligationPage23 from "./Components/ObligationPage23";
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -110,6 +133,29 @@ function App() {
         <Route path="/legislation11" element={<LegislationPage11 />} />
         <Route path="/legislation12" element={<LegislationPage12 />} />
         <Route path="/legislation13" element={<LegislationPage13 />} />
+        <Route path="/obligation1" element={<ObligationPage1 />} />
+        <Route path="/obligation2" element={<ObligationPage2 />} />
+        <Route path="/obligation3" element={<ObligationPage3 />} />
+        <Route path="/obligation4" element={<ObligationPage4 />} />
+        <Route path="/obligation5" element={<ObligationPage5 />} />
+        <Route path="/obligation6" element={<ObligationPage6 />} />
+        <Route path="/obligation7" element={<ObligationPage7 />} />
+        <Route path="/obligation8" element={<ObligationPage8 />} />
+        <Route path="/obligation9" element={<ObligationPage9 />} />
+        <Route path="/obligation10" element={<ObligationPage10 />} />
+        <Route path="/obligation11" element={<ObligationPage11 />} />
+        <Route path="/obligation12" element={<ObligationPage12 />} />
+        <Route path="/obligation13" element={<ObligationPage13 />} />
+        <Route path="/obligation14" element={<ObligationPage14 />} />
+        <Route path="/obligation15" element={<ObligationPage15 />} />
+        <Route path="/obligation16" element={<ObligationPage16 />} />
+        <Route path="/obligation17" element={<ObligationPage17 />} />
+        <Route path="/obligation18" element={<ObligationPage18 />} />
+        <Route path="/obligation19" element={<ObligationPage19 />} />
+        <Route path="/obligation20" element={<ObligationPage20 />} />
+        <Route path="/obligation21" element={<ObligationPage21 />} />
+        <Route path="/obligation22" element={<ObligationPage22 />} />
+        <Route path="/obligation23" element={<ObligationPage23 />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>
