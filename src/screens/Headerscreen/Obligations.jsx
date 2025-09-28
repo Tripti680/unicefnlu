@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import Construction from "../../Components/Construction";
 
 function Obligations() {
@@ -104,7 +105,7 @@ function Obligations() {
     link: {
       color: "#0a2c5f",
       textDecoration: "none",
-      cursor:"pointer",
+     cursor:"pointer",
     },
     arrow: (isActive) => ({
       fontSize: "14px",
@@ -168,15 +169,15 @@ function Obligations() {
                             children in every country, in particular in the
                             developing countries.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation1");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                          
+                              <Link
+                                to="/obligation1"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -200,15 +201,14 @@ function Obligations() {
                             are particularly vulnerable to recruitment or use in
                             hostilities.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation2");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation2"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -233,15 +233,14 @@ function Obligations() {
                             Prevention of the Sale of Children, Child
                             Prostitution and Child Pornography.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation3");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation3"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -263,15 +262,14 @@ function Obligations() {
                             for employment to effectively eliminate child
                             labour.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation4");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                          <Link
+                                to="/obligation4"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -300,15 +298,14 @@ function Obligations() {
                             trafficking; and work that is likely to jeopardize
                             children&#39;s health, safety, or morals.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation5");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation5"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>
@@ -345,15 +342,14 @@ function Obligations() {
                             and fair procedures in juvenile justice systems
                             worldwide.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation6");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation6"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -376,15 +372,14 @@ function Obligations() {
                             juveniles in detention and to foster the use of
                             alternatives to imprisonment.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation7");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation7"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -407,15 +402,14 @@ function Obligations() {
                             to prevent young people from engaging in delinquent
                             behaviour.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation8");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation8"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -438,15 +432,14 @@ function Obligations() {
                             promoting principles like the best interests of the
                             child, dignity, and protection from discrimination.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation9");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation9"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -471,15 +464,14 @@ function Obligations() {
                             treated fairly when they say what happened to them
                             in a court of law.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation10");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation10"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>
@@ -518,15 +510,14 @@ function Obligations() {
                             and paved the way for, the adoption of more than
                             seventy human rights treaties.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation11");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation11"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -549,15 +540,14 @@ function Obligations() {
                             the civil and political rights of individuals within
                             their territory and jurisdiction.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation12");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation12"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -580,15 +570,14 @@ function Obligations() {
                             the civil and political rights of individuals within
                             their territory and jurisdiction.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation13");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation13"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -614,15 +603,14 @@ function Obligations() {
                             and environmental dimensions to achieve universal
                             well-being and respect for human rights.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation14");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation14"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>
@@ -659,15 +647,14 @@ function Obligations() {
                             work together to improve the well-being of children
                             in South Asia.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation15");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation15"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -691,15 +678,14 @@ function Obligations() {
                             incompatible with the dignity and honour of human
                             beings and is a violation of basic human rights.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation16");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation16"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>
@@ -739,15 +725,14 @@ function Obligations() {
                             investigation and the removal of CSAM from
                             cyberspace.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation17");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation17"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -777,15 +762,14 @@ function Obligations() {
                             trafficking especially women and children
                             expeditiously.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation18");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation18"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -812,15 +796,14 @@ function Obligations() {
                             effective tool in countering trafficking in persons
                             and promoting cross-border and regional cooperation.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation19");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation19"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>
@@ -859,15 +842,14 @@ function Obligations() {
                             especially after setbacks from the pandemic, climate
                             change and conflict.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation20");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation20"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -893,15 +875,14 @@ function Obligations() {
                             remain central in pandemic response and recovery
                             planning.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation21");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                           <Link
+                                to="/obligation21"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -924,15 +905,14 @@ function Obligations() {
                             in need of protection and to ensuring safe
                             neighbourhoods for all children.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation22");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation22"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
 
@@ -956,15 +936,14 @@ function Obligations() {
                             can trap children in cycles of poverty and
                             vulnerability.
                           </p>
-                          <a
-                            onClick={(e) => {
-                              e.preventDefault();
-                              navigation("/obligation23");
-                            }}
-                            style={styles.link}
-                          >
-                            Continue reading &#10219;
-                          </a>
+                            <Link
+                                to="/obligation23"
+                                target="_blank"
+                                rel="noreferrer"
+                                style={styles.link}
+                              >
+                                Continue reading &#10219;
+                              </Link>
                         </div>
                       </div>
                     </div>

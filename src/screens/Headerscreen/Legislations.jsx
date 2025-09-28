@@ -1,8 +1,8 @@
-
 import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import Construction from "../../Components/Construction";
 
 function Legislations() {
@@ -148,7 +148,9 @@ function Legislations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 0: !prev[0] }))
+                      }
                     >
                       Children in Conflict with the Law (CCL)
                       <span style={styles.arrow(activeMains[0])}>▼</span>
@@ -195,20 +197,14 @@ function Legislations() {
                                 through proper care, protection, development,
                                 treatment, social re-integration.
                               </p>
-                              <a
-                                href="/legislation1"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation1",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation1"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -237,20 +233,14 @@ function Legislations() {
                                 address operational challenges and governance
                                 issues in the implementation of the JJ Act 2015.{" "}
                               </p>
-                              <a
-                                href="/legislation2"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation2",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation2"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div>
@@ -278,20 +268,14 @@ function Legislations() {
                                 2021 and provide detailed procedural guidance
                                 for implementation.{" "}
                               </p>
-                              <a
-                                href="/legislation3"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation3",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation3"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -335,20 +319,14 @@ function Legislations() {
                                 incorporating contemporary criminal justice
                                 principles.
                               </p>
-                              <a
-                                href="/legislation4"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation4",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation4"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -360,7 +338,9 @@ function Legislations() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 10: !prev[10] }))
+                      }
                     >
                       Children in Need of Care and Protection
                       <span style={styles.arrow(activeMains[10])}>▼</span>
@@ -406,20 +386,14 @@ function Legislations() {
                                 18) from sexual assault, sexual harassment and
                                 child pornography.
                               </p>
-                              <a
-                                href="/legislation5"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation5",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation5"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -449,20 +423,14 @@ function Legislations() {
                                 Act with greater efficacy by detailing
                                 procedures.{" "}
                               </p>
-                              <a
-                                href="/legislation6"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation6",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation6"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div>
@@ -490,20 +458,14 @@ function Legislations() {
                                 marriages and related matters connected
                                 therewith.{" "}
                               </p>
-                              <a
-                                href="/legislation7"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation7",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation7"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -533,20 +495,14 @@ function Legislations() {
                                 all occupations and of adolescents (14-18 years)
                                 in hazardous occupations and processes..{" "}
                               </p>
-                              <a
-                                href="/legislation8"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation8",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation8"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -588,20 +544,14 @@ function Legislations() {
                                 This Act prevents and combats trafficking and
                                 sexual exploitation for commercial purposes.
                               </p>
-                              <a
-                                href="/legislation9"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation9",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation9"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -631,20 +581,14 @@ function Legislations() {
                                 data interchange and other means of electronic
                                 communication.{" "}
                               </p>
-                              <a
-                                href="/legislation10"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation10",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation10"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -677,20 +621,14 @@ function Legislations() {
                                 e a grievance redressal mechanism for resolving
                                 complaints from users or victims.{" "}
                               </p>
-                              <a
-                                href="/legislation11"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation11",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation11"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div>
@@ -719,20 +657,14 @@ function Legislations() {
                                 incorporating contemporary criminal justice
                                 principles.{" "}
                               </p>
-                              <a
-                                href="/legislation12"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation12",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation12"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -762,20 +694,14 @@ function Legislations() {
                                 justice system that reduces delays and ensures
                                 timely access to justice.{" "}
                               </p>
-                              <a
-                                href="/legislation13"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/legislation13",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/legislation13"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>

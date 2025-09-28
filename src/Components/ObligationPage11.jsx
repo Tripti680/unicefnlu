@@ -64,7 +64,7 @@ function ObligationPage11() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="udhr_booklet_en_web.pdf"
+                  href="https://drive.google.com/file/d/1dKwfjrmFv6MJK3YckRk96AneV12-Ab9f/view"
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

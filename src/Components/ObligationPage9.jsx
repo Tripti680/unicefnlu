@@ -87,7 +87,7 @@ function ObligationPage9() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="criminaljusticesystem.pdf"
+                  href="https://drive.google.com/file/d/1pHHk86iZUpoJoZH7igU7W7B2TuL2k5jb/view"
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

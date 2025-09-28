@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 // import Construction from '../../Components/Construction'
 
 function Landmark() {
@@ -192,20 +193,15 @@ function Landmark() {
                                 this case, the age of 18), it does not offend
                                 Article 14.
                               </p>
-                              <a
-                                href="/landmark1"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark1",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             
+                              <Link
+                                to="/landmark1"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -238,20 +234,14 @@ function Landmark() {
                                 practical, and objective test for determining
                                 “juvenility” under the Act.{" "}
                               </p>
-                               <a
-                                href="/landmark2"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark2",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark2"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -294,20 +284,14 @@ function Landmark() {
                                 The Court laid down a hierarchy of
                                 age-determination evidence.
                               </p>
-                              <a
-                                href="/landmark3"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark3",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark3"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -338,20 +322,14 @@ function Landmark() {
                                 medical evidence can be considered for the
                                 purposes of determining the age of a juvenile.{" "}
                               </p>
-                              <a
-                                href="/landmark4"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark4",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark4"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -381,20 +359,14 @@ function Landmark() {
                                 ages, and the law cannot demand reliance on
                                 ‘impossible or unreliable’ procedures.{" "}
                               </p>
-                               <a
-                                href="/landmark5"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark5",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                               <Link
+                                to="/landmark5"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -424,20 +396,14 @@ function Landmark() {
                                 relevant age for juvenility by overturning two
                                 landmark judgements.{" "}
                               </p>
-                              <a
-                                href="/landmark6"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark6",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark6"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -467,20 +433,14 @@ function Landmark() {
                                 the court is obliged to conduct an inquiry and
                                 record a finding.{" "}
                               </p>
-                             <a
-                                href="/landmark7"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark7",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                            <Link
+                                to="/landmark7"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -527,20 +487,14 @@ function Landmark() {
                                 juvenile’s welfare, developmental needs, and
                                 potential for rehabilitation.
                               </p>
-                             <a
-                                href="/landmark8"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark8",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark8"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -571,20 +525,14 @@ function Landmark() {
                                 sufficient to satisfy the definition of
                                 ‘association’ under Section 12.{" "}
                               </p>
-                               <a
-                                href="/landmark9"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark9",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                               <Link
+                                to="/landmark9"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -630,20 +578,14 @@ function Landmark() {
                                 does not, the interpretation favouring the child
                                 must prevail.
                               </p>
-                              <a
-                                href="/landmark10"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark10",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark10"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -673,20 +615,14 @@ function Landmark() {
                                 an offence by a child is “heinous,” since the JJ
                                 Act entrusts this responsibility to the JJB.{" "}
                               </p>
-                               <a
-                                href="/landmark11"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark11",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark11"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -748,20 +684,14 @@ function Landmark() {
                                 protection, along with right to education,
                                 health, and development.
                               </p>
-                              <a
-                                href="/landmark12"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark12",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark12"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -792,20 +722,14 @@ function Landmark() {
                                 against child trafficking and the Devadasi
                                 system.{" "}
                               </p>
-                             <a
-                                href="/landmark13"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark13",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark13"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -851,20 +775,14 @@ function Landmark() {
                                 rehabilitation of minor girls rescued from
                                 brothels.
                               </p>
-                              <a
-                                href="/landmark14"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark14",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark14"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -897,20 +815,14 @@ function Landmark() {
                                 mandate child-friendly procedures in sexual
                                 abuse cases.{" "}
                               </p>
-                             <a
-                                href="/landmark15"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark15",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                            <Link
+                                to="/landmark15"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -957,20 +869,14 @@ function Landmark() {
                                 and established comprehensive monitoring
                                 mechanisms.
                               </p>
-                             <a
-                                href="/landmark16"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark16",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark16"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
 
@@ -1007,20 +913,14 @@ function Landmark() {
                                 Articles 14, 15, and 21 of the Indian
                                 Constitution.{" "}
                               </p>
-                              <a
-                                href="/landmark17"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark17",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                             <Link
+                                to="/landmark17"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                           <div>
@@ -1051,20 +951,14 @@ function Landmark() {
                                 that effective implementation of juvenile
                                 justice legislation is mandatory.{" "}
                               </p>
-                              <a
-                                href="/landmark18"
-                                onClick={(e) => {
-                                  e.preventDefault();
-                                  window.open(
-                                    window.location.origin + "/landmark18",
-                                    "_blank",
-                                    "noreferrer"
-                                  );
-                                }}
+                              <Link
+                                to="/landmark18"
+                                target="_blank"
+                                rel="noreferrer"
                                 style={styles.link}
                               >
                                 Continue reading &#10219;
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>

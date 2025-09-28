@@ -212,6 +212,11 @@ function Footer() {
                 </Link>
               </li>
               <li className="fw-bold h5">
+                <Link className="text-white text-decoration-none" to="/j4clive">
+                  J4C Live
+                </Link>
+              </li>
+              <li className="fw-bold h5">
                 <Link className="text-white text-decoration-none" to="/contact">
                   Contact
                 </Link>

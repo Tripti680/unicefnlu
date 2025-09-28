@@ -2,6 +2,7 @@ import { useState } from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
 import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
 import Construction from "../../Components/Construction";
 
 function Notable() {
@@ -14,7 +15,7 @@ function Notable() {
     navigate(path);
   };
 
- const styles = {
+  const styles = {
     body: {
       fontFamily: "Arial, sans-serif",
       background: "#fff",
@@ -43,7 +44,7 @@ function Notable() {
       alignItems: "center",
       borderRadius: "7px",
     },
-      accordionHeaderupper: {
+    accordionHeaderupper: {
       background: "#ffc107",
       color: "#0a2c5f",
       padding: "15px 20px",
@@ -60,8 +61,7 @@ function Notable() {
       overflow: "hidden",
       transition: "max-height 0.5s ease",
       background: "#fff",
-       padding:isActive ? "5px 20px":"0 18px",
-      
+      padding: isActive ? "5px 20px" : "0 18px",
     }),
     accordionSubheader: {
       background: "#ffc107",
@@ -79,7 +79,6 @@ function Notable() {
       overflow: "hidden",
       transition: "max-height 0.5s ease",
       background: "#fff",
-     
     }),
     accordionSubSubheader: {
       background: "#e0e0e0",
@@ -124,7 +123,10 @@ function Notable() {
               {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 Status of Child Rights within the Indian Criminal Justice System
               </h3> */}
-              <h4 className="fw-bold mt-3 yellowclr bluetxt " style={styles.accordionHeaderupper}>
+              <h4
+                className="fw-bold mt-3 yellowclr bluetxt "
+                style={styles.accordionHeaderupper}
+              >
                 NOTABLE REPORTS
               </h4>
               <p className="pt-3 px-lg-2">
@@ -143,7 +145,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 0: !prev[0] }))
+                      }
                     >
                       Annual Report 2024-25, Ministry of Women and Child
                       Development, Government of India
@@ -157,15 +161,14 @@ function Notable() {
                         child protection schemes and legal frameworks during
                         fiscal year 2024-25.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable1"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -173,7 +176,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 1: !prev[1] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 1: !prev[1] }))
+                      }
                     >
                       Crime in India statistics, National Crime Records Bureau
                       (2022)
@@ -189,15 +194,14 @@ function Notable() {
                         gives us a statistical overview of crimes against
                         children and juveniles in conflict with law.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                     <Link
+                        to="/notable2"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -205,7 +209,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 2: !prev[2] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 2: !prev[2] }))
+                      }
                     >
                       A Decade of POCSO: Developments, Challenges, and
                       Observations from Judicial Data, Vidhi Centre for Legal
@@ -223,15 +229,14 @@ function Notable() {
                         spread over 28 states and Union Territories from
                         November 2012 up to February 2021.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                     <Link
+                        to="/notable3"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -239,7 +244,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 3: !prev[3] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 3: !prev[3] }))
+                      }
                     >
                       Child Rights in India - Stakeholder’s Report on Universal
                       Periodic Review III (April 2022)
@@ -255,15 +262,14 @@ function Notable() {
                         improved children&#39;s status and conditions following
                         its 2011 UPR obligations.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable4"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -271,7 +277,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 4: !prev[4] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 4: !prev[4] }))
+                      }
                     >
                       Policy Research on Children Deprived of Liberty in the
                       Administration of Justice in South Asia, Kathmandu School
@@ -291,15 +299,14 @@ function Notable() {
                         frameworks against actual juvenile justice system
                         operations.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                     <Link
+                        to="/notable5"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -307,7 +314,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 5: !prev[5] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 5: !prev[5] }))
+                      }
                     >
                       “Romantic” Cases under the POCSO Act: An Analysis of
                       Judgments of Special Courts in Assam, Maharashtra &amp;
@@ -324,15 +333,14 @@ function Notable() {
                         adolescents in non- exploitative consensual
                         relationships.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                     <Link
+                        to="/notable6"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -340,7 +348,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 6: !prev[6] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 6: !prev[6] }))
+                      }
                     >
                       Strategy for Ending Violence against Children (EVAC),
                       UNICEF India (2020)
@@ -357,15 +367,14 @@ function Notable() {
                         interventions, and prevention mechanisms targeting the
                         community level for protection of children.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable7"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -373,7 +382,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 7: !prev[7] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 7: !prev[7] }))
+                      }
                     >
                       Children in Conflict with the Law – A Primer based on
                       NCRB&#39;s Crime in India Report, HAQ Centre for Child
@@ -392,15 +403,14 @@ function Notable() {
                         particularly among adolescent boys from disadvantaged
                         educational and social backgrounds.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable8"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -408,7 +418,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 8: !prev[8] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 8: !prev[8] }))
+                      }
                     >
                       Research on the Sexual Exploitation of Boys: Findings,
                       Ethical Considerations and Methodological Challenges,
@@ -427,15 +439,14 @@ function Notable() {
                         research reveals significant knowledge gaps surrounding
                         sexual exploitation of boys globally.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable9"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -443,7 +454,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 9: !prev[9] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 9: !prev[9] }))
+                      }
                     >
                       Mapping Needs and Priorities: Study of Child Rape Victim
                       in Delhi, Delhi Commission for Protection and Human
@@ -466,15 +479,14 @@ function Notable() {
                         operationalization of &#39;Smile Clubs&#39; as a
                         targeted intervention for their rehabilitation in Delhi.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable10"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
 
@@ -482,7 +494,9 @@ function Notable() {
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 10: !prev[10] }))
+                      }
                     >
                       Status of Juvenile Justice System: Structures, Mechanisms,
                       &amp; Processes, National Legal Services Authority (2019)
@@ -502,21 +516,22 @@ function Notable() {
                         institutions are following the mandate of the law and
                         effectively monitoring the implementation of the Act.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                      <Link
+                        to="/notable11"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div style={styles.accordionItem}>
                     <div
                       style={styles.accordionHeader}
-                      onClick={() => setActiveMains(prev => ({ ...prev, 11: !prev[11] }))}
+                      onClick={() =>
+                        setActiveMains((prev) => ({ ...prev, 11: !prev[11] }))
+                      }
                     >
                       Implementation of the POCSO Act, 2012 by Special Courts:
                       Challenges and Issues, Centre for Child and the Law,
@@ -535,15 +550,14 @@ function Notable() {
                         such as the judiciary, lawyers, prosecutors, child
                         protection systems, NGOs, and children.
                       </p>
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          navigation("/obligation1");
-                        }}
+                     <Link
+                        to="/notable12"
+                        target="_blank"
+                        rel="noreferrer"
                         style={styles.link}
                       >
                         Continue reading &#10219;
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

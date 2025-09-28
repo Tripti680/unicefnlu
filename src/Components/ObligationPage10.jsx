@@ -95,7 +95,7 @@ function ObligationPage10() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="childvictimswitnesses.pdf"
+                  href="https://drive.google.com/file/d/19ZWdLHrVFb31STY2du3C0uVGLdeGD202/view"
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

@@ -20,6 +20,7 @@ import Obligations from "./screens/Headerscreen/Obligations";
 import Notable from "./screens/Headerscreen/Notable";
 import NewsDigest from "./screens/Headerscreen/NewsDigest";
 import Opinion1 from "./screens/Headerscreen/Opinion1";
+import J4CLive from "./screens/Headerscreen/J4CLive";
 import ChildRight from "./screens/Headerscreen/ChildRight";
 import QuarterlyNewsletter from "./screens/Headerscreen/QuarterlyNewsletter";
 import MarqueFirst from "./screens/Headerscreen/MarqueFirst";
@@ -77,10 +78,22 @@ import ObligationPage20 from "./Components/ObligationPage20";
 import ObligationPage21 from "./Components/ObligationPage21";
 import ObligationPage22 from "./Components/ObligationPage22";
 import ObligationPage23 from "./Components/ObligationPage23";
+import NotablePage1 from "./Components/NotablePage1";
+import NotablePage2 from "./Components/NotablePage2";
+import NotablePage3 from "./Components/NotablePage3";
+import NotablePage4 from "./Components/NotablePage4";
+import NotablePage5 from "./Components/NotablePage5";
+import NotablePage6 from "./Components/NotablePage6";
+import NotablePage7 from "./Components/NotablePage7";
+import NotablePage8 from "./Components/NotablePage8";
+import NotablePage9 from "./Components/NotablePage9";
+import NotablePage10 from "./Components/NotablePage10";
+import NotablePage11 from "./Components/NotablePage11";
+import NotablePage12 from "./Components/NotablePage12";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -90,7 +103,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         {/* <Route path="/construction" element={<Construction />} /> */}
         <Route path="/fellowsInformation" element={<FellowsInformation />} />
-
+        <Route path="/j4clive" element={<J4CLive />} />
         <Route path="/legislations" element={<Legislations />} />
         <Route path="/landmark" element={<Landmark />} />
         <Route path="/obligations" element={<Obligations />} />
@@ -156,10 +169,22 @@ function App() {
         <Route path="/obligation21" element={<ObligationPage21 />} />
         <Route path="/obligation22" element={<ObligationPage22 />} />
         <Route path="/obligation23" element={<ObligationPage23 />} />
+        <Route path="/notable1" element={<NotablePage1 />} />
+        <Route path="/notable2" element={<NotablePage2 />} />
+        <Route path="/notable3" element={<NotablePage3 />} />
+        <Route path="/notable4" element={<NotablePage4 />} />
+        <Route path="/notable5" element={<NotablePage5 />} />
+        <Route path="/notable6" element={<NotablePage6 />} />
+        <Route path="/notable7" element={<NotablePage7 />} />
+        <Route path="/notable8" element={<NotablePage8 />} />
+        <Route path="/notable9" element={<NotablePage9 />} />
+        <Route path="/notable10" element={<NotablePage10 />} />
+        <Route path="/notable11" element={<NotablePage11 />} />
+        <Route path="/notable12" element={<NotablePage12 />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

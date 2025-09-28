@@ -93,7 +93,7 @@ function ObligationPage8() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="riyadhguidelines"
+                  href="https://drive.google.com/file/d/1d1DuS7QW9_k1aofail9VmO69OtHLQ4Lz/view"
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

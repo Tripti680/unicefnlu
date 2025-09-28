@@ -26,13 +26,14 @@ function Header() {
     setSuggestions([]);
   };
 
-  const menuItems = {
-    home: "/",
-    about: "/aboutus",
-    fellowship: "/fellowship",
-    publications: "/publication",
-    contact: "/contact",
-  };
+  const menuItems = [
+    { key: "home", label: "Home", path: "/" },
+    { key: "about", label: "About", path: "/aboutus" },
+    { key: "fellowship", label: "Fellowship", path: "/fellowship" },
+    { key: "publications", label: "Publications", path: "/publication" },
+    { key: "j4clive", label: "J4C Live", path: "/j4clive" },
+    { key: "contact", label: "Contact", path: "/contact" },
+  ];
 
   const handleInputChange = (e) => {
     const value = e.target.value.toLowerCase();
@@ -41,9 +42,7 @@ function Header() {
     if (value.trim() === "") {
       setSuggestions([]);
     } else {
-      const filtered = Object.keys(menuItems).filter((key) =>
-        key.includes(value)
-      );
+      const filtered = menuItems.filter((item) => item.key.includes(value));
       setSuggestions(filtered);
     }
   };
@@ -51,7 +50,7 @@ function Header() {
   const handleSearch = (e) => {
     e.preventDefault();
     if (suggestions.length > 0) {
-      navigation(menuItems[suggestions[0]]);
+      navigation(suggestions[0].path);
     } else {
       alert("No matching page found!");
     }
@@ -81,7 +80,7 @@ function Header() {
           <div className="row align-items-center">
             {/* Logo */}
             <div className="col-6 col-lg-2 px-4 d-flex align-items-center">
-              <div className="logo text-white" style={{padding:"10px"}}>
+              <div className="logo text-white" style={{ padding: "10px" }}>
                 <a onClick={() => navigation("/")}>
                   <img
                     key={currentLogo}
@@ -112,16 +111,16 @@ function Header() {
                     id="navbarSupportedContent"
                   >
                     <ul className="navbar-nav ms-lg-4">
-                      {Object.entries(menuItems).map(([key, path]) => (
-                        <li className="nav-item mx-lg-3" key={key}>
+                      {menuItems.map((item) => (
+                        <li className="nav-item mx-lg-3" key={item.key}>
                           <a
                             className={`nav-link fs-5 fw-semibold ${
-                              location.pathname === path
+                              location.pathname === item.path
                                 ? "active background:0f2c59"
                                 : "text-light"
                             }`}
                             style={
-                              location.pathname === path
+                              location.pathname === item.path
                                 ? {
                                     borderRadius: "40px",
                                     background: "#fff",
@@ -129,9 +128,9 @@ function Header() {
                                   }
                                 : {}
                             }
-                            onClick={() => navigation(path)}
+                            onClick={() => navigation(item.path)}
                           >
-                            {key.charAt(0).toUpperCase() + key.slice(1)}
+                            {item.label}
                           </a>
                         </li>
                       ))}
@@ -195,9 +194,9 @@ function Header() {
                       key={index}
                       className="list-group-item list-group-item-action"
                       style={{ cursor: "pointer" }}
-                      onClick={() => navigation(menuItems[item])}
+                      onClick={() => navigation(item.path)}
                     >
-                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                      {item.label}
                     </li>
                   ))}
                 </ul>
@@ -315,16 +314,32 @@ function Header() {
                       </button>
                     </h2>
                   </div>
+
                   {/* Accordion Item 4 */}
                   <div className="accordion-item">
-                    <h2 className="accordion-header" id="headingThree">
+                    <h2 className="accordion-header" id="headingFour">
                       <button
                         className="accordion-button collapsed removedropdown"
                         type="button"
                         data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
+                        data-bs-target="#collapseFour"
                         aria-expanded="false"
-                        aria-controls="collapseThree"
+                        aria-controls="collapseFour"
+                      >
+                        <a onClick={() => navigation("/j4clive")}>J4C Live</a>
+                      </button>
+                    </h2>
+                  </div>
+                  {/* Accordion Item 5 */}
+                  <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingFive">
+                      <button
+                        className="accordion-button collapsed removedropdown"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive"
+                        aria-expanded="false"
+                        aria-controls="collapseFive"
                       >
                         <a onClick={() => navigation("/contact")}>Contact</a>
                       </button>
