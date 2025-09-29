@@ -16,6 +16,56 @@ function NotablePage2() {
     { year: "Kidnapping and Abduction of Minor Girls to compel her for marriage", cases: "Sec. 366 IPC", overall: "13,641", delhi: "13,981", nagaland: "3.1" },
     { year: "Exposure and Abandonment", cases: "Sec. 317 IPC", overall: "54,685", delhi: "55,961", nagaland: "12.3" },
   ];
+  const data3 = [
+    { Law: "POCSO Act", Incidents: "20,753 (of which 20,494 are u/Ss. 4 & 6)", Victims: "21,167 (of which 20,902 are u/Ss. 4 & 6)" },
+
+    { Law: "Other SLL crimes", Incidents: "68,571", Victims: "70,810" },
+
+    { Law: "Child Labour (Prohibition & Regulation) Act", Incidents: "1,360", Victims: "1,384" },
+
+    { Law: "Cyber Crimes/Information Technology Act", Incidents: "172 (of which 157 are Publishing/Transmitting sexually explicit material)", Victims: "218 (of which 203 are Publishing/Transmitting sexually explicit material)" },
+  ];
+  const data4 = [
+    { Law: "Pending Cases (Previous Year)", Number: "484,657" },
+    { Law: "New Cases Sent for Trial", Number: "103,557" },
+    { Law: "Total Cases for Trial", Number: "588,214" },
+    { Law: "Cases Disposed", Number: "46,414" },
+    { Law: "Pending Cases (End of Year)", Number: "541,800" },
+
+  ];
+  const data5 = [
+    { Crime: "Total crimes against children", Conviction: "33.6", Trial: "92.1" },
+    { Crime: "POCSO Act cases	31.7	89.2", Conviction: "	31.7	", Trial: "89.2" },
+  ];
+  const data6 = [
+
+    { Age: "Below 6 years", Girls: "806", Boys: "37", Transgender: "0", Victims: "843" },
+    { Age: "6 to 12 years", Girls: "3,100", Boys: "118", Transgender: "0", Victims: "3,218" },
+    { Age: "12 to 16 years", Girls: "14,601", Boys: "199", Transgender: "0", Victims: "14,800" },
+    { Age: "16 to 18 years", Girls: "19,523", Boys: "60", Transgender: "0", Victims: "19,583" },
+    { Age: "Total Child Victims", Girls: "38,030", Boys: "414", Transgender: "0", Victims: "38,444" },
+  ];
+
+  const data7 = [
+    { Relationship: "Friends/Online-Friends or Live in Partners on Pretext of Marriage", Number: "19,765" },
+    { Relationship: "Friends/Neighbors/Employer or Other Known Persons", Number: "13,641" },
+    { Relationship: "Family Members", Number: "3,276" },
+    { Relationship: "Unknown or Not Identified", Number: "1,225" },
+
+  ];
+  const data8 = [
+    { Area: "Metropolitan Cities", Number: "20,550", Charge: "46.9%" },
+  { Area: "Delhi", Number: "7,400", Charge: "32.7%" },
+  { Area: "Patna", Number: "127", Charge: "100%" },
+  ];
+
+ const data9 = [
+  { Crime: "Rape", Incidents: "13,178", Total : "14,384", Delhi : "5,668", Victims: "6,428" },
+  { Crime: "Exposure and Abandonment", Incidents: "11,112", Total : "11,681", Delhi : "5,314", Victims: "5,579" },
+  { Crime: "Kidnapping and Abduction of Children", Incidents: "11,567", Total : "12,145", Delhi : "5,323", Victims: "5,590" },
+  { Crime: "Missing Children Deemed as Kidnapped", Incidents: "6,489", Total : "6,760", Delhi : "2,660", Victims: "2,785" },
+  { Crime: "Assault on Women with Intent to Outrage her Modesty", Incidents: "3,956", Total : "4,040", Delhi : "0", Victims: "0" },
+];
 
   const styles = {
     accordionHeader: {
@@ -135,6 +185,214 @@ function NotablePage2() {
                   </table>
                 </div>
               </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">3. Prevalent SLL (Special & Local Laws) Crimes against Children:</span>{" "}
+                  The Protection of Children from Sexual Offences Act (POCSO Act) is the most significant SLL crime category and within the same, 95.75% of the victims were girls.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Law/Act", "Incidents/Cases", "Victims"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data3.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Law}</td>
+                          <td style={styles.td}>{row.Incidents}</td>
+                          <td style={styles.td}>{row.Victims}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">4. Court Disposal of Cases:</span>{" "}
+                  The judiciary faces significant challenges in case disposal.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Court disposal metric ", "Number of Cases in 2022"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data4.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Law}</td>
+
+                          <td style={styles.td}>{row.Number}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">4. Court Disposal of Cases:</span>{" "}
+                  The judiciary faces significant challenges in case disposal.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Crime Category	", "Conviction Rate (%)	", "Trial Pendency (%)"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data5.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Crime}</td>
+                          <td style={styles.td}>{row.Conviction}</td>
+                          <td style={styles.td}>{row.Trial}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">5. POCSO Act:</span>{" "}
+                  Victimisation figures indicate that younger children, especially girls, are highly vulnerable to sexual offences. A critical trend highlighted is that 96.8% of offenders in POCSO Act cases are known to the victim.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Age Group", "Girls", "Boys", "Transgender", "	Total POCSO Victims"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data6.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Age}</td>
+                          <td style={styles.td}>{row.Girls}</td>
+                          <td style={styles.td}>{row.Boys}</td>
+                          <td style={styles.td}>{row.Transgender}</td>
+                          <td style={styles.td}>{row.Victims}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div style={{ overflowX: "auto" }} className="mt-4">
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Relationship to the victim", "Number of POCSO Cases in 2022"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data7.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Relationship}</td>
+                          <td style={styles.td}>{row.Number}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <h4 className="fw-bold mt-3 bluetxt yellowclr" style={styles.subaccordionHeader}>
+                Crimes Against Children (Metropolitan Cities)
+              </h4>
+
+              <p className="aboutpara">
+                Trends highlight the increasing challenge of crime against children in India's major cities, the significant burden on the police and judicial systems, and the low conviction rates despite a high number of reported cases.
+              </p>
+
+               <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">1. General Trends in Crime Against Children (Metropolitan Cities): </span>{" "}
+                The total number of incidents of crime against children in metropolitan cities has steadily increased over the last three years. The City of Delhi had the highest number of cases and Patna had the best charge-sheeting rate.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Area", "Number of Cases in 2022","Charge-sheeting rate"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data8.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Area}</td>
+
+                          <td style={styles.td}>{row.Number}</td>
+                           <td style={styles.td}>{row.Charge}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+               <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">1. General Trends in Crime Against Children (Metropolitan Cities): </span>{" "}
+                The total number of incidents of crime against children in metropolitan cities has steadily increased over the last three years. The City of Delhi had the highest number of cases and Patna had the best charge-sheeting rate.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Crime", "Total Incidents","Total Victims","Delhi Incidents","Delhi Incidents"].map((header, idx) => (
+                          <th key={idx} style={{ ...styles.th, minWidth: "180px" }}>{header}</th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data9.map((row, i) => (
+                        <tr key={i} style={{ backgroundColor: i % 2 === 0 ? "#f2f2f2" : "#ffffff" }}>
+                          <td style={styles.td}>{row.Crime}</td>
+
+                          <td style={styles.td}>{row.Incidents }</td>
+                           <td style={styles.td}>{row.Victims}</td>
+                           <td style={styles.td}>{row.Delhi }</td>
+                           <td style={styles.td}>{row.Victims}</td>
+
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>

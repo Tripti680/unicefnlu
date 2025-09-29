@@ -117,7 +117,7 @@ function ObligationPage18() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/drive/folders/1BPu-cWezzCwASKsK-U8nRKuINXYE-Z9E"
+                  href="../assets/pdf/MoU_US-INDIA_CyberTipLine%20Reports.pdf"
                   target="_blank"
                 >
                   Click here to access the full text of the MoU

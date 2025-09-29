@@ -131,8 +131,8 @@ function ObligationPage17() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/drive/folders/1BPu-cWezzCwASKsK-U8nRKuINXYE-Z9E"
-                  target="_blank"
+                  href="../assets/pdf/MOU_INDCOMBODIA.pdf"
+                  target  ="_blank"
                 >
                   Click here to access the full text of the MoU
                 </a>
