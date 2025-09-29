@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/MoU_US-INDIA_CyberTipLine Reports.pdf"
 
 function ObligationPage18() {
   const styles = {
@@ -117,7 +118,7 @@ function ObligationPage18() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="../assets/pdf/MoU_US-INDIA_CyberTipLine%20Reports.pdf"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the MoU
