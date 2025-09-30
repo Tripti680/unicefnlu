@@ -315,19 +315,132 @@ function NotablePage2() {
       rate: "1.8",
     },
     {
-    area: "Uttar Pradesh",
-    rate: "853.3",
+      area: "Uttar Pradesh",
+      rate: "853.3",
+    },
+    {
+      area: "Maharashtra",
+      rate: "361.1",
+    },
+    {
+      area: "West Bengal",
+      rate: "300.0",
+    },
+  ];
+  const data18 = [
+    {
+      crime: "Theft",
+      cases: "6,495",
+    },
+    {
+      crime: "Burglary",
+      cases: "2,030",
+    },
+    {
+      crime: "Rape",
+      cases: "1,130",
+    },
+    {
+      crime: "Attempt to Commit Murder",
+      cases: "1,292",
+    },
+    {
+      crime: "Robbery",
+      cases: "1,152",
+    },
+    {
+      crime: "Offences Affecting the Human Body (Total)",
+      cases: "12,132",
+    },
+    {
+      crime: "Offences against Property (Total)",
+      cases: "10,146",
+    },
+  ];
+
+  const data19 = [
+    {
+      criminal: "Protection of Children from Sexual Offences Act (POCSO Act)",
+      number: "2,356",
+    },
+    {
+      criminal: "Narcotic Drugs & Psychotropic Substances Act (NDPS Act)",
+      number: "387",
+    },
+    {
+      criminal: "Arms Act",
+      number: "351",
+    },
+    {
+      criminal: "Prohibition Act (State)",
+      number: "261",
+    },
+    {
+      criminal: "Juvenile Justice (Care and Protection of Children) Act",
+      number: "12",
+    },
+    {
+      criminal:
+        "Other State Local Acts under Other Regulatory & Enforcement – Acts",
+      number: "3,984",
+    },
+  ];
+
+  // ------------need to discuss--------
+  const data20 = [
+    {
+      category: "-",
+      boys: "Age Group 12-16 years",
+    },
+  ];
+
+   const data21 = [
+     {
+    criminal: "Offences Affecting the Human Body (Total)",
+    number: "1,744",
   },
   {
-    area: "Maharashtra",
-    rate: "361.1",
+    criminal: "Offences against Property (Total)",
+    number: "2,578",
   },
   {
-    area: "West Bengal",
-    rate: "300.0",
+    criminal: "Theft",
+    number: "1,774",
+  },
+  {
+    criminal: "Rape",
+    number: "166",
+  },
+  {
+    criminal: "Attempt to Commit Murder",
+    number: "301",
+  },
+  {
+    criminal: "Protection of Children from Sexual Offences Act",
+    number: "305",
+  },
+  {
+    criminal: "Arms Act",
+    number: "65",
+  },
+  {
+    criminal: "Narcotic Drugs & Psychotropic Substances Act",
+    number: "34",
+  },
+  {
+    criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
+    number: "502",
   },
   ];
 
+
+  // -----need to discusss------
+ const data22 = [
+    {
+      category: "-",
+      boys: "Age Group 12-16 years",
+    },
+  ];
   const styles = {
     accordionHeader: {
       background: "#ffc107",
@@ -1116,7 +1229,7 @@ function NotablePage2() {
                   </table>
                 </div>
 
-                  <div style={{ overflowX: "auto" }} className="mt-4">
+                <div style={{ overflowX: "auto" }} className="mt-4">
                   <table style={{ borderCollapse: "collapse", width: "100%" }}>
                     <thead>
                       <tr>
@@ -1153,6 +1266,132 @@ function NotablePage2() {
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
+                    2. Prevalent IPC Crimes by Juveniles:
+                  </span>{" "}
+                  Several IPC crime categories show high incidences:
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Crime", "Cases Reported"].map((header, idx) => (
+                          <th
+                            key={idx}
+                            style={{ ...styles.th, minWidth: "150px" }}
+                          >
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data18.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.crime}</td>
+                          <td style={styles.td}>{row.cases}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                    3. Prevalent SLL Crimes by Juveniles
+                  </span>{" "}
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Criminal Legislation", "Number of Cases"].map(
+                          (header, idx) => (
+                            <th
+                              key={idx}
+                              style={{ ...styles.th, minWidth: "150px" }}
+                            >
+                              {header}
+                            </th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data19.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.criminal}</td>
+                          <td style={styles.td}>{row.number}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                    4. Age and Gender Profile of Apprehended Juveniles (IPC
+                    &amp; SLL Crimes):
+                  </span>{" "}
+                  The majority of juveniles apprehended are boys in the 16 years
+                  &amp; above and below 18 years age group. Similarly, in SLL
+                  crimes, the 16-18 years age group for boys showed the highest
+                  numbers across various acts. Girls and transgender individuals
+                  accounted for a very small percentage.
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Category", "Boys Apprehended"].map((header, idx) => (
+                          <th
+                            key={idx}
+                            style={{ ...styles.th, minWidth: "150px" }}
+                          >
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data20.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.category}</td>
+                          <td style={styles.td}>{row.boys}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
                     5. Disposal of Juveniles Apprehended:
                   </span>{" "}
                   In 2022, there were a total of 41,614 total juveniles for
@@ -1179,6 +1418,113 @@ function NotablePage2() {
                   Matric”. The vast majority of juveniles apprehended were
                   “Living with Parents”.
                 </p>
+              </div>
+
+              <h4
+                className="fw-bold mt-3 bluetxt yellowclr"
+                style={styles.subaccordionHeader}
+              >
+                Juveniles in Conflict with Law (Metropolitan Cities)
+              </h4>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                    1. Overall Trends in Crime Committed by Juveniles
+                    (Metropolitan Cities):
+                  </span>{" "}
+                  The total number of cases of crime committed by juveniles in
+                  metropolitan cities also shows an increasing trend. From 5,974
+                  cases in 2020, it rose to 5,828 in 2021, and then to 5,352
+                  cases in 2022. Notably, Delhi City consistently reports a high
+                  number of cases.
+                </p>
+              </div>
+
+
+                <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                    2. Prevalent IPC Crimes by Juveniles in Cities: 
+                  </span>{" "}
+                  Similar to the all-India trend, property crimes and crimes against persons are prominent
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Crime/Criminal Legislation", "Number of Cases"].map(
+                          (header, idx) => (
+                            <th
+                              key={idx}
+                              style={{ ...styles.th, minWidth: "150px" }}
+                            >
+                              {header}
+                            </th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data21.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.criminal}</td>
+                          <td style={styles.td}>{row.number}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                   4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes): 
+                  </span>{" "}
+                The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
+
+
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Category", "Boys Apprehended"].map((header, idx) => (
+                          <th
+                            key={idx}
+                            style={{ ...styles.th, minWidth: "150px" }}
+                          >
+                            {header}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data22.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.category}</td>
+                          <td style={styles.td}>{row.boys}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
