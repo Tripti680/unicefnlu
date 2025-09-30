@@ -108,10 +108,10 @@ function NewsDigest() {
   return (
     <>
       <Header />
-      <section className="newsdigest">
+      <section className="newsdigest aboutpara">
         <div className="container my-lg-5 px-lg-4">
-          <div className="row">
-            <div className="col-12 px-lg-4" style={styles.accordion}>
+          <div className="row  ">
+            <div className="col-12 px-lg-4 " style={styles.accordion}>
               {/* <h3 className="fw-bold pt-lg-0 pt-3">
                 NLUD – UNICEF Monthly News Digest on Child Rights and the Indian
                 Criminal Justice System
@@ -122,7 +122,7 @@ function NewsDigest() {
               >
                 AUGUST 2025
               </h4>
-              <p className="pt-3">
+              <p className="pt-3 px-lg-0 px-2 aboutpara">
                 The following resource outlines the legal developments
                 pertaining to child rights and the Indian criminal justice
                 system – judicial, legislative and policy-oriented that took
@@ -135,12 +135,12 @@ function NewsDigest() {
           </div>
 
           <div className="row">
-            <div className="col-12 p-0 bg-white">
-              <div style={styles.body} className="px-lg-4">
+            <div className="col-12 p-0 bg-white ">
+              <div style={styles.body} className="px-lg-4 mx-lg-0 mx-3">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
@@ -395,7 +395,7 @@ function NewsDigest() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >

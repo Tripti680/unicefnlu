@@ -129,7 +129,7 @@ function Legislations() {
               >
                 LEGISLATIONS
               </h4>
-              <p className="pt-3">
+              <p className="pt-3 px-lg-0 px-2 aboutpara">
                 This resource outlines the Acts and Rules relevant to child
                 rights within the Indian criminal justice system divided into
                 legislations dealing with children in need of care and
@@ -142,11 +142,11 @@ function Legislations() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body} className="px-lg-4">
-                <div style={styles.accordion}>
+              <div style={styles.body} className="px-lg-4 mx-lg-0 mx-3">
+                <div style={styles.accordion} >
                   {/* MAIN ITEM 1 */}
-                  <div style={styles.accordionItem}>
-                    <div
+                  <div style={styles.accordionItem} >
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 0: !prev[0] }))
@@ -335,8 +335,8 @@ function Legislations() {
                   </div>
 
                   {/* MAIN ITEM 2 */}
-                  <div style={styles.accordionItem}>
-                    <div
+                  <div style={styles.accordionItem} >
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 10: !prev[10] }))

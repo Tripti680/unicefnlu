@@ -3,8 +3,8 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 
 function LegislationPage4() {
-   const styles = {
-   
+  const styles = {
+
     accordionHeader: {
       background: "#ffc107",
       color: "#0a2c5f",
@@ -17,14 +17,14 @@ function LegislationPage4() {
       alignItems: "center",
       borderRadius: "7px",
     },
-  
+
   };
   return (
     <>
       <Header />
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
-          <div className="row">
+          <div className="row m-1">
             <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr " style={styles.accordionHeader}>
                 Bharatiya Nyaya Sanhita, 2023
