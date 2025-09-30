@@ -394,53 +394,131 @@ function NotablePage2() {
     },
   ];
 
-   const data21 = [
-     {
-    criminal: "Offences Affecting the Human Body (Total)",
-    number: "1,744",
-  },
-  {
-    criminal: "Offences against Property (Total)",
-    number: "2,578",
-  },
-  {
-    criminal: "Theft",
-    number: "1,774",
-  },
-  {
-    criminal: "Rape",
-    number: "166",
-  },
-  {
-    criminal: "Attempt to Commit Murder",
-    number: "301",
-  },
-  {
-    criminal: "Protection of Children from Sexual Offences Act",
-    number: "305",
-  },
-  {
-    criminal: "Arms Act",
-    number: "65",
-  },
-  {
-    criminal: "Narcotic Drugs & Psychotropic Substances Act",
-    number: "34",
-  },
-  {
-    criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
-    number: "502",
-  },
+  const data21 = [
+    {
+      criminal: "Offences Affecting the Human Body (Total)",
+      number: "1,744",
+    },
+    {
+      criminal: "Offences against Property (Total)",
+      number: "2,578",
+    },
+    {
+      criminal: "Theft",
+      number: "1,774",
+    },
+    {
+      criminal: "Rape",
+      number: "166",
+    },
+    {
+      criminal: "Attempt to Commit Murder",
+      number: "301",
+    },
+    {
+      criminal: "Protection of Children from Sexual Offences Act",
+      number: "305",
+    },
+    {
+      criminal: "Arms Act",
+      number: "65",
+    },
+    {
+      criminal: "Narcotic Drugs & Psychotropic Substances Act",
+      number: "34",
+    },
+    {
+      criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
+      number: "502",
+    },
   ];
 
 
   // -----need to discusss------
- const data22 = [
+  const data22 = [
     {
       category: "-",
       boys: "Age Group 12-16 years",
     },
   ];
+
+
+   const data23 = [
+     {
+    Disposal: "Juveniles Apprehended",
+    Number: "7,061",
+  },
+  {
+    Disposal: "Total for Disposal",
+    Number: "15,303 (This includes 8,242 pending from the start of the year)",
+  },
+  {
+    Disposal: "Discharged During Investigation",
+    Number: "500",
+  },
+  {
+    Disposal: "Sent Home after Advice/Admonition",
+    Number: "3,505",
+  },
+  {
+    Disposal: "Sent to Special Homes/Fit Institutions",
+    Number: "1,533",
+  },
+  {
+    Disposal: "Dealt with Fines",
+    Number: "566",
+  },
+  {
+    Disposal: "Awarded Imprisonment",
+    Number: "60",
+  },
+  {
+    Disposal: "Acquitted/Discharged",
+    Number: "470",
+  },
+  {
+    Disposal: "% Held Guilty",
+    Number: "92.3%",
+  },
+  {
+    Disposal: "Pending Cases (End)",
+    Number: "8,669",
+  },
+  ];
+const data24 = [
+   {
+    Education: "Above Primary to Matric",
+    Number: "3,326",
+  },
+  {
+    Education: "Upto Primary",
+    Number: "1,951",
+  },
+  {
+    Education: "Above Matric to High Secondary",
+    Number: "1,141",
+  },
+
+  ];
+
+  const data25 = [
+    {
+    Education: "Living with Parents",
+    Number: "6,205",
+  },
+  {
+    Education: "Living with Guardians",
+    Number: "522",
+  },
+  {
+    Education: "Homeless",
+    Number: "334",
+  },
+
+
+  ];
+
+
   const styles = {
     accordionHeader: {
       background: "#ffc107",
@@ -1442,10 +1520,10 @@ function NotablePage2() {
               </div>
 
 
-                <div className="main mt-4 aboutpara">
+              <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                    2. Prevalent IPC Crimes by Juveniles in Cities: 
+                    2. Prevalent IPC Crimes by Juveniles in Cities:
                   </span>{" "}
                   Similar to the all-India trend, property crimes and crimes against persons are prominent
                 </p>
@@ -1488,9 +1566,9 @@ function NotablePage2() {
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                   4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes): 
+                    4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes):
                   </span>{" "}
-                The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
+                  The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
 
 
                 </p>
@@ -1526,6 +1604,125 @@ function NotablePage2() {
                   </table>
                 </div>
               </div>
+
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                   5. Disposal of Juveniles Apprehended in Cities:
+                  </span>{" "}
+                
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Disposal metric", "Number of juveniles in 2022"].map(
+                          (header, idx) => (
+                            <th
+                              key={idx}
+                              style={{ ...styles.th, minWidth: "150px" }}
+                            >
+                              {header}
+                            </th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data23.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.Disposal }</td>
+                          <td style={styles.td}>{row.Number }</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div className="main mt-4 aboutpara">
+                <p>
+                  <span className="fw-bold">
+                  6. Education and Family Background of Juveniles Apprehended in Cities:
+                  </span>{" "}
+                
+                </p>
+
+                <div style={{ overflowX: "auto" }}>
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Education Category", "Number of Juveniles in 2022"].map(
+                          (header, idx) => (
+                            <th
+                              key={idx}
+                              style={{ ...styles.th, minWidth: "150px" }}
+                            >
+                              {header}
+                            </th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data24.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.Education  }</td>
+                          <td style={styles.td}>{row.Number }</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div style={{ overflowX: "auto" }} className="mt-4">
+                  <table style={{ borderCollapse: "collapse", width: "100%" }}>
+                    <thead>
+                      <tr>
+                        {["Living Arrangement", "Living Arrangement	(Living)"].map(
+                          (header, idx) => (
+                            <th
+                              key={idx}
+                              style={{ ...styles.th, minWidth: "150px" }}
+                            >
+                              {header}
+                            </th>
+                          )
+                        )}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {data25.map((row, i) => (
+                        <tr
+                          key={i}
+                          style={{
+                            backgroundColor:
+                              i % 2 === 0 ? "#f2f2f2" : "#ffffff",
+                          }}
+                        >
+                          <td style={styles.td}>{row.Education  }</td>
+                          <td style={styles.td}>{row.Number }</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
