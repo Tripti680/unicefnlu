@@ -394,48 +394,48 @@ function NotablePage2() {
     },
   ];
 
-   const data21 = [
-     {
-    criminal: "Offences Affecting the Human Body (Total)",
-    number: "1,744",
-  },
-  {
-    criminal: "Offences against Property (Total)",
-    number: "2,578",
-  },
-  {
-    criminal: "Theft",
-    number: "1,774",
-  },
-  {
-    criminal: "Rape",
-    number: "166",
-  },
-  {
-    criminal: "Attempt to Commit Murder",
-    number: "301",
-  },
-  {
-    criminal: "Protection of Children from Sexual Offences Act",
-    number: "305",
-  },
-  {
-    criminal: "Arms Act",
-    number: "65",
-  },
-  {
-    criminal: "Narcotic Drugs & Psychotropic Substances Act",
-    number: "34",
-  },
-  {
-    criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
-    number: "502",
-  },
+  const data21 = [
+    {
+      criminal: "Offences Affecting the Human Body (Total)",
+      number: "1,744",
+    },
+    {
+      criminal: "Offences against Property (Total)",
+      number: "2,578",
+    },
+    {
+      criminal: "Theft",
+      number: "1,774",
+    },
+    {
+      criminal: "Rape",
+      number: "166",
+    },
+    {
+      criminal: "Attempt to Commit Murder",
+      number: "301",
+    },
+    {
+      criminal: "Protection of Children from Sexual Offences Act",
+      number: "305",
+    },
+    {
+      criminal: "Arms Act",
+      number: "65",
+    },
+    {
+      criminal: "Narcotic Drugs & Psychotropic Substances Act",
+      number: "34",
+    },
+    {
+      criminal:
+        "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
+      number: "502",
+    },
   ];
 
-
   // -----need to discusss------
- const data22 = [
+  const data22 = [
     {
       category: "-",
       boys: "Age Group 12-16 years",
@@ -1441,13 +1441,13 @@ function NotablePage2() {
                 </p>
               </div>
 
-
-                <div className="main mt-4 aboutpara">
+              <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                    2. Prevalent IPC Crimes by Juveniles in Cities: 
+                    2. Prevalent IPC Crimes by Juveniles in Cities:
                   </span>{" "}
-                  Similar to the all-India trend, property crimes and crimes against persons are prominent
+                  Similar to the all-India trend, property crimes and crimes
+                  against persons are prominent
                 </p>
 
                 <div style={{ overflowX: "auto" }}>
@@ -1484,15 +1484,15 @@ function NotablePage2() {
                 </div>
               </div>
 
-
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                   4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes): 
+                    4. Age and Gender Profile of Apprehended Juveniles in Cities
+                    (IPC & SLL Crimes):
                   </span>{" "}
-                The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
-
-
+                  The metropolitan city data also indicates that the majority of
+                  apprehended juveniles are boys, predominantly in the older age
+                  groups.
                 </p>
 
                 <div style={{ overflowX: "auto" }}>
