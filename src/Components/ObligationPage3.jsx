@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/crc-sale.pdf";
 
 function ObligationPage3() {
   const styles = {
@@ -105,7 +106,7 @@ function ObligationPage3() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1WaML1Vz9D0u-jGtF3qoqC6zh6LMljvxx/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

@@ -39,7 +39,7 @@ function Footer() {
     socialIcon: {
       width: "25px", // Adjust size as needed
       height: "25px",
-      filter: "invert(100%)", // Default white filter for other icons
+      // filter: "invert(100%)", // Default white filter for other icons
     },
     spotifyIcon: {
       width: "25px",
@@ -167,7 +167,7 @@ function Footer() {
                     src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png"
                     alt="YouTube"
                     className="social-icon"
-                    style={styles.socialIcon}
+                    style={styles.socialIconn}
                   />
                 </a>
                 <a href="#">
@@ -183,7 +183,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="col-lg-2 col-md-12 mb-lg-4 mt-lg-4 text-end quicklink">
+          <div className="col-lg-2 col-md-12 mb-lg-4 text-end quicklink">
             <ul className="h5 list-unstyled">
               <li className="mb-2 fw-bold h5">
                 <Link className="text-white text-decoration-none" to="/">

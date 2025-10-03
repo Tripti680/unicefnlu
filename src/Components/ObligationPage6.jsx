@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/riyadhguidelines.pdf";
 
 function ObligationPage6() {
   const styles = {
@@ -153,7 +154,7 @@ function ObligationPage6() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/156XNWB2uzYQu0kMjmwy5Lzw2mqP1rMTC/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Rules

@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/crc-conflict.pdf";
+
 
 function ObligationPage2() {
   const styles = {
@@ -92,7 +94,7 @@ function ObligationPage2() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1yFCgT5dwn4ijbiCsS5TzC5KqKaEW9LHA/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Convention
