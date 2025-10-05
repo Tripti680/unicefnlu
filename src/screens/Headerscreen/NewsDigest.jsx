@@ -279,7 +279,7 @@ function NewsDigest() {
                                 for minors committing heinous crimes.{" "}
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://s3.courtbook.in/2025/08/doc-1.pdf"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
@@ -330,7 +330,7 @@ function NewsDigest() {
                                 ensuring prompt verification.{" "}
                               </p>
                               <a
-                                href="https://example.com/"
+                                href="https://indiankanoon.org/doc/184952703/"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}
