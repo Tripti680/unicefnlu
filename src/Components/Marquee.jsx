@@ -16,7 +16,7 @@ function MarqueeComponent() {
       style={{ backgroundColor: "#ffc107", color: "#0f2c59",fontSize:"1.1rem",fontWeight:500,padding:"10px 0px" }}
     >
       <i className="fa fa-caret-right me-1"></i> <Link to="/marquefirst" style={{textDecoration:'none',color:'#0f2c59',cursor:'pointer'}}>Call for applications for the NLUD-UNICEF Justice for Children Fellowship</Link> &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;  &#10020; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;<Link to="/marquefirst" style={{textDecoration:'none',color:'#0f2c59',cursor:'pointer'}}>Call for
-Submissions for the UNICEF Chair Quarterly Newsletter</Link>
+Submissions for the NLUD-UNICEF Chair Quarterly Newsletter</Link>
     </Marquee>
   );
 }

@@ -17,12 +17,12 @@ function Banner() {
                   // paddingLeft:'128px'
                 }}
               >
-                UNICEF Chair on Justice for Children
+                NLUD Chair on Justice for Children
                 <br />
               <span style={{
                   fontSize: "clamp(28px, 6vw, 48px)", // responsive font size
                  
-                }} > National Law University Delhi</span>
+                }} > in collaboration with UNICEF</span>
               </h2>
              
             </div>
