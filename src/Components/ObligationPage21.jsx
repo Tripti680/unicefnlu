@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/crcdeclare.png";
 
 function ObligationPage21() {
   const styles = {
@@ -73,7 +74,7 @@ function ObligationPage21() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1aNEoXkWzh_f-EA1hSiWtXVMr73e-lWwX/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Statement

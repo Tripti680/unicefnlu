@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
-import pdf from "../assets/pdf/Saarc Convention On Preventing And Combating Trafficking In Women And Children For Prostitution.pdf"
+import pdf from "../assets/pdf/saarc-welfare.pdf"
 
 function ObligationPage15() {
   const styles = {

@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/g20-2018.pdf"
 
 function ObligationPage23() {
   const styles = {
@@ -72,7 +73,7 @@ function ObligationPage23() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1na8hx6Lu-c3eRaouIpeGOuY_h_uFvOTj/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Statement

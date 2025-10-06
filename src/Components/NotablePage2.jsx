@@ -389,130 +389,159 @@ function NotablePage2() {
   // ------------need to discuss--------
   const data20 = [
     {
-      category: "-",
-      boys: "Age Group 12-16 years",
+      category: "",
+      boys: "Age Group 12-16 years  |  Age Group 16-18 years",
     },
+     {
+      category: "Offences Affecting the Human Body (Total)",
+      boys: "11,651  |  14,893",
+    },
+     {
+      category: "Theft",
+      boys: "6,220  |  7,837",
+    },
+     {
+      category: "POCSO Act",
+      boys: "1,878  |  2,567",
+    },
+     
   ];
 
-   const data21 = [
-     {
-    criminal: "Offences Affecting the Human Body (Total)",
-    number: "1,744",
-  },
-  {
-    criminal: "Offences against Property (Total)",
-    number: "2,578",
-  },
-  {
-    criminal: "Theft",
-    number: "1,774",
-  },
-  {
-    criminal: "Rape",
-    number: "166",
-  },
-  {
-    criminal: "Attempt to Commit Murder",
-    number: "301",
-  },
-  {
-    criminal: "Protection of Children from Sexual Offences Act",
-    number: "305",
-  },
-  {
-    criminal: "Arms Act",
-    number: "65",
-  },
-  {
-    criminal: "Narcotic Drugs & Psychotropic Substances Act",
-    number: "34",
-  },
-  {
-    criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
-    number: "502",
-  },
+  const data21 = [
+    {
+      criminal: "Offences Affecting the Human Body (Total)",
+      number: "1,744",
+    },
+    {
+      criminal: "Offences against Property (Total)",
+      number: "2,578",
+    },
+    {
+      criminal: "Theft",
+      number: "1,774",
+    },
+    {
+      criminal: "Rape",
+      number: "166",
+    },
+    {
+      criminal: "Attempt to Commit Murder",
+      number: "301",
+    },
+    {
+      criminal: "Protection of Children from Sexual Offences Act",
+      number: "305",
+    },
+    {
+      criminal: "Arms Act",
+      number: "65",
+    },
+    {
+      criminal: "Narcotic Drugs & Psychotropic Substances Act",
+      number: "34",
+    },
+    {
+      criminal: "Other State Local Acts (Other Regulatory & Enforcement – Acts)",
+      number: "502",
+    },
   ];
 
   // -----need to discusss------
   const data22 = [
     {
-      category: "-",
-      boys: "Age Group 12-16 years",
+      category: "",
+      boys: "Age Group 12-16 years  |  Age Group 16-18 years",
+    },
+     {
+      category: "Offences Affecting the Human Body (Total)",
+      boys: "1,990  |  2,476",
+    },
+     {
+      category: "Theft",
+      boys: "1,679  |  2,180",
+    },
+     {
+      category: "POCSO Act",
+      boys: "06  |  59",
+    },
+     {
+      category: "Total cognizable SLL crimes",
+      boys: "457  |  562",
     },
   ];
 
 
-   const data23 = [
-     {
-    Disposal: "Juveniles Apprehended",
-    Number: "7,061",
-  },
-  {
-    Disposal: "Total for Disposal",
-    Number: "15,303 (This includes 8,242 pending from the start of the year)",
-  },
-  {
-    Disposal: "Discharged During Investigation",
-    Number: "500",
-  },
-  {
-    Disposal: "Sent Home after Advice/Admonition",
-    Number: "3,505",
-  },
-  {
-    Disposal: "Sent to Special Homes/Fit Institutions",
-    Number: "1,533",
-  },
-  {
-    Disposal: "Dealt with Fines",
-    Number: "566",
-  },
-  {
-    Disposal: "Awarded Imprisonment",
-    Number: "60",
-  },
-  {
-    Disposal: "Acquitted/Discharged",
-    Number: "470",
-  },
-  {
-    Disposal: "% Held Guilty",
-    Number: "92.3%",
-  },
-  {
-    Disposal: "Pending Cases (End)",
-    Number: "8,669",
-  },
+  const data23 = [
+    {
+      Disposal: "Juveniles Apprehended",
+      Number: "7,061",
+    },
+    {
+      Disposal: "Total for Disposal",
+      Number: "15,303 (This includes 8,242 pending from the start of the year)",
+    },
+    {
+      Disposal: "Discharged During Investigation",
+      Number: "500",
+    },
+    {
+      Disposal: "Sent Home after Advice/Admonition",
+      Number: "3,505",
+    },
+    {
+      Disposal: "Sent to Special Homes/Fit Institutions",
+      Number: "1,533",
+    },
+    {
+      Disposal: "Dealt with Fines",
+      Number: "566",
+    },
+    {
+      Disposal: "Awarded Imprisonment",
+      Number: "60",
+    },
+    {
+      Disposal: "Acquitted/Discharged",
+      Number: "470",
+    },
+    {
+      Disposal: "% Held Guilty",
+      Number: "92.3%",
+    },
+    {
+      Disposal: "Pending Cases (End)",
+      Number: "8,669",
+    },
   ];
-const data24 = [
-   {
-    Education: "Above Primary to Matric",
-    Number: "3,326",
-  },
-  {
-    Education: "Upto Primary",
-    Number: "1,951",
-  },
-  {
-    Education: "Above Matric to High Secondary",
-    Number: "1,141",
-  },
+  const data24 = [
+    {
+      Education: "Above Primary to Matric",
+      Number: "3,326",
+    },
+    {
+      Education: "Upto Primary",
+      Number: "1,951",
+    },
+    {
+      Education: "Above Matric to High Secondary",
+      Number: "1,141",
+    },
 
   ];
 
   const data25 = [
     {
-    Education: "Living with Parents",
-    Number: "6,205",
-  },
-  {
-    Education: "Living with Guardians",
-    Number: "522",
-  },
-  {
-    Education: "Homeless",
-    Number: "334",
-  },
+      Education: "Living with Parents",
+      Number: "6,205",
+    },
+    {
+      Education: "Living with Guardians",
+      Number: "522",
+    },
+    {
+      Education: "Homeless",
+      Number: "334",
+    },
 
 
   ];
@@ -1564,9 +1593,9 @@ const data24 = [
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                   4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes): 
+                    4. Age and Gender Profile of Apprehended Juveniles in Cities (IPC & SLL Crimes):
                   </span>{" "}
-                The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
+                  The metropolitan city data also indicates that the majority of apprehended juveniles are boys, predominantly in the older age groups.
 
 
                 </p>
@@ -1607,9 +1636,9 @@ const data24 = [
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                   5. Disposal of Juveniles Apprehended in Cities:
+                    5. Disposal of Juveniles Apprehended in Cities:
                   </span>{" "}
-                
+
                 </p>
 
                 <div style={{ overflowX: "auto" }}>
@@ -1637,8 +1666,8 @@ const data24 = [
                               i % 2 === 0 ? "#f2f2f2" : "#ffffff",
                           }}
                         >
-                          <td style={styles.td}>{row.Disposal }</td>
-                          <td style={styles.td}>{row.Number }</td>
+                          <td style={styles.td}>{row.Disposal}</td>
+                          <td style={styles.td}>{row.Number}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -1649,9 +1678,9 @@ const data24 = [
               <div className="main mt-4 aboutpara">
                 <p>
                   <span className="fw-bold">
-                  6. Education and Family Background of Juveniles Apprehended in Cities:
+                    6. Education and Family Background of Juveniles Apprehended in Cities:
                   </span>{" "}
-                
+
                 </p>
 
                 <div style={{ overflowX: "auto" }}>
@@ -1679,8 +1708,8 @@ const data24 = [
                               i % 2 === 0 ? "#f2f2f2" : "#ffffff",
                           }}
                         >
-                          <td style={styles.td}>{row.Education  }</td>
-                          <td style={styles.td}>{row.Number }</td>
+                          <td style={styles.td}>{row.Education}</td>
+                          <td style={styles.td}>{row.Number}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -1712,13 +1741,24 @@ const data24 = [
                               i % 2 === 0 ? "#f2f2f2" : "#ffffff",
                           }}
                         >
-                          <td style={styles.td}>{row.Education  }</td>
-                          <td style={styles.td}>{row.Number }</td>
+                          <td style={styles.td}>{row.Education}</td>
+                          <td style={styles.td}>{row.Number}</td>
                         </tr>
                       ))}
                     </tbody>
                   </table>
                 </div>
+              </div>
+
+              <div className="main mt-4">
+                <a
+                  className="aboutpara link aboutpara fs-6"
+                  href="https://www.ncrb.gov.in/uploads/nationalcrimerecordsbureau/custom/1701607577CrimeinIn
+dia2022Book1.pdf"
+                  target="_blank"
+                >
+                  Click here for the full report
+                </a>
               </div>
 
             </div>
