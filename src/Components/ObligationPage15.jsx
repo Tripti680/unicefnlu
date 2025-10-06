@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/Saarc Convention On Preventing And Combating Trafficking In Women And Children For Prostitution.pdf"
 
 function ObligationPage15() {
   const styles = {
@@ -99,7 +100,7 @@ function ObligationPage15() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1WRgFzZu6chK-Yd0dgnkOiOnHMtzDZC6K/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Convention

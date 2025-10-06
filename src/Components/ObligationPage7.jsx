@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/havanarules.pdf"
 
 function ObligationPage7() {
   const styles = {
@@ -152,7 +153,7 @@ function ObligationPage7() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/19jnbeXjJ5YPrJofsmpL9mbBn7VF15-jG/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Rules

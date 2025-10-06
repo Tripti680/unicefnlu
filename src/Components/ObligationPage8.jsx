@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../Components/Header";
 import Footer from "../Components/Footer";
+import pdf from "../assets/pdf/riyadhguidelines.pdf";
 
 function ObligationPage8() {
   const styles = {
@@ -93,7 +94,7 @@ function ObligationPage8() {
               <div className="main mt-4">
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://drive.google.com/file/d/1d1DuS7QW9_k1aofail9VmO69OtHLQ4Lz/view"
+                  href={pdf}
                   target="_blank"
                 >
                   Click here to access the full text of the Convention
