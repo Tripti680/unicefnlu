@@ -36,7 +36,7 @@ function NotablePage4() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         Prepared by “HAQ: Centre for Child Rights”, New Delhi,
                         on behalf of various coalitions and networks including
@@ -49,7 +49,7 @@ function NotablePage4() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         To what extent have India&#39;s interventions been
                         amenable with child rights commitments accepted during
@@ -62,7 +62,7 @@ function NotablePage4() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         Data Collection Sources include policy documents of the
                         Government of India, National Crime Records Bureau

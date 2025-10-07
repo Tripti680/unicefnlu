@@ -110,9 +110,9 @@ function Header() {
                     className="collapse navbar-collapse show"
                     id="navbarSupportedContent"
                   >
-                    <ul className="navbar-nav ms-lg-4">
+                    <ul className="navbar-nav ">
                       {menuItems.map((item) => (
-                        <li className="nav-item mx-lg-3" key={item.key}>
+                        <li className="nav-item mx-lg-2" key={item.key}>
                           <a
                             className={`nav-link fs-5 fw-semibold ${
                               location.pathname === item.path

@@ -37,7 +37,7 @@ function NotablePage5() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         The Kathmandu School of Law (KSL) organized this
                         research study through support from the Global Campus of
@@ -53,7 +53,7 @@ function NotablePage5() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         The research examined eight South Asian countries to
                         determine their success in implementing international
@@ -69,7 +69,7 @@ function NotablePage5() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         The study employed  a multi-country comparative analysis
                         which used desk review methods to analyze data from

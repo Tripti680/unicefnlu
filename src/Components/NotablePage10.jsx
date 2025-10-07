@@ -37,7 +37,7 @@ function NotablePage10() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         Delhi Commission for Protection and Human Development
                         Society
@@ -45,7 +45,7 @@ function NotablePage10() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         The primary aim of this study was to understand the
                         personal, familial, and societal needs of minor victims
@@ -62,13 +62,13 @@ function NotablePage10() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         Data was collected through interviews with 100 child
                         rape victims (94 girls and 6 boys) and their parents or
                         caregivers using a structured interview schedule. In
                         most cases (83%), parents/caregivers provided views,
-                        while in 14% of cases, both victims and family members
+                        while in 15% of cases, both victims and family members
                         were interviewed. Only one victim directly interacted
                         with the interviewer. The research team also conducted
                         physical observations of the victims&#39; living
@@ -115,7 +115,7 @@ function NotablePage10() {
                   <li>
                     26% of victims had physical illnesses, including abdominal
                     pain, anaemia, and infections. Treatment was hampered by
-                    lack of money (81%), stigma (14%), and delays. (6) 57% of
+                    lack of money (81%), stigma (15%), and delays. (6) 57% of
                     families faced livelihood losses, with job loss, legal
                     procedures, and lack of time as key reasons; only 6% of
                     children above 14 had skill training.

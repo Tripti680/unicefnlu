@@ -37,12 +37,12 @@ function NotablePage6() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">Enfold Proactive Health Trust</td>
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         The research aimed to understand the proportion of
                         “romantic” cases under the POCSO Act and the manner in
@@ -52,7 +52,7 @@ function NotablePage6() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         “Romantic Case” are defined as cases where the victim
                         admitted to being in a romantic relationship with the

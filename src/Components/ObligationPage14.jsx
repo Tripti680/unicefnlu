@@ -114,7 +114,7 @@ function ObligationPage14() {
                   href={pdf}
                   target="_blank"
                 >
-                  Click here to access the full text of the Convention
+                  Click here to access the full text of the 2030 Agenda
                 </a>
               </div>
             </div>

@@ -36,7 +36,7 @@ function NotablePage9() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         United Nations Children&#39;s Fund (UNICEF), Data and
                         Analytics Section
@@ -44,7 +44,7 @@ function NotablePage9() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         Examination of magnitude, causes, risk factors, and
                         consequences of sexual exploitation of boys, plus
@@ -52,7 +52,7 @@ function NotablePage9() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         A systematic literature review of quantitative and
                         qualitative research published between 1999 and March

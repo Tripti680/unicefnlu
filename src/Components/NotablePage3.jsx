@@ -37,7 +37,7 @@ function NotablePage3() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3" >
                         The research was carried out by Vidhi Centre for Legal
                         Policy in partnership with World Bank Data Evidence for
@@ -46,7 +46,7 @@ function NotablePage3() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         The evaluation of the Protection of Children from Sexual
                         Offences Act (POCSO) 2012 has been assessed since its
@@ -57,7 +57,7 @@ function NotablePage3() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         This is the most comprehensive empirical study on the
                         application of POCSO so far, which studied nearly

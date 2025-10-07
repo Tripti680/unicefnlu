@@ -36,14 +36,14 @@ function NotablePage11() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         National Legal Services Authority
                       </td>
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         The aim of this report is to highlight the status of
                         implementation of the Juvenile Justice (Care and
@@ -58,7 +58,7 @@ function NotablePage11() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         A detailed questionnaire, devised with valuable inputs
                         from the Bachpan Bachao Andolan (BBA), was prepared by
@@ -98,7 +98,7 @@ function NotablePage11() {
                     specialised services like medical or vocational centres.
                   </li>
                   <li>
-                    Child Care Institutions: Only 14% of States/UTs have
+                    Child Care Institutions: Only 15% of States/UTs have
                     Observation Homes in every district; 5 lack homes for girls.
                     80% have Special Homes, 60% with separate facilities by
                     gender. 71% have Places of Safety, but 9 lack them. 34% have

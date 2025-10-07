@@ -1087,7 +1087,7 @@ function NewsDigest() {
                                 protection mechanisms.
                               </p>
                               <a
-                                href="https://www.sikkim.gov.in/media/press-release/press-info?name=Press+release+from+District+Child+Protection+Unit+(DCPU),+Gyalshing&&id=133071"
+                                href="https://www.sikkim.gov.in/media/press-release/press-info?name=Press+release+from+District+Child+Protection+Unit+%28DCPU%29%2C+Gyalshing&id=133071"
                                 target="_blank"
                                 rel="noreferrer"
                                 style={styles.link}

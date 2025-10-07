@@ -36,7 +36,7 @@ function NotablePage1() {
                 <table className="min-w-full divide-y divide-gray-200 aboutpara">
                   <tbody className="bg-white divide-y divide-gray-100">
                     <tr>
-                      <td style={{width:"14%",verticalAlign:"top"}}>Study conducted by:</td>
+                      <td style={{width:"15%",verticalAlign:"top"}}>Study conducted by:</td>
                       <td className="px-3">
                         Ministry of Women and Child Development, Government of
                         India, with data compiled from National Commission for
@@ -47,7 +47,7 @@ function NotablePage1() {
                     </tr>
 
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Research Objective:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Research Objective:</td>
                       <td className="px-3">
                         This administrative report lacks a specific Research
                         Objective, functioning instead as a compliance document
@@ -56,7 +56,7 @@ function NotablePage1() {
                       </td>
                     </tr>
                     <tr>
-                      <td className="" style={{width:"14%",verticalAlign:"top"}}>Methodology:</td>
+                      <td className="" style={{width:"15%",verticalAlign:"top"}}>Methodology:</td>
                       <td className="px-3">
                         The methodology relied exclusively on administrative
                         data collection from 36 states/UTs, institutional

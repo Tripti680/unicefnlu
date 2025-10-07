@@ -68,7 +68,7 @@ function ObligationPage11() {
                   href={pdf}
                   target="_blank"
                 >
-                  Click here to access the full text of the Convention
+                Click here to access the full text of the Declaration
                 </a>
               </div>
             </div>
