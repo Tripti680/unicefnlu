@@ -130,7 +130,7 @@ function LandmarkPage16() {
 
                 <a
                   className="aboutpara link aboutpara fs-6"
-                  href="https://indiankanoon.org/doc/87705010/"
+                  href="https://cdnbbsr.s3waas.gov.in/s3d04863f100d59b3eb688a11f95b0ae60/uploads/2025/06/20250617139853866.pdf"
                   target="_blank"
                 >
               Click here for the full text of the judgement
