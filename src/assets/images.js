@@ -19,6 +19,7 @@ import headerlogo1 from "../assets/Images/headerlogo1.jpg";
 import headerlogo2 from "../assets/Images/headerlogo2.jpg";
 import headerlogo3 from "../assets/Images/headerlogo3.jpg";
 import spotify from "../assets/Images/spotify.png";
+import footersecondlogo from "../assets/Images/English_Centered_RGB.png";
 
 const Images = {
   banner: banner,
@@ -41,6 +42,7 @@ const Images = {
   headerlogo2: headerlogo2,
   headerlogo3: headerlogo3,
   spotify:spotify,
+  footersecondlogo:footersecondlogo,
 };
 
 export default Images;

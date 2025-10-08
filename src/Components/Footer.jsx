@@ -68,7 +68,7 @@ function Footer() {
                   src={Images.nlulogo}
                   alt="Logo"
                   style={{
-                    width: 90,
+                    width: 85,
                     height: 83,
                     cursor: "pointer",
                     borderRadius: "8px",
@@ -79,10 +79,11 @@ function Footer() {
             <div className="logo text-white mb-3 ">
               <a onClick={() => navigation("/")}>
                 <img
-                  src={Images.uniceffooterlogo}
+                  src={Images.footersecondlogo}
                   alt="Logo"
+                  className="mx-lg-0 mx-2"
                   style={{
-                    width: 90,
+                    width: 85,
                     height: 83,
                     cursor: "pointer",
                     borderRadius: "8px",
