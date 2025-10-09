@@ -42,9 +42,10 @@ function Footer() {
       // filter: "invert(100%)", // Default white filter for other icons
     },
     spotifyIcon: {
-      width: "25px",
-      height: "25px",
-      filter: "invert(100%)", // No filter to preserve Spotify's green color
+      width: "23px",
+      height: "23px",
+      filter: "invert(15%)", 
+      borderRadius:"4px"// No filter to preserve Spotify's green color
     },
   };
 
