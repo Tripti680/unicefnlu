@@ -24,7 +24,7 @@ function LandmarkPage11() {
       <Header />
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
-          <div className="row">
+          <div className="row m-1">
             <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr " style={styles.accordionHeader}>
                 Puneet S. v. State of Karnataka (2019 SCC OnLine Kar 1835)

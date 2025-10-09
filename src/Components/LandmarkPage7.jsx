@@ -25,7 +25,7 @@ function LandmarkPage7() {
       <Header />
       <section className="landmark">
         <div className="container my-lg-4 mb-3 fs-5 ">
-          <div className="row">
+          <div className="row m-1">
             <div className="col-12  px-lg-4">
               <h4 className="fw-bold mt-3 bluetxt yellowclr" style={styles.accordionHeader}>
                 Bhola Bhagat Vs. State of Bihar, [1997] 8 SCC 236

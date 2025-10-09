@@ -126,7 +126,7 @@ function Landmark() {
               <h4 className="fw-bold mt-3 bluetxt yellowclr" style={styles.accordionHeaderupper}>
                 LANDMARK JUDGEMENTS
               </h4>
-              <p className="pt-3 px-lg-2">
+              <p className="pt-3 px-lg-0 px-2 aboutpara">
                 The following resource outlines the landmark judgments of the
                 Indian Supreme Court on issues pertaining to child rights and
                 the Indian criminal justice system. The judgements have been
@@ -139,11 +139,11 @@ function Landmark() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body} className="px-lg-4">
+              <div style={styles.body} className="px-lg-4 mx-lg-0 mx-3">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
@@ -632,7 +632,7 @@ function Landmark() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >

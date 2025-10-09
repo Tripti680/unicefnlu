@@ -117,7 +117,7 @@ function Obligations() {
     <>
       <Header />
       <section className="landmark">
-        <div className="container  px-lg-4 my-lg-5">
+        <div className="container my-lg-5 px-lg-4">
           <div className="row">
             <div className="col-12 px-lg-4" style={styles.accordion}>
               {/* <h3 className="fw-bold pt-lg-0 pt-3">
@@ -126,7 +126,7 @@ function Obligations() {
               <h4 className="fw-bold mt-3 yellowclr bluetxt" style={styles.accordionHeaderupper}>
                 OBLIGATIONS UNDER INTERNATIONAL LAW
               </h4>
-              <p className="pt-3 px-lg-2">
+              <p className="pt-3 px-lg-0 px-2 aboutpara">
                 The following resource provides a comprehensive list of India’s
                 obligations under international law with regard to children and
                 the criminal justice system.{" "}
@@ -136,11 +136,11 @@ function Obligations() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body} className="px-lg-4">
+              <div style={styles.body} className="px-lg-4 mx-lg-0 mx-3">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 0: !prev[0] }))}
                     >
@@ -313,7 +313,7 @@ function Obligations() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 5: !prev[5] }))}
                     >
@@ -479,7 +479,7 @@ function Obligations() {
 
                   {/* MAIN ITEM 3 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 10: !prev[10] }))}
                     >
@@ -618,7 +618,7 @@ function Obligations() {
 
                   {/* MAIN ITEM 4 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 14: !prev[14] }))}
                     >
@@ -693,7 +693,7 @@ function Obligations() {
 
                   {/* MAIN ITEM 5 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 16: !prev[16] }))}
                     >
@@ -811,7 +811,7 @@ function Obligations() {
 
                   {/* MAIN ITEM 6 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() => setActiveMains(prev => ({ ...prev, 19: !prev[19] }))}
                     >

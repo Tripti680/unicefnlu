@@ -165,3 +165,7 @@ border-bottom:1px solid #36676e;
       cursor:'pointer';
       font-weight:bold;
     }
+
+table td {
+  vertical-align: top; /* applies to all td */
+}

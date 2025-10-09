@@ -129,7 +129,7 @@ function Notable() {
               >
                 NOTABLE REPORTS
               </h4>
-              <p className="pt-3 px-lg-2">
+              <p className="pt-3 px-lg-0 px-2 aboutpara">
                 The following resource outlines some recent reports on the
                 implementation of child rights legislations and policies within
                 the Indian criminal justice system.{" "}
@@ -139,11 +139,11 @@ function Notable() {
 
           <div className="row">
             <div className="col-12 p-0 bg-white">
-              <div style={styles.body} className="px-lg-4">
+              <div style={styles.body} className="px-lg-4  mx-lg-0 mx-3">
                 <div style={styles.accordion}>
                   {/* MAIN ITEM 1 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 0: !prev[0] }))
@@ -174,7 +174,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 1: !prev[1] }))
@@ -207,7 +207,7 @@ function Notable() {
 
                   {/* MAIN ITEM 3 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 2: !prev[2] }))
@@ -242,7 +242,7 @@ function Notable() {
 
                   {/* MAIN ITEM 4 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 3: !prev[3] }))
@@ -275,7 +275,7 @@ function Notable() {
 
                   {/* MAIN ITEM 5 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 4: !prev[4] }))
@@ -312,7 +312,7 @@ function Notable() {
 
                   {/* MAIN ITEM 6 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 5: !prev[5] }))
@@ -346,7 +346,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 6: !prev[6] }))
@@ -380,7 +380,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 7: !prev[7] }))
@@ -416,7 +416,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 8: !prev[8] }))
@@ -452,7 +452,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 9: !prev[9] }))
@@ -492,7 +492,7 @@ function Notable() {
 
                   {/* MAIN ITEM 2 */}
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 10: !prev[10] }))
@@ -527,7 +527,7 @@ function Notable() {
                     </div>
                   </div>
                   <div style={styles.accordionItem}>
-                    <div
+                    <div className="accordionHeader"
                       style={styles.accordionHeader}
                       onClick={() =>
                         setActiveMains((prev) => ({ ...prev, 11: !prev[11] }))
