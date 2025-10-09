@@ -102,7 +102,7 @@ function Header() {
             {/* Navbar (Desktop only) */}
             <div
               className="col-lg-7 d-none d-lg-block desktopnavbar"
-              style={{ position: "relative", right: "190px" }}
+              style={{ position: "relative", right: "166px" }}
             >
               <nav className="navbar navbar-expand-xl navbar-dark">
                 <div className="container-fluid justify-content-start">

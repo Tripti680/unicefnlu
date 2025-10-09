@@ -63,7 +63,9 @@ function Footer() {
           {/* Logo Section */}
           <div className="col-lg-1 px-lg-4 footerlogo-section">
             <div className="logo text-white mb-3">
-              <a onClick={() => navigation("/")}>
+              <a
+               href="https://nludelhi.ac.in/" 
+              target="_blank">
                 <img
                   src={Images.nlulogo}
                   alt="Logo"
@@ -77,7 +79,9 @@ function Footer() {
               </a>
             </div>
             <div className="logo text-white mb-3 ">
-              <a onClick={() => navigation("/")}>
+              <a 
+              href="https://www.unicef.org/"
+              target="_blank">
                 <img
                   src={Images.footersecondlogo}
                   alt="Logo"
