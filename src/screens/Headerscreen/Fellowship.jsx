@@ -1,8 +1,14 @@
 import React from "react";
 import Header from "../../Components/Header";
 import Footer from "../../Components/Footer";
+import { useNavigate } from "react-router";
 
 function Fellowship() {
+ const navigate = useNavigate();
+  const navigation = (path) => {
+    navigate(path);
+  };
+
   return (
     <>
       <Header />
@@ -42,10 +48,21 @@ function Fellowship() {
                     as a team to generate child rights scholarship specifically
                     within the realm of criminal justice.
                   </p>
-                  <ul className="list-unstyled greyclr p-1 px-3 ">
+                  <a onClick={() => navigation("/fellowshiprequirement")}  
+                  style={{
+                       textDecoration:"none",
+                        cursor: "pointer",
+                      
+                       }}>
+                    <ul className="list-unstyled greyclr p-1 px-3 ">
                     <li>
-                      {" "}
-                      <b>Fellowship requirements</b>
+                   <a onClick={() => navigation("/fellowshiprequirement")}  
+                  style={{
+                       textDecoration:"none",
+                        cursor: "pointer",
+                      
+                       }}><b>Fellowship requirements</b></a>
+                      
                     </li>
                     <li>
                       {" "}
@@ -55,9 +72,10 @@ function Fellowship() {
                       <b>Apply</b>
                     </li>
                     <li className="fw-bold text-danger">
-                      Deadline: October 1, 2025
+                      Deadline: November 15, 2025
                     </li>
                   </ul>
+                  </a>
                 </div>
               </div>
             </div>
@@ -89,7 +107,7 @@ function Fellowship() {
                       <b>Apply</b>
                     </li>
                     <li className="fw-bold text-danger">
-                      Deadline: October 1, 2025
+                     Applications will open on November 1, 2025
                     </li>
                   </ul>
                 </div>

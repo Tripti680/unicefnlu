@@ -90,6 +90,7 @@ import NotablePage9 from "./Components/NotablePage9";
 import NotablePage10 from "./Components/NotablePage10";
 import NotablePage11 from "./Components/NotablePage11";
 import NotablePage12 from "./Components/NotablePage12";
+import FellowshipRequirement from "./Components/FellowshipRequirement";
 
 function App() {
   return (
@@ -181,6 +182,7 @@ function App() {
         <Route path="/notable10" element={<NotablePage10 />} />
         <Route path="/notable11" element={<NotablePage11 />} />
         <Route path="/notable12" element={<NotablePage12 />} />
+         <Route path="/fellowshiprequirement" element={<FellowshipRequirement />} />
 
         <Route path="*" element={<Homepage />} />
       </Routes>
