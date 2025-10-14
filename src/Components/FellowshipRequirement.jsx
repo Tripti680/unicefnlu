@@ -29,12 +29,14 @@ function FellowshipRequirement() {
                 className="fw-bold mt-3 bluetxt yellowclr px-2"
                 style={styles.accordionHeader}
               >
-                NLUD-UNICEF Justice for Children Research Fellowship
+               NLUD Justice for Children Research Fellowship
               </h4>
 
-              <h5 lassName="fw-bold mt-3 bluetxt yellowclr px-2">
-                Call for Applications
-              </h5>
+              <h5  className="fw-bold mt-3  px-2"
+               >Established under the aegis of the NLUD Chair on Justice for children in collaboration with UNICEF</h5>
+                 <h5  className="fw-bold mt-3  px-2"
+               >Call for Applications </h5>
+
 
               <div className="main mt-4">
                 <p className="aboutpara">
@@ -119,7 +121,7 @@ function FellowshipRequirement() {
 
                 <p className="aboutpara fw-bold">
                   {" "}
-                  (1) NLUD-UNICEF Chair Quarterly Newsletter{" "}
+                  (1)NLUD Chair Quarterly Newsletter supported by UNICEF{" "}
                 </p>
                 <ul className="aboutpara">
                   <li>
@@ -143,8 +145,7 @@ function FellowshipRequirement() {
 
                 <p className="aboutpara fw-bold">
                   {" "}
-                  (2) NLUD-UNICEF Chair White Paper Series on Implementation of
-                  the POCSO
+                  (2)	NLUD Chair White Paper Series supported by UNICEF on Implementation of the POCSO 
                 </p>
                 <ul className="aboutpara">
                   <li>

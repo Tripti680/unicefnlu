@@ -19,10 +19,10 @@ function AboutUs() {
           {/* Intro */}
           <div className="mb-3">
             <h2 className="fw-bold">
-              NLUD–UNICEF Chair on Justice for Children
+              NLUD collaboration with UNICEF Chair on Justice for Children
             </h2>
             <p className="aboutpara">
-              The UNICEF Chair on Justice for Children is a product of the
+              The NLUD Chair on Justice for Children is a product of the
               collaboration between UNICEF and National Law University Delhi in
               pursuance of the objective of promoting research, building
               knowledge, and strengthening practice around access to justice for
@@ -196,7 +196,7 @@ function AboutUs() {
               for Children Fellows are now open.{" "}
               <a
                 className="pointer"
-                onClick={() => navigation("/FellowsInformation")}
+                onClick={() => navigation("/Fellowship")}
               >
                 Click here for more information.
               </a>
@@ -218,6 +218,7 @@ function AboutUs() {
                   <li>Aadya Mital</li>
                   <li>Adyasha Syam</li>
                   <li>Aravya Gupta</li>
+                  <li>Sudiksha Jha</li>
                 </ul>
               </div>
               <div className="col-lg-3">
