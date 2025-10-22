@@ -19,7 +19,7 @@ function AboutUs() {
           {/* Intro */}
           <div className="mb-3">
             <h2 className="fw-bold">
-              NLUD collaboration with UNICEF Chair on Justice for Children
+             NLUD Chair on Justice for Children <br />in collaboration with UNICEF
             </h2>
             <p className="aboutpara">
               The NLUD Chair on Justice for Children is a product of the

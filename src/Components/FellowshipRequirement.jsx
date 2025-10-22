@@ -7,8 +7,8 @@ function FellowshipRequirement() {
     accordionHeader: {
       background: "#ffc107",
       color: "#0a2c5f",
-      padding: "15px 20px",
-      fontSize: "18px",
+      padding: "15px 7px",
+      fontSize: "22px",
       fontWeight: "bold",
       cursor: "pointer",
       display: "flex",
@@ -16,6 +16,19 @@ function FellowshipRequirement() {
       alignItems: "center",
       borderRadius: "7px",
     },
+    accordionHeaderblue:{
+   
+      background: "#0a2c5f",
+      color: "#fff",
+      padding: "15px 7px",
+      fontSize: "22px",
+      fontWeight: "bold",
+      cursor: "pointer",
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      borderRadius: "7px",
+    }
   };
 
   return (
@@ -25,40 +38,44 @@ function FellowshipRequirement() {
         <div className="container my-lg-4 mb-3 fs-5 ">
           <div className="row m-1">
             <div className="col-12 px-lg-4">
-              <h4
-                className="fw-bold mt-3 bluetxt yellowclr px-2"
+              <h2
+                className=" mt-3 fs-1 bluetxt yellowclr px-2"
                 style={styles.accordionHeader}
               >
                NLUD Justice for Children Research Fellowship
-              </h4>
+              </h2>
 
-              <h5  className="fw-bold mt-3  px-2"
+              <h5  className=" mt-3  px-1" 
                >Established under the aegis of the NLUD Chair on Justice for children in collaboration with UNICEF</h5>
-                 <h5  className="fw-bold mt-3  px-2"
-               >Call for Applications </h5>
+                 <h5  className=" mt-3  "  style={styles.accordionHeaderblue}
+               >CALL FOR APPLICATIONS </h5>
 
 
-              <div className="main mt-4">
+              <div className="main mt-4 px-1">
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Employment type:</span> Contractual{" "}
+                  <span className=" text-decoration-underline">Employment type</span>: Contractual. . Full-time.{" "}
                 </p>
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Time period: </span> Nine months
+                  <span className=" text-decoration-underline">Time period</span> : Nine months
                   starting Dec 15, 2025{" "}
                 </p>
-                <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Location:</span> National Law
+              
+                 <p className="aboutpara">
+                  <span className=" text-decoration-underline">Location</span> :National Law
                   University Delhi{" "}
                 </p>
+                  <p className="aboutpara">
+                  <span className=" text-decoration-underline">Stipend</span>: INR 50,000/- per month
+                </p>
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Application Deadline: </span>
+                  <span className=" text-decoration-underline">Application Deadline</span>:
                   November 15, 2025{" "}
                 </p>
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Qualifications:</span> Law Graduate
+                  <span className=" text-decoration-underline">Qualifications</span> L: aw Graduate
                   (LL.B. or B.A.LL.B.){" "}
                 </p>
-                <p className="aboutpara fw-bold ">Essential requirements -</p>
+                <p className="aboutpara  ">Essential requirements -</p>
                 <ul className="aboutpara">
                   <li>
                     {" "}
@@ -74,7 +91,7 @@ function FellowshipRequirement() {
                   <li> proficiency in the use of MS Word and PowerPoint</li>
                 </ul>
 
-                <p className="aboutpara fw-bold">Desirable requirements -</p>
+                <p className="aboutpara ">Desirable requirements -</p>
                 <ul className="aboutpara">
                   <li>
                     {" "}
@@ -90,7 +107,7 @@ function FellowshipRequirement() {
                 </ul>
 
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">How to apply: </span>
+                  <span className=" text-decoration-underline">How to apply</span>:
                   Complete the Google form available <a href="https://forms.gle/xZEXpTFqN1y14Md18" target="_blank">here</a>. Please do not submit
                   any application materials by post or email.
                 </p>
@@ -100,12 +117,12 @@ function FellowshipRequirement() {
                 </p>
 
                 <p className="aboutpara ">
-                  <span className="fw-bold text-decoration-underline">Contact for queries: </span>
+                  <span className=" text-decoration-underline">Contact for queries</span>:
                   unicefchair@nludelhi.ac.in
                 </p>
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">About the Fellowship: </span>
-                  The NLUD-UNICEF Justice for Children Research Fellowship, is a
+                  <span className=" text-decoration-underline">About the Fellowship: </span>
+                 The NLUD Justice for Children Fellowship, supported by UNICEF, is a
                   flagship program for young graduates committed to research on
                   issues surrounding access to justice for children in need of
                   care and protection, and children in conflict with the law.
@@ -114,14 +131,14 @@ function FellowshipRequirement() {
                   rights within the Indian criminal justice system.
                 </p>
                 <p className="aboutpara">
-                  <span className="fw-bold text-decoration-underline">Deliverables: </span>
+                  <span className=" text-decoration-underline">Deliverables</span>:
                   The research fellows will be expected to contribute
                   scholarship to the publication of:
                 </p>
 
-                <p className="aboutpara fw-bold">
+                <p className="aboutpara ">
                   {" "}
-                  (1)NLUD Chair Quarterly Newsletter supported by UNICEF{" "}
+                  (1) NLUD Chair Quarterly Newsletter supported by UNICEF{" "}
                 </p>
                 <ul className="aboutpara">
                   <li>
@@ -143,7 +160,7 @@ function FellowshipRequirement() {
                   </li>
                 </ul>
 
-                <p className="aboutpara fw-bold">
+                <p className="aboutpara ">
                   {" "}
                   (2)	NLUD Chair White Paper Series supported by UNICEF on Implementation of the POCSO 
                 </p>

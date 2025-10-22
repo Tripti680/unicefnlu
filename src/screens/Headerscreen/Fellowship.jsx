@@ -21,7 +21,7 @@ function Fellowship() {
               The NLUD Justice for Children Fellowship
             </h2>
             <p className="mt-3 ">
-              The NLUD supported by UNICEF Justice for Children Fellowship is a one-year
+              The NLUD Justice for Children Fellowship, supported by UNICEF, is a one-year
               flagship program for young graduates committed to research and
               advocacy specifically on issues surrounding access to justice for
               children in need of care and protection, and children in conflict
@@ -91,22 +91,7 @@ function Fellowship() {
                     provide legal representation to children in need of care,
                     and children in conflict with the law.
                   </p>
-                  <ul className="list-unstyled greyclr p-1 px-3 ">
-                    <li>
-                      {" "}
-                      <b>Fellowship requirements</b>
-                    </li>
-                    <li>
-                      {" "}
-                      <b>Eligibility</b>
-                    </li>
-                    <li>
-                      <b>Apply</b>
-                    </li>
-                    <li className="fw-bold text-danger">
-                      Applications will open on November 1, 2025
-                    </li>
-                  </ul>
+                 
                 </div>
               </div>
             </div>
