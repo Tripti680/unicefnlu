@@ -53,15 +53,15 @@ function FellowshipRequirement() {
 
               <div className="main mt-4 px-1">
                 <p className="aboutpara">
-                  <span className=" text-decoration-underline">Employment type</span>: Contractual. . Full-time.{" "}
+                  <span className=" text-decoration-underline">Employment type</span>: Contractual. Full-time.{" "}
                 </p>
                 <p className="aboutpara">
-                  <span className=" text-decoration-underline">Time period</span> : Nine months
+                  <span className=" text-decoration-underline">Time period</span>: Nine months
                   starting Dec 15, 2025{" "}
                 </p>
               
                  <p className="aboutpara">
-                  <span className=" text-decoration-underline">Location</span> :National Law
+                  <span className=" text-decoration-underline">Location</span>: National Law
                   University Delhi{" "}
                 </p>
                   <p className="aboutpara">
@@ -72,7 +72,7 @@ function FellowshipRequirement() {
                   November 15, 2025{" "}
                 </p>
                 <p className="aboutpara">
-                  <span className=" text-decoration-underline">Qualifications</span> L: aw Graduate
+                  <span className=" text-decoration-underline">Qualifications</span>: Law Graduate
                   (LL.B. or B.A.LL.B.){" "}
                 </p>
                 <p className="aboutpara  ">Essential requirements -</p>

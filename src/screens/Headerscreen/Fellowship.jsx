@@ -36,7 +36,7 @@ function Fellowship() {
           </div>
 
           {/* Fellowship Types */}
-          <div className="row g-4 justify-content-around">
+          <div className="row g-5 justify-content-around fellowshiptypes">
             {/* Research Fellowship */}
             <div className="col-md-4">
               <div className="  shadow-sm border-0">
@@ -79,7 +79,7 @@ function Fellowship() {
 
             {/* Litigation Fellowship */}
 
-            <div className="col-md-4">
+            <div className="col-md-4 pt-4 pt-lg-0 ">
               <div className="  shadow-sm border-0">
                 <div className="mb-0 p-0" style={{ height: "224px" }}>
                   <h4 className="fw-bold mb-0 p-1 px-3 yellowclr ">

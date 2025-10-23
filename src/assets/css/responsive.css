@@ -58,3 +58,9 @@
     }
 
 }
+
+@media (min-width:767px) and (max-width:972px) {
+   .fellowshiptypes{
+    height:450px !important;
+   }
+}
